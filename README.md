@@ -1,6 +1,4 @@
-Yeh lijiye aapka poora **ready-to-copy-paste README.md content** bina kisi extra text ke. Ise seedha apne GitHub repo mein paste kar dena:
 
-```markdown
 # Cadence Financial Group — Enterprise PII Sanitization Pipeline
 
 An automated, local-first data governance pipeline engineered to extract multi-format business documents, detect Personally Identifiable Information (PII) using a hybrid approach (Regex + NER), and redact sensitive entities safely before downstream LLM processing.
