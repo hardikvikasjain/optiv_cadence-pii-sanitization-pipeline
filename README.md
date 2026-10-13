@@ -1,8 +1,3 @@
-Yeh lijiye aapke GitHub repository ke liye ekdum **next-level, ultra-attractive README.md** file! Isme professional layout, custom HTML/Markdown styling, lighting effect aesthetic badges, interactive flow design, aur enterprise-grade technical presentation di gayi hai taaki evaluator dekhte hi select kar le.
-
-Ise seedha copy karke apne `README.md` mein paste kar dena:
-
-```markdown
 <div align="center">
 
 # 🛡️ Enterprise PII Sanitization & Data Governance Pipeline
