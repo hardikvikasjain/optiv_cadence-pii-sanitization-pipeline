@@ -1,0 +1,54 @@
+{
+  "execution_timestamp": "2026-10-14 00:22:15",
+  "files_processed_count": 3,
+  "total_segments_extracted": 3299,
+  "total_pii_entities_detected": 673,
+  "findings_by_type": {
+    "PERSON_NAME": 303,
+    "ACCOUNT_OR_EMPLOYEE_ID": 173,
+    "EMAIL": 191,
+    "PHONE": 6
+  },
+  "safety_gate_verdicts": {
+    "Cadence_TPRM_Training.docx": {
+      "file_name": "Cadence_TPRM_Training.docx",
+      "status": "REVIEW REQUIRED",
+      "safe_for_downstream_llm": false,
+      "segments_total": 1791,
+      "segments_with_warnings": 97,
+      "failures_count": 0,
+      "pii_detected_count": 22,
+      "warning_samples": [
+        "low OCR confidence",
+        "low OCR confidence",
+        "low OCR confidence"
+      ]
+    },
+    "Cadence_Group_Risk_Management_Policy__v6.0.pdf": {
+      "file_name": "Cadence_Group_Risk_Management_Policy__v6.0.pdf",
+      "status": "REVIEW REQUIRED",
+      "safe_for_downstream_llm": false,
+      "segments_total": 1134,
+      "segments_with_warnings": 51,
+      "failures_count": 0,
+      "pii_detected_count": 576,
+      "warning_samples": [
+        "low OCR confidence - PII may be mis-read",
+        "low OCR confidence - PII may be mis-read",
+        "low OCR confidence - PII may be mis-read"
+      ]
+    },
+    "Cadence_Financial_Group_Organizational_Pack.pptx": {
+      "file_name": "Cadence_Financial_Group_Organizational_Pack.pptx",
+      "status": "REVIEW REQUIRED",
+      "safe_for_downstream_llm": false,
+      "segments_total": 374,
+      "segments_with_warnings": 1,
+      "failures_count": 0,
+      "pii_detected_count": 75,
+      "warning_samples": [
+        "low OCR confidence"
+      ]
+    }
+  }
+}

@@ -1,0 +1,839 @@
+[
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00020",
+    "entity_text": "Desmond Achterberg",
+    "entity_type": "PERSON_NAME",
+    "start_char": 7,
+    "end_char": 25,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00026",
+    "entity_text": "Tobias Lindqvist",
+    "entity_type": "PERSON_NAME",
+    "start_char": 7,
+    "end_char": 23,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00037",
+    "entity_text": "Marguerite Vossberg",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 19,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00039",
+    "entity_text": "m.vossberg@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 28,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00040",
+    "entity_text": "Desmond Achterberg",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 18,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00042",
+    "entity_text": "d.achterberg@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 30,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00045",
+    "entity_text": "p.raghunathan@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 31,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00046",
+    "entity_text": "Tobias Lindqvist",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 16,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00048",
+    "entity_text": "t.lindqvist@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 29,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00049",
+    "entity_text": "Adaeze Okonkwo-Bell",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 19,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00051",
+    "entity_text": "a.okonkwobell@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 31,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00054",
+    "entity_text": "r.featherstone@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 32,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00055",
+    "entity_text": "Bartholomew Nkemdirim",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 21,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00057",
+    "entity_text": "b.nkemdirim@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 29,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00058",
+    "entity_text": "Yasmin El-Katib",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 15,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00060",
+    "entity_text": "y.elkatib@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 27,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00066",
+    "entity_text": "Tobias Lindqvist",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 16,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00068",
+    "entity_text": "t.lindqvist@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 29,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00071",
+    "entity_text": "e.bertucci@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 28,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00072",
+    "entity_text": "Colette Marchetti",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 17,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00074",
+    "entity_text": "c.marchetti@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 29,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00075",
+    "entity_text": "Hyun-Woo Park",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 13,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00077",
+    "entity_text": "h.park@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 24,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00078",
+    "entity_text": "Nikolai Brandvold",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 17,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00080",
+    "entity_text": "n.brandvold@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 29,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00093",
+    "entity_text": "Adaeze Okonkwo-Bell",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 19,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00095",
+    "entity_text": "a.okonkwobell@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 31,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00096",
+    "entity_text": "Imani Oduya",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 11,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00098",
+    "entity_text": "i.oduya@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 25,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00099",
+    "entity_text": "Gerhardt Wenzel",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 15,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00101",
+    "entity_text": "g.wenzel@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 26,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00102",
+    "entity_text": "Solveig Aarnio",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 14,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00104",
+    "entity_text": "s.aarnio@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 26,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00105",
+    "entity_text": "Rafael Quintanilla",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 18,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00107",
+    "entity_text": "r.quintanilla@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 31,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00114",
+    "entity_text": "M. Vossberg",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 11,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00116",
+    "entity_text": "A. Okonkwo-Bell",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 15,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00117",
+    "entity_text": "E. Bertucci",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 11,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00119",
+    "entity_text": "Y. El-Katib",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 11,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00120",
+    "entity_text": "I. Oduya",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 8,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00195",
+    "entity_text": "A. Okonkwo-Bell",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 15,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00196",
+    "entity_text": "S. Aarnio Dir",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 13,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00197",
+    "entity_text": "E. Bertucci",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 11,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00199",
+    "entity_text": "N. Brandvold",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 12,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00200",
+    "entity_text": "B. Nkemdirim",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 12,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00201",
+    "entity_text": "R. Quintanilla Dir",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 18,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00283",
+    "entity_text": "Marguerite Vossberg",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 19,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00286",
+    "entity_text": "m.vossberg@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 28,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00288",
+    "entity_text": "Bartholomew Nkemdirim",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 21,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00291",
+    "entity_text": "b.nkemdirim@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 29,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00293",
+    "entity_text": "Yasmin El-Katib",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 15,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00296",
+    "entity_text": "y.elkatib@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 27,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00298",
+    "entity_text": "Desmond Achterberg",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 18,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00301",
+    "entity_text": "d.achterberg@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 30,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00306",
+    "entity_text": "p.raghunathan@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 31,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00311",
+    "entity_text": "r.featherstone@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 32,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00313",
+    "entity_text": "Tobias Lindqvist",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 16,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00316",
+    "entity_text": "t.lindqvist@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 29,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00321",
+    "entity_text": "e.bertucci@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 28,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00323",
+    "entity_text": "Colette Marchetti",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 17,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00326",
+    "entity_text": "c.marchetti@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 29,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00328",
+    "entity_text": "Hyun-Woo Park",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 13,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00331",
+    "entity_text": "h.park@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 24,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00333",
+    "entity_text": "Nikolai Brandvold",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 17,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00336",
+    "entity_text": "n.brandvold@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 29,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00338",
+    "entity_text": "Adaeze Okonkwo-Bell",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 19,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00341",
+    "entity_text": "a.okonkwobell@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 31,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00343",
+    "entity_text": "Imani Oduya",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 11,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00346",
+    "entity_text": "i.oduya@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 25,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00348",
+    "entity_text": "Gerhardt Wenzel",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 15,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00351",
+    "entity_text": "g.wenzel@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 26,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00353",
+    "entity_text": "Solveig Aarnio",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 14,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00356",
+    "entity_text": "s.aarnio@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 26,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00358",
+    "entity_text": "Rafael Quintanilla",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 18,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_Financial_Group_Organizational_Pack.pptx#00361",
+    "entity_text": "r.quintanilla@cadencefg.example",
+    "entity_type": "EMAIL",
+    "start_char": 0,
+    "end_char": 31,
+    "detection_method": "regex",
+    "confidence_or_strength": 0.95
+  },
+  {
+    "segment_id": "Cadence_TPRM_Training.docx#00115",
+    "entity_text": "Privacy Shield",
+    "entity_type": "PERSON_NAME",
+    "start_char": 148,
+    "end_char": 162,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_TPRM_Training.docx#00128",
+    "entity_text": "Jyoti Karwal",
+    "entity_type": "PERSON_NAME",
+    "start_char": 45,
+    "end_char": 57,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_TPRM_Training.docx#00130",
+    "entity_text": "Chris Schmitz",
+    "entity_type": "PERSON_NAME",
+    "start_char": 28,
+    "end_char": 41,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_TPRM_Training.docx#00134",
+    "entity_text": "Shimane Smith",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 13,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_TPRM_Training.docx#00134",
+    "entity_text": "Daniela Figueroa",
+    "entity_type": "PERSON_NAME",
+    "start_char": 14,
+    "end_char": 30,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_TPRM_Training.docx#00138",
+    "entity_text": "Chris Schmitz",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 13,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_TPRM_Training.docx#00142",
+    "entity_text": "Daniela Figueroa",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 16,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_TPRM_Training.docx#00146",
+    "entity_text": "Rob Tilney",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 11,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_TPRM_Training.docx#00146",
+    "entity_text": "Jyoti Karwal",
+    "entity_type": "PERSON_NAME",
+    "start_char": 11,
+    "end_char": 24,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_TPRM_Training.docx#00146",
+    "entity_text": "Jonathan Szeto",
+    "entity_type": "PERSON_NAME",
+    "start_char": 24,
+    "end_char": 38,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_TPRM_Training.docx#00146",
+    "entity_text": "Marc Otani",
+    "entity_type": "PERSON_NAME",
+    "start_char": 39,
+    "end_char": 49,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_TPRM_Training.docx#00150",
+    "entity_text": "Tamika Oliver",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 13,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_TPRM_Training.docx#00154",
+    "entity_text": "Dayo Seton",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 10,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_TPRM_Training.docx#00162",
+    "entity_text": "Daniela Figueroa",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 16,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_TPRM_Training.docx#01266",
+    "entity_text": "Daniela Figueroa",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 16,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_TPRM_Training.docx#01269",
+    "entity_text": "Siddharth Gaikwad",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 17,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_TPRM_Training.docx#01269",
+    "entity_text": "Srinivas Teppa",
+    "entity_type": "PERSON_NAME",
+    "start_char": 19,
+    "end_char": 33,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  },
+  {
+    "segment_id": "Cadence_TPRM_Training.docx#01271",
+    "entity_text": "Nikhil Karkera",
+    "entity_type": "PERSON_NAME",
+    "start_char": 0,
+    "end_char": 14,
+    "detection_method": "NER",
+    "confidence_or_strength": 0.7
+  }
+]

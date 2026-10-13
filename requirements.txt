@@ -1,0 +1,6 @@
+pymupdf
+python-docx
+python-pptx
+pytesseract
+pandas
+spacy

@@ -62,6 +62,7 @@ graph TD
 cadence-pii-sanitization-pipeline/
 │
 ├── 📁 01_Demo/
+│   ├── 📜 main.py                           # Master terminal demo & integration orchestrator
 │   └── 📓 Cadence_PII_Detection.ipynb       # Master Google Colab notebook (Run-all ready)
 │
 ├── 📁 02_Presentation/
@@ -73,11 +74,17 @@ cadence-pii-sanitization-pipeline/
 │
 ├── 📁 04_Results/
 │   ├── 📄 findings.csv                      # Traceable PII audit log with source references
-│   ├── 📄 sanitized_output.json             # Redacted text outputs ready for downstream AI
-│   └── 📄 qa_log.csv                        # Manual test log with True/False positive checks
+│   ├── 📄 findings.json                     # Machine-readable audit log
+│   ├── 📄 pipeline_summary.json             # Pipeline scorecard & safety gate verdicts
+│   ├── 📄 qa_log.csv                        # Manual test log with True/False positive checks
+│   └── 📁 sanitized_outputs/                # Sanitized document text files (*_sanitized.txt)
+│       ├── Cadence_Financial_Group_Organizational_Pack_sanitized.txt
+│       ├── Cadence_Group_Risk_Management_Policy__v6.0_sanitized.txt
+│       └── Cadence_TPRM_Training_sanitized.txt
 │
+├── 📜 extractor.py                          # Person 1: Document extraction & OCR fallback
+├── 📜 pii_detector.py                       # Person 2: Hybrid Regex + spaCy NER detection
 └── 📜 README.md                             # Professional project documentation
-
 ```
 
 ---
@@ -97,10 +104,21 @@ cadence-pii-sanitization-pipeline/
 
 ## ⚡ Quickstart Guide (How to Run)
 
-1. **Open Colab:** Launch the master notebook inside `01_Demo/Cadence_PII_Detection.ipynb` in **Google Colab**.
+### Option A: Live Terminal Pipeline & Demo (Person 4 CLI)
+Run the automated end-to-end integration orchestrator directly from the command line:
+```bash
+# Execute standard pipeline across all artifacts
+python 01_Demo/main.py
+
+# Optional: customize preview samples or specify custom directory
+python 01_Demo/main.py --preview 5 --input-dir ./data
+```
+The CLI provides colored step-by-step progress logging, Before/After redaction verification previews, and exports all audit artifacts to `04_Results/`.
+
+### Option B: Interactive Google Colab / Jupyter Notebook
+1. **Open Colab / Jupyter:** Launch `01_Demo/Cadence_PII_Detection.ipynb`.
 2. **Run All:** Execute cells sequentially from top to bottom (`Runtime -> Run all`).
-3. **Upload Artifacts:** When prompted by the file upload widget, select your enterprise sample documents (`.docx`, `.pptx`, `.pdf`).
-4. **Download Reports:** View findings instantly and automatically export `findings.csv` and sanitized JSON outputs.
+3. **Inspect & Download:** View interactive Pandas findings tables, Before/After inspection diffs, and download the full results bundle.
 
 ---
 

@@ -1,0 +1,1153 @@
+[SLIDE_SHAPE sh4]
+Organizational
+Reference Pack
+
+[SLIDE_SHAPE sh5]
+Leadership structure, reporting lines and accountability matrices
+
+[SLIDE_SHAPE sh7]
+Prepared for
+Cadence Financial Group  ·  Version 1.0  ·  Internal — Confidential
+
+[SLIDE_SHAPE sh8]
+06
+
+[SLIDE_SHAPE sh9]
+Executive officers
+
+[SLIDE_SHAPE sh11]
+16
+
+[SLIDE_SHAPE sh12]
+Named role holders
+
+[SLIDE_SHAPE sh14]
+02
+
+[SLIDE_SHAPE sh15]
+Accountability matrices
+
+[SLIDE_SHAPE sh17]
+03
+
+[SLIDE_SHAPE sh18]
+Divisional structures
+
+[SLIDE_SHAPE sh3]
+Organization at a Glance
+
+[SLIDE_SHAPE sh4]
+CADENCE FINANCIAL GROUP
+
+[SLIDE_SHAPE sh6]
+Cadence Financial Group is organised into five reporting divisions under the Chief Executive Officer. Governance of technology, data and risk activity is distributed across the Technology & Data and Risk, Compliance & Security divisions, with joint accountability recorded in the matrices that follow.
+
+[SLIDE_SHAPE sh9]
+Office of the CEO
+
+[SLIDE_SHAPE sh10]
+Strategy, communications and board reporting
+
+[SLIDE_SHAPE sh11]
+Led by Marguerite Vossberg
+
+[SLIDE_SHAPE sh14]
+Operations
+
+[SLIDE_SHAPE sh15]
+Client servicing, payments and shared services
+
+[SLIDE_SHAPE sh16]
+Led by [REDACTED: PERSON_NAME]
+
+[SLIDE_SHAPE sh19]
+Finance
+
+[SLIDE_SHAPE sh20]
+Treasury, financial control and planning
+
+[SLIDE_SHAPE sh21]
+Led by Priyanka Raghunathan
+
+[SLIDE_SHAPE sh24]
+Technology & Data
+
+[SLIDE_SHAPE sh25]
+Engineering, infrastructure, data and security
+
+[SLIDE_SHAPE sh26]
+Led by [REDACTED: PERSON_NAME]
+
+[SLIDE_SHAPE sh29]
+Risk, Compliance & Security
+
+[SLIDE_SHAPE sh30]
+Enterprise risk, compliance, privacy and assurance
+
+[SLIDE_SHAPE sh31]
+Led by Adaeze Okonkwo-Bell
+
+[SLIDE_SHAPE sh34]
+People & Culture
+
+[SLIDE_SHAPE sh35]
+Talent, workforce policy and employee relations
+
+[SLIDE_SHAPE sh36]
+Led by Rosalind Featherstone
+
+[SLIDE_SHAPE sh38]
+Cadence Financial Group  |  Internal — Confidential  |  Contains personal data (synthetic sample)
+
+[SLIDE_SHAPE sh39]
+2
+
+[SLIDE_SHAPE sh3]
+Executive Leadership Structure
+
+[SLIDE_SHAPE sh4]
+ORG CHART — TIER 1 AND TIER 2
+
+[SLIDE_SHAPE sh8]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_SHAPE sh9]
+CHIEF EXECUTIVE OFFICER
+
+[SLIDE_SHAPE sh10]
+[REDACTED: EMAIL]
+M +1 (555) 0114
+
+[SLIDE_SHAPE sh16]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_SHAPE sh17]
+CHIEF OPERATING OFFICER
+
+[SLIDE_SHAPE sh18]
+[REDACTED: EMAIL]
+M +1 (555) 0121
+
+[SLIDE_SHAPE sh22]
+Priyanka Raghunathan
+
+[SLIDE_SHAPE sh23]
+CHIEF FINANCIAL OFFICER
+
+[SLIDE_SHAPE sh24]
+[REDACTED: EMAIL]
+M +1 (555) 0128
+
+[SLIDE_SHAPE sh28]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_SHAPE sh29]
+CHIEF INFORMATION OFFICER
+
+[SLIDE_SHAPE sh30]
+[REDACTED: EMAIL]
+M +1 (555) 0133
+
+[SLIDE_SHAPE sh34]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_SHAPE sh35]
+CHIEF RISK OFFICER
+
+[SLIDE_SHAPE sh36]
+[REDACTED: EMAIL]
+M +1 (555) 0139
+
+[SLIDE_SHAPE sh40]
+Rosalind Featherstone
+
+[SLIDE_SHAPE sh41]
+CHIEF PEOPLE OFFICER
+
+[SLIDE_SHAPE sh42]
+[REDACTED: EMAIL]
+M +1 (555) 0145
+
+[SLIDE_SHAPE sh45]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_SHAPE sh46]
+GENERAL COUNSEL
+
+[SLIDE_SHAPE sh47]
+[REDACTED: EMAIL]
+M +1 (555) 0196
+
+[SLIDE_SHAPE sh50]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_SHAPE sh51]
+DATA PROTECTION OFFICER
+
+[SLIDE_SHAPE sh52]
+[REDACTED: EMAIL]
+M +1 (555) 0192
+
+[SLIDE_SHAPE sh53]
+Independent reporting line
+The General Counsel and the Data Protection Officer report directly to the Chief Executive Officer and hold a standing reporting line to the Board Risk Committee.
+
+[SLIDE_SHAPE sh55]
+Cadence Financial Group  |  Internal — Confidential  |  Contains personal data (synthetic sample)
+
+[SLIDE_SHAPE sh56]
+3
+
+[SLIDE_SHAPE sh3]
+Technology & Data Division
+
+[SLIDE_SHAPE sh4]
+ORG CHART — REPORTING TO THE CHIEF INFORMATION OFFICER
+
+[SLIDE_SHAPE sh8]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_SHAPE sh9]
+CHIEF INFORMATION OFFICER
+
+[SLIDE_SHAPE sh10]
+[REDACTED: EMAIL]
+M +1 (555) 0133
+
+[SLIDE_SHAPE sh16]
+Emiliano Bertucci
+
+[SLIDE_SHAPE sh17]
+VP, INFORMATION SECURITY
+
+[SLIDE_SHAPE sh18]
+[REDACTED: EMAIL]
+M +1 (555) 0152
+
+[SLIDE_SHAPE sh22]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_SHAPE sh23]
+VP, ENGINEERING
+
+[SLIDE_SHAPE sh24]
+[REDACTED: EMAIL]
+M +1 (555) 0163
+
+[SLIDE_SHAPE sh28]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_SHAPE sh29]
+VP, DATA & ANALYTICS
+
+[SLIDE_SHAPE sh30]
+[REDACTED: EMAIL]
+M +1 (555) 0157
+
+[SLIDE_SHAPE sh34]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_SHAPE sh35]
+VP, INFRASTRUCTURE & CLOUD
+
+[SLIDE_SHAPE sh36]
+[REDACTED: EMAIL]
+M +1 (555) 0168
+
+[SLIDE_SHAPE sh39]
+Information Security
+
+[SLIDE_SHAPE sh40]
+Security operations, identity, vulnerability management
+
+[SLIDE_SHAPE sh43]
+Engineering
+
+[SLIDE_SHAPE sh44]
+Core banking platform, digital channels, release management
+
+[SLIDE_SHAPE sh47]
+Data & Analytics
+
+[SLIDE_SHAPE sh48]
+Data platform, model development, reporting services
+
+[SLIDE_SHAPE sh51]
+Infrastructure & Cloud
+
+[SLIDE_SHAPE sh52]
+Hosting, networks, resilience and cloud governance
+
+[SLIDE_SHAPE sh54]
+Cadence Financial Group  |  Internal — Confidential  |  Contains personal data (synthetic sample)
+
+[SLIDE_SHAPE sh55]
+4
+
+[SLIDE_SHAPE sh3]
+Risk, Compliance & Security Division
+
+[SLIDE_SHAPE sh4]
+ORG CHART — REPORTING TO THE CHIEF RISK OFFICER
+
+[SLIDE_SHAPE sh8]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_SHAPE sh9]
+CHIEF RISK OFFICER
+
+[SLIDE_SHAPE sh10]
+[REDACTED: EMAIL]
+M +1 (555) 0139
+
+[SLIDE_SHAPE sh16]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_SHAPE sh17]
+VP, COMPLIANCE
+
+[SLIDE_SHAPE sh18]
+[REDACTED: EMAIL]
+M +1 (555) 0174
+
+[SLIDE_SHAPE sh22]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_SHAPE sh23]
+VP, OPERATIONAL RISK
+
+[SLIDE_SHAPE sh24]
+[REDACTED: EMAIL]
+M +1 (555) 0179
+
+[SLIDE_SHAPE sh28]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_SHAPE sh29]
+DIRECTOR, THIRD-PARTY RISK
+
+[SLIDE_SHAPE sh30]
+[REDACTED: EMAIL]
+M +1 (555) 0183
+
+[SLIDE_SHAPE sh34]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_SHAPE sh35]
+DIRECTOR, INTERNAL ASSURANCE
+
+[SLIDE_SHAPE sh36]
+[REDACTED: EMAIL]
+M +1 (555) 0188
+
+[SLIDE_SHAPE sh39]
+Committee interlock   The Chief Risk Officer chairs the Enterprise Risk Committee. The Data Protection Officer, the VP Information Security and the Director of Third-Party Risk hold standing membership. Escalations from the divisions feed the committee on a monthly cycle, with material items routed to the Board Risk Committee.
+
+[SLIDE_SHAPE sh41]
+Cadence Financial Group  |  Internal — Confidential  |  Contains personal data (synthetic sample)
+
+[SLIDE_SHAPE sh42]
+5
+
+[SLIDE_SHAPE sh3]
+RACI — AI & Data Governance Programme
+
+[SLIDE_SHAPE sh4]
+ACCOUNTABILITY BY ACTIVITY AND ROLE HOLDER
+
+[SLIDE_TABLE_CELL sh6:r1:c1]
+Activity
+
+[SLIDE_TABLE_CELL sh6:r1:c2]
+[REDACTED: PERSON_NAME]
+CEO
+
+[SLIDE_TABLE_CELL sh6:r1:c3]
+T. Lindqvist
+CIO
+
+[SLIDE_TABLE_CELL sh6:r1:c4]
+[REDACTED: PERSON_NAME]
+CRO
+
+[SLIDE_TABLE_CELL sh6:r1:c5]
+[REDACTED: PERSON_NAME]
+VP InfoSec
+
+[SLIDE_TABLE_CELL sh6:r1:c6]
+H. Park
+VP Data
+
+[SLIDE_TABLE_CELL sh6:r1:c7]
+[REDACTED: PERSON_NAME]
+DPO
+
+[SLIDE_TABLE_CELL sh6:r1:c8]
+[REDACTED: PERSON_NAME]
+VP Compliance
+
+[SLIDE_TABLE_CELL sh6:r2:c1]
+AI use-case intake and approval
+
+[SLIDE_TABLE_CELL sh6:r2:c2]
+I
+
+[SLIDE_TABLE_CELL sh6:r2:c3]
+R
+
+[SLIDE_TABLE_CELL sh6:r2:c4]
+A
+
+[SLIDE_TABLE_CELL sh6:r2:c5]
+C
+
+[SLIDE_TABLE_CELL sh6:r2:c6]
+R
+
+[SLIDE_TABLE_CELL sh6:r2:c7]
+C
+
+[SLIDE_TABLE_CELL sh6:r2:c8]
+C
+
+[SLIDE_TABLE_CELL sh6:r3:c1]
+Model inventory and registration
+
+[SLIDE_TABLE_CELL sh6:r3:c3]
+A
+
+[SLIDE_TABLE_CELL sh6:r3:c4]
+C
+
+[SLIDE_TABLE_CELL sh6:r3:c5]
+I
+
+[SLIDE_TABLE_CELL sh6:r3:c6]
+R
+
+[SLIDE_TABLE_CELL sh6:r3:c7]
+C
+
+[SLIDE_TABLE_CELL sh6:r3:c8]
+I
+
+[SLIDE_TABLE_CELL sh6:r4:c1]
+Data classification and PII detection
+
+[SLIDE_TABLE_CELL sh6:r4:c3]
+C
+
+[SLIDE_TABLE_CELL sh6:r4:c4]
+C
+
+[SLIDE_TABLE_CELL sh6:r4:c5]
+R
+
+[SLIDE_TABLE_CELL sh6:r4:c6]
+R
+
+[SLIDE_TABLE_CELL sh6:r4:c7]
+A
+
+[SLIDE_TABLE_CELL sh6:r4:c8]
+I
+
+[SLIDE_TABLE_CELL sh6:r5:c1]
+Privacy impact assessment
+
+[SLIDE_TABLE_CELL sh6:r5:c2]
+I
+
+[SLIDE_TABLE_CELL sh6:r5:c3]
+C
+
+[SLIDE_TABLE_CELL sh6:r5:c4]
+C
+
+[SLIDE_TABLE_CELL sh6:r5:c5]
+C
+
+[SLIDE_TABLE_CELL sh6:r5:c6]
+I
+
+[SLIDE_TABLE_CELL sh6:r5:c7]
+A
+
+[SLIDE_TABLE_CELL sh6:r5:c8]
+R
+
+[SLIDE_TABLE_CELL sh6:r6:c1]
+Security review of AI platforms
+
+[SLIDE_TABLE_CELL sh6:r6:c3]
+C
+
+[SLIDE_TABLE_CELL sh6:r6:c4]
+A
+
+[SLIDE_TABLE_CELL sh6:r6:c5]
+R
+
+[SLIDE_TABLE_CELL sh6:r6:c6]
+C
+
+[SLIDE_TABLE_CELL sh6:r6:c7]
+C
+
+[SLIDE_TABLE_CELL sh6:r6:c8]
+I
+
+[SLIDE_TABLE_CELL sh6:r7:c1]
+Model monitoring and drift review
+
+[SLIDE_TABLE_CELL sh6:r7:c3]
+A
+
+[SLIDE_TABLE_CELL sh6:r7:c4]
+C
+
+[SLIDE_TABLE_CELL sh6:r7:c5]
+I
+
+[SLIDE_TABLE_CELL sh6:r7:c6]
+R
+
+[SLIDE_TABLE_CELL sh6:r7:c7]
+I
+
+[SLIDE_TABLE_CELL sh6:r7:c8]
+C
+
+[SLIDE_TABLE_CELL sh6:r8:c1]
+Regulatory reporting on AI use
+
+[SLIDE_TABLE_CELL sh6:r8:c2]
+A
+
+[SLIDE_TABLE_CELL sh6:r8:c3]
+I
+
+[SLIDE_TABLE_CELL sh6:r8:c4]
+R
+
+[SLIDE_TABLE_CELL sh6:r8:c5]
+I
+
+[SLIDE_TABLE_CELL sh6:r8:c6]
+C
+
+[SLIDE_TABLE_CELL sh6:r8:c7]
+C
+
+[SLIDE_TABLE_CELL sh6:r8:c8]
+R
+
+[SLIDE_TABLE_CELL sh6:r9:c1]
+Programme funding and prioritisation
+
+[SLIDE_TABLE_CELL sh6:r9:c2]
+A
+
+[SLIDE_TABLE_CELL sh6:r9:c3]
+R
+
+[SLIDE_TABLE_CELL sh6:r9:c4]
+C
+
+[SLIDE_TABLE_CELL sh6:r9:c5]
+I
+
+[SLIDE_TABLE_CELL sh6:r9:c6]
+I
+
+[SLIDE_TABLE_CELL sh6:r9:c7]
+I
+
+[SLIDE_TABLE_CELL sh6:r9:c8]
+I
+
+[SLIDE_SHAPE sh8]
+R
+
+[SLIDE_SHAPE sh9]
+Responsible
+
+[SLIDE_SHAPE sh11]
+A
+
+[SLIDE_SHAPE sh12]
+Accountable
+
+[SLIDE_SHAPE sh14]
+C
+
+[SLIDE_SHAPE sh15]
+Consulted
+
+[SLIDE_SHAPE sh17]
+I
+
+[SLIDE_SHAPE sh18]
+Informed
+
+[SLIDE_SHAPE sh19]
+Blank cells indicate no formal involvement
+in the activity.
+
+[SLIDE_SHAPE sh21]
+Cadence Financial Group  |  Internal — Confidential  |  Contains personal data (synthetic sample)
+
+[SLIDE_SHAPE sh22]
+6
+
+[SLIDE_SHAPE sh3]
+RACI — Third-Party Risk & Incident Response
+
+[SLIDE_SHAPE sh4]
+ACCOUNTABILITY BY ACTIVITY AND ROLE HOLDER
+
+[SLIDE_TABLE_CELL sh6:r1:c1]
+Activity
+
+[SLIDE_TABLE_CELL sh6:r1:c2]
+[REDACTED: PERSON_NAME]
+CRO
+
+[SLIDE_TABLE_CELL sh6:r1:c3]
+[REDACTED: PERSON_NAME]. TPRM
+
+[SLIDE_TABLE_CELL sh6:r1:c4]
+[REDACTED: PERSON_NAME]
+VP InfoSec
+
+[SLIDE_TABLE_CELL sh6:r1:c5]
+G. Wenzel
+VP Op Risk
+
+[SLIDE_TABLE_CELL sh6:r1:c6]
+[REDACTED: PERSON_NAME]
+VP Cloud
+
+[SLIDE_TABLE_CELL sh6:r1:c7]
+[REDACTED: PERSON_NAME]
+General Counsel
+
+[SLIDE_TABLE_CELL sh6:r1:c8]
+[REDACTED: PERSON_NAME]. Assurance
+
+[SLIDE_TABLE_CELL sh6:r2:c1]
+Vendor onboarding due diligence
+
+[SLIDE_TABLE_CELL sh6:r2:c2]
+A
+
+[SLIDE_TABLE_CELL sh6:r2:c3]
+R
+
+[SLIDE_TABLE_CELL sh6:r2:c4]
+C
+
+[SLIDE_TABLE_CELL sh6:r2:c5]
+C
+
+[SLIDE_TABLE_CELL sh6:r2:c6]
+I
+
+[SLIDE_TABLE_CELL sh6:r2:c7]
+C
+
+[SLIDE_TABLE_CELL sh6:r2:c8]
+I
+
+[SLIDE_TABLE_CELL sh6:r3:c1]
+SOC 2 report review and gap analysis
+
+[SLIDE_TABLE_CELL sh6:r3:c2]
+I
+
+[SLIDE_TABLE_CELL sh6:r3:c3]
+R
+
+[SLIDE_TABLE_CELL sh6:r3:c4]
+C
+
+[SLIDE_TABLE_CELL sh6:r3:c5]
+C
+
+[SLIDE_TABLE_CELL sh6:r3:c6]
+I
+
+[SLIDE_TABLE_CELL sh6:r3:c8]
+A
+
+[SLIDE_TABLE_CELL sh6:r4:c1]
+Contractual security schedules
+
+[SLIDE_TABLE_CELL sh6:r4:c2]
+C
+
+[SLIDE_TABLE_CELL sh6:r4:c3]
+R
+
+[SLIDE_TABLE_CELL sh6:r4:c4]
+C
+
+[SLIDE_TABLE_CELL sh6:r4:c5]
+I
+
+[SLIDE_TABLE_CELL sh6:r4:c6]
+I
+
+[SLIDE_TABLE_CELL sh6:r4:c7]
+A
+
+[SLIDE_TABLE_CELL sh6:r4:c8]
+I
+
+[SLIDE_TABLE_CELL sh6:r5:c1]
+Continuous vendor monitoring
+
+[SLIDE_TABLE_CELL sh6:r5:c2]
+A
+
+[SLIDE_TABLE_CELL sh6:r5:c3]
+R
+
+[SLIDE_TABLE_CELL sh6:r5:c4]
+C
+
+[SLIDE_TABLE_CELL sh6:r5:c5]
+R
+
+[SLIDE_TABLE_CELL sh6:r5:c6]
+I
+
+[SLIDE_TABLE_CELL sh6:r5:c7]
+I
+
+[SLIDE_TABLE_CELL sh6:r5:c8]
+C
+
+[SLIDE_TABLE_CELL sh6:r6:c1]
+Incident detection and triage
+
+[SLIDE_TABLE_CELL sh6:r6:c2]
+I
+
+[SLIDE_TABLE_CELL sh6:r6:c3]
+I
+
+[SLIDE_TABLE_CELL sh6:r6:c4]
+A
+
+[SLIDE_TABLE_CELL sh6:r6:c5]
+C
+
+[SLIDE_TABLE_CELL sh6:r6:c6]
+R
+
+[SLIDE_TABLE_CELL sh6:r6:c7]
+I
+
+[SLIDE_TABLE_CELL sh6:r6:c8]
+I
+
+[SLIDE_TABLE_CELL sh6:r7:c1]
+Incident escalation and notification
+
+[SLIDE_TABLE_CELL sh6:r7:c2]
+A
+
+[SLIDE_TABLE_CELL sh6:r7:c3]
+C
+
+[SLIDE_TABLE_CELL sh6:r7:c4]
+R
+
+[SLIDE_TABLE_CELL sh6:r7:c5]
+C
+
+[SLIDE_TABLE_CELL sh6:r7:c6]
+I
+
+[SLIDE_TABLE_CELL sh6:r7:c7]
+R
+
+[SLIDE_TABLE_CELL sh6:r7:c8]
+I
+
+[SLIDE_TABLE_CELL sh6:r8:c1]
+Post-incident review and remediation
+
+[SLIDE_TABLE_CELL sh6:r8:c2]
+C
+
+[SLIDE_TABLE_CELL sh6:r8:c3]
+C
+
+[SLIDE_TABLE_CELL sh6:r8:c4]
+R
+
+[SLIDE_TABLE_CELL sh6:r8:c5]
+A
+
+[SLIDE_TABLE_CELL sh6:r8:c6]
+R
+
+[SLIDE_TABLE_CELL sh6:r8:c7]
+I
+
+[SLIDE_TABLE_CELL sh6:r8:c8]
+C
+
+[SLIDE_TABLE_CELL sh6:r9:c1]
+Annual control testing
+
+[SLIDE_TABLE_CELL sh6:r9:c2]
+I
+
+[SLIDE_TABLE_CELL sh6:r9:c3]
+C
+
+[SLIDE_TABLE_CELL sh6:r9:c4]
+C
+
+[SLIDE_TABLE_CELL sh6:r9:c5]
+C
+
+[SLIDE_TABLE_CELL sh6:r9:c6]
+I
+
+[SLIDE_TABLE_CELL sh6:r9:c7]
+I
+
+[SLIDE_TABLE_CELL sh6:r9:c8]
+A
+
+[SLIDE_SHAPE sh8]
+R
+
+[SLIDE_SHAPE sh9]
+Responsible
+
+[SLIDE_SHAPE sh11]
+A
+
+[SLIDE_SHAPE sh12]
+Accountable
+
+[SLIDE_SHAPE sh14]
+C
+
+[SLIDE_SHAPE sh15]
+Consulted
+
+[SLIDE_SHAPE sh17]
+I
+
+[SLIDE_SHAPE sh18]
+Informed
+
+[SLIDE_SHAPE sh19]
+Role holders are listed by name; contact
+details appear in the directory.
+
+[SLIDE_SHAPE sh21]
+Cadence Financial Group  |  Internal — Confidential  |  Contains personal data (synthetic sample)
+
+[SLIDE_SHAPE sh22]
+7
+
+[SLIDE_SHAPE sh3]
+Role Holder Directory
+
+[SLIDE_SHAPE sh4]
+NAMED CONTACTS BY DIVISION
+
+[SLIDE_TABLE_CELL sh6:r1:c1]
+Name
+
+[SLIDE_TABLE_CELL sh6:r1:c2]
+Role
+
+[SLIDE_TABLE_CELL sh6:r1:c3]
+Division
+
+[SLIDE_TABLE_CELL sh6:r1:c4]
+Email
+
+[SLIDE_TABLE_CELL sh6:r1:c5]
+Mobile
+
+[SLIDE_TABLE_CELL sh6:r2:c1]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_TABLE_CELL sh6:r2:c2]
+Chief Executive Officer
+
+[SLIDE_TABLE_CELL sh6:r2:c3]
+Office of the CEO
+
+[SLIDE_TABLE_CELL sh6:r2:c4]
+[REDACTED: EMAIL]
+
+[SLIDE_TABLE_CELL sh6:r2:c5]
++1 (555) 0114
+
+[SLIDE_TABLE_CELL sh6:r3:c1]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_TABLE_CELL sh6:r3:c2]
+General Counsel
+
+[SLIDE_TABLE_CELL sh6:r3:c3]
+Office of the CEO
+
+[SLIDE_TABLE_CELL sh6:r3:c4]
+[REDACTED: EMAIL]
+
+[SLIDE_TABLE_CELL sh6:r3:c5]
++1 (555) 0196
+
+[SLIDE_TABLE_CELL sh6:r4:c1]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_TABLE_CELL sh6:r4:c2]
+Data Protection Officer
+
+[SLIDE_TABLE_CELL sh6:r4:c3]
+Office of the CEO
+
+[SLIDE_TABLE_CELL sh6:r4:c4]
+[REDACTED: EMAIL]
+
+[SLIDE_TABLE_CELL sh6:r4:c5]
++1 (555) 0192
+
+[SLIDE_TABLE_CELL sh6:r5:c1]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_TABLE_CELL sh6:r5:c2]
+Chief Operating Officer
+
+[SLIDE_TABLE_CELL sh6:r5:c3]
+Operations
+
+[SLIDE_TABLE_CELL sh6:r5:c4]
+[REDACTED: EMAIL]
+
+[SLIDE_TABLE_CELL sh6:r5:c5]
++1 (555) 0121
+
+[SLIDE_TABLE_CELL sh6:r6:c1]
+Priyanka Raghunathan
+
+[SLIDE_TABLE_CELL sh6:r6:c2]
+Chief Financial Officer
+
+[SLIDE_TABLE_CELL sh6:r6:c3]
+Finance
+
+[SLIDE_TABLE_CELL sh6:r6:c4]
+[REDACTED: EMAIL]
+
+[SLIDE_TABLE_CELL sh6:r6:c5]
++1 (555) 0128
+
+[SLIDE_TABLE_CELL sh6:r7:c1]
+Rosalind Featherstone
+
+[SLIDE_TABLE_CELL sh6:r7:c2]
+Chief People Officer
+
+[SLIDE_TABLE_CELL sh6:r7:c3]
+People & Culture
+
+[SLIDE_TABLE_CELL sh6:r7:c4]
+[REDACTED: EMAIL]
+
+[SLIDE_TABLE_CELL sh6:r7:c5]
++1 (555) 0145
+
+[SLIDE_TABLE_CELL sh6:r8:c1]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_TABLE_CELL sh6:r8:c2]
+Chief Information Officer
+
+[SLIDE_TABLE_CELL sh6:r8:c3]
+Technology & Data
+
+[SLIDE_TABLE_CELL sh6:r8:c4]
+[REDACTED: EMAIL]
+
+[SLIDE_TABLE_CELL sh6:r8:c5]
++1 (555) 0133
+
+[SLIDE_TABLE_CELL sh6:r9:c1]
+Emiliano Bertucci
+
+[SLIDE_TABLE_CELL sh6:r9:c2]
+VP, Information Security
+
+[SLIDE_TABLE_CELL sh6:r9:c3]
+Technology & Data
+
+[SLIDE_TABLE_CELL sh6:r9:c4]
+[REDACTED: EMAIL]
+
+[SLIDE_TABLE_CELL sh6:r9:c5]
++1 (555) 0152
+
+[SLIDE_TABLE_CELL sh6:r10:c1]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_TABLE_CELL sh6:r10:c2]
+VP, Engineering
+
+[SLIDE_TABLE_CELL sh6:r10:c3]
+Technology & Data
+
+[SLIDE_TABLE_CELL sh6:r10:c4]
+[REDACTED: EMAIL]
+
+[SLIDE_TABLE_CELL sh6:r10:c5]
++1 (555) 0163
+
+[SLIDE_TABLE_CELL sh6:r11:c1]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_TABLE_CELL sh6:r11:c2]
+VP, Data & Analytics
+
+[SLIDE_TABLE_CELL sh6:r11:c3]
+Technology & Data
+
+[SLIDE_TABLE_CELL sh6:r11:c4]
+[REDACTED: EMAIL]
+
+[SLIDE_TABLE_CELL sh6:r11:c5]
++1 (555) 0157
+
+[SLIDE_TABLE_CELL sh6:r12:c1]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_TABLE_CELL sh6:r12:c2]
+VP, Infrastructure & Cloud
+
+[SLIDE_TABLE_CELL sh6:r12:c3]
+Technology & Data
+
+[SLIDE_TABLE_CELL sh6:r12:c4]
+[REDACTED: EMAIL]
+
+[SLIDE_TABLE_CELL sh6:r12:c5]
++1 (555) 0168
+
+[SLIDE_TABLE_CELL sh6:r13:c1]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_TABLE_CELL sh6:r13:c2]
+Chief Risk Officer
+
+[SLIDE_TABLE_CELL sh6:r13:c3]
+Risk, Compliance & Security
+
+[SLIDE_TABLE_CELL sh6:r13:c4]
+[REDACTED: EMAIL]
+
+[SLIDE_TABLE_CELL sh6:r13:c5]
++1 (555) 0139
+
+[SLIDE_TABLE_CELL sh6:r14:c1]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_TABLE_CELL sh6:r14:c2]
+VP, Compliance
+
+[SLIDE_TABLE_CELL sh6:r14:c3]
+Risk, Compliance & Security
+
+[SLIDE_TABLE_CELL sh6:r14:c4]
+[REDACTED: EMAIL]
+
+[SLIDE_TABLE_CELL sh6:r14:c5]
++1 (555) 0174
+
+[SLIDE_TABLE_CELL sh6:r15:c1]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_TABLE_CELL sh6:r15:c2]
+VP, Operational Risk
+
+[SLIDE_TABLE_CELL sh6:r15:c3]
+Risk, Compliance & Security
+
+[SLIDE_TABLE_CELL sh6:r15:c4]
+[REDACTED: EMAIL]
+
+[SLIDE_TABLE_CELL sh6:r15:c5]
++1 (555) 0179
+
+[SLIDE_TABLE_CELL sh6:r16:c1]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_TABLE_CELL sh6:r16:c2]
+Director, Third-Party Risk
+
+[SLIDE_TABLE_CELL sh6:r16:c3]
+Risk, Compliance & Security
+
+[SLIDE_TABLE_CELL sh6:r16:c4]
+[REDACTED: EMAIL]
+
+[SLIDE_TABLE_CELL sh6:r16:c5]
++1 (555) 0183
+
+[SLIDE_TABLE_CELL sh6:r17:c1]
+[REDACTED: PERSON_NAME]
+
+[SLIDE_TABLE_CELL sh6:r17:c2]
+Director, Internal Assurance
+
+[SLIDE_TABLE_CELL sh6:r17:c3]
+Risk, Compliance & Security
+
+[SLIDE_TABLE_CELL sh6:r17:c4]
+[REDACTED: EMAIL]
+
+[SLIDE_TABLE_CELL sh6:r17:c5]
++1 (555) 0188
+
+[SLIDE_SHAPE sh8]
+Cadence Financial Group  |  Internal — Confidential  |  Contains personal data (synthetic sample)
+
+[SLIDE_SHAPE sh9]
+8
+
+[SLIDE_SHAPE sh3]
+Handling of Personal Data
+
+[SLIDE_SHAPE sh5]
+Classification
+
+[SLIDE_SHAPE sh6]
+This pack carries an Internal — Confidential marking and holds directory-level personal data comprising names, corporate email addresses and mobile numbers.
+
+[SLIDE_SHAPE sh8]
+Distribution
+
+[SLIDE_SHAPE sh9]
+Circulation is limited to named recipients with a defined business need. Onward forwarding, printing and upload to third-party or generative AI tools are to be avoided.
+
+[SLIDE_SHAPE sh11]
+Sample data notice
+
+[SLIDE_SHAPE sh12]
+The role holder details shown are synthetic and have been generated for illustration. Live records are to be sourced from the HR system of record before operational use.
+
+[SLIDE_SHAPE sh14]
+Retention
+
+[SLIDE_SHAPE sh15]
+Superseded versions are to be withdrawn once a revised pack is issued; retention beyond the current reporting cycle is not anticipated.

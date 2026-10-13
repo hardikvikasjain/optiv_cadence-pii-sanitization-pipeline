@@ -1,0 +1,94 @@
+Source File,Location,PII Type,Detected Value,Method
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh16,PERSON_NAME,Des****rg,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh26,PERSON_NAME,Tob****st,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh8,PERSON_NAME,Mar****rg,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh10,EMAIL,m.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh16,PERSON_NAME,Des****rg,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh18,EMAIL,d.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh24,EMAIL,p.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh28,PERSON_NAME,Tob****st,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh30,EMAIL,t.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh34,PERSON_NAME,Ada****ll,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh36,EMAIL,a.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh42,EMAIL,r.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh45,PERSON_NAME,Bar****im,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh47,EMAIL,b.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh50,PERSON_NAME,Yas****ib,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh52,EMAIL,y.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh8,PERSON_NAME,Tob****st,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh10,EMAIL,t.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh18,EMAIL,e.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh22,PERSON_NAME,Col****ti,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh24,EMAIL,c.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh28,PERSON_NAME,Hyu****rk,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh30,EMAIL,h.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh34,PERSON_NAME,Nik****ld,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh36,EMAIL,n.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh8,PERSON_NAME,Ada****ll,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh10,EMAIL,a.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh16,PERSON_NAME,Ima****ya,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh18,EMAIL,i.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh22,PERSON_NAME,Ger****el,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh24,EMAIL,g.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh28,PERSON_NAME,Sol****io,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh30,EMAIL,s.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh34,PERSON_NAME,Raf****la,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Shape sh36,EMAIL,r.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r1:c2,PERSON_NAME,M. ****rg,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r1:c4,PERSON_NAME,A. ****ll,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r1:c5,PERSON_NAME,E. ****ci,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r1:c7,PERSON_NAME,Y. ****ib,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r1:c8,PERSON_NAME,I. ****ya,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r1:c2,PERSON_NAME,A. ****ll,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r1:c3,PERSON_NAME,S. ****ir,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r1:c4,PERSON_NAME,E. ****ci,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r1:c6,PERSON_NAME,N. ****ld,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r1:c7,PERSON_NAME,B. ****im,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r1:c8,PERSON_NAME,R. ****ir,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r2:c1,PERSON_NAME,Mar****rg,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r2:c4,EMAIL,m.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r3:c1,PERSON_NAME,Bar****im,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r3:c4,EMAIL,b.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r4:c1,PERSON_NAME,Yas****ib,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r4:c4,EMAIL,y.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r5:c1,PERSON_NAME,Des****rg,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r5:c4,EMAIL,d.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r6:c4,EMAIL,p.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r7:c4,EMAIL,r.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r8:c1,PERSON_NAME,Tob****st,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r8:c4,EMAIL,t.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r9:c4,EMAIL,e.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r10:c1,PERSON_NAME,Col****ti,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r10:c4,EMAIL,c.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r11:c1,PERSON_NAME,Hyu****rk,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r11:c4,EMAIL,h.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r12:c1,PERSON_NAME,Nik****ld,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r12:c4,EMAIL,n.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r13:c1,PERSON_NAME,Ada****ll,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r13:c4,EMAIL,a.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r14:c1,PERSON_NAME,Ima****ya,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r14:c4,EMAIL,i.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r15:c1,PERSON_NAME,Ger****el,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r15:c4,EMAIL,g.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r16:c1,PERSON_NAME,Sol****io,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r16:c4,EMAIL,s.****@cadencefg.example,regex
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r17:c1,PERSON_NAME,Raf****la,NER
+Cadence_Financial_Group_Organizational_Pack.pptx,Slide_Table_Cell sh6:r17:c4,EMAIL,r.****@cadencefg.example,regex
+Cadence_TPRM_Training.docx,Table_Cell t4:r5:c2,PERSON_NAME,Pri****ld,NER
+Cadence_TPRM_Training.docx,Table_Cell t5:r2:c4,PERSON_NAME,Jyo****al,NER
+Cadence_TPRM_Training.docx,Table_Cell t5:r3:c4,PERSON_NAME,Chr****tz,NER
+Cadence_TPRM_Training.docx,Table_Cell t5:r4:c4,PERSON_NAME,Shi****th,NER
+Cadence_TPRM_Training.docx,Table_Cell t5:r4:c4,PERSON_NAME,Dan****oa,NER
+Cadence_TPRM_Training.docx,Table_Cell t5:r5:c4,PERSON_NAME,Chr****tz,NER
+Cadence_TPRM_Training.docx,Table_Cell t5:r6:c4,PERSON_NAME,Dan****oa,NER
+Cadence_TPRM_Training.docx,Table_Cell t5:r7:c4,PERSON_NAME,Rob****ey,NER
+Cadence_TPRM_Training.docx,Table_Cell t5:r7:c4,PERSON_NAME,Jyo****al,NER
+Cadence_TPRM_Training.docx,Table_Cell t5:r7:c4,PERSON_NAME,Jon****to,NER
+Cadence_TPRM_Training.docx,Table_Cell t5:r7:c4,PERSON_NAME,Mar****ni,NER
+Cadence_TPRM_Training.docx,Table_Cell t5:r8:c4,PERSON_NAME,Tam****er,NER
+Cadence_TPRM_Training.docx,Table_Cell t5:r9:c4,PERSON_NAME,Day****on,NER
+Cadence_TPRM_Training.docx,Table_Cell t5:r11:c4,PERSON_NAME,Dan****oa,NER
+Cadence_TPRM_Training.docx,Table_Cell t15:r3:c2,PERSON_NAME,Dan****oa,NER
+Cadence_TPRM_Training.docx,Table_Cell t15:r5:c2,PERSON_NAME,Sid****ad,NER
+Cadence_TPRM_Training.docx,Table_Cell t15:r5:c2,PERSON_NAME,Sri****pa,NER
+Cadence_TPRM_Training.docx,Table_Cell t15:r6:c2,PERSON_NAME,Nik****ra,NER

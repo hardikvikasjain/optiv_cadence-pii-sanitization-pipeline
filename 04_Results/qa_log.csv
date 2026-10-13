@@ -1,0 +1,21 @@
+test_id,file_name,segment_id,entity_type,detected_masked,method,confidence,validation,notes
+QA-001,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00119,PERSON_NAME,P*** S***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-002,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00132,PERSON_NAME,J*** K***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-003,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00134,PERSON_NAME,C*** S***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-004,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00138,PERSON_NAME,S*** S***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-005,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00138,PERSON_NAME,D*** F***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-006,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00142,PERSON_NAME,C*** S***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-007,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00146,PERSON_NAME,D*** F***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-008,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00150,PERSON_NAME,R*** T***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-009,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00150,PERSON_NAME,J*** K***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-010,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00150,PERSON_NAME,J*** S***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-011,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00150,PERSON_NAME,M*** O***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-012,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00154,PERSON_NAME,T*** O***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-013,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00158,PERSON_NAME,D*** S***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-014,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00166,PERSON_NAME,D*** F***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-015,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00324,PERSON_NAME,D*** S***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-016,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00638,PERSON_NAME,W H***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-017,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00662,PERSON_NAME,W H***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-018,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00700,PERSON_NAME,W H***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-019,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#01768,PERSON_NAME,D*** F***,NER,0.7,TRUE_POSITIVE,Verified against ground truth
+QA-020,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#01771,PERSON_NAME,S*** G***,NER,0.7,TRUE_POSITIVE,Verified against ground truth

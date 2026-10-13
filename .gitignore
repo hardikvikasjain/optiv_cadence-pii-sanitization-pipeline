@@ -5,3 +5,8 @@ __pycache__/
 *.pyc
 tempCodeRunnerFile.py
 Person2_PII_Detector.zip*
+scratch/
+temp
+/Cadence_*
+data/
+
