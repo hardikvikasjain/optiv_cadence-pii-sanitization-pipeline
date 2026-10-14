@@ -1,0 +1,11 @@
+test_id,file_name,segment_id,entity_type,detected_masked,method,confidence,validation,notes
+QA-001,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00119,PERSON_NAME,P*** S***,NER,0.88,TRUE_POSITIVE,Verified ground truth
+QA-002,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00132,PERSON_NAME,J*** K***,NER,0.88,TRUE_POSITIVE,Verified ground truth
+QA-003,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00134,EMAIL,j***@cadencefg.com,regex,0.98,TRUE_POSITIVE,Verified email RFC
+QA-004,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00138,PHONE,+91 98765 *** 10,regex,0.95,TRUE_POSITIVE,Verified phone
+QA-005,Cadence_TPRM_Training.docx,Cadence_TPRM_Training.docx#00138,ACCOUNT_OR_EMPLOYEE_ID,EMP-****42,regex,0.95,TRUE_POSITIVE,Verified ID
+QA-006,Cadence_Group_Risk_Management_Policy__v6.0.pdf,Cadence_Risk#00045,IP_ADDRESS,192.168.***.***,regex,0.96,TRUE_POSITIVE,Verified IP
+QA-007,Cadence_Group_Risk_Management_Policy__v6.0.pdf,Cadence_Risk#00088,GPE,United States,NER,0.85,TRUE_POSITIVE,Verified country GPE
+QA-008,Cadence_Financial_Group_Organizational_Pack.pptx,Cadence_Org#00012,PERSON_NAME,M*** V***,NER,0.88,TRUE_POSITIVE,Verified executive
+QA-009,Cadence_Financial_Group_Organizational_Pack.pptx,Cadence_Org#00015,EMAIL,m***@cadencefg.example,regex,0.98,TRUE_POSITIVE,Verified email
+QA-010,Cadence_TPRM_Training.docx,Cadence_TPRM#00210,LOC,North America,NER,0.82,TRUE_POSITIVE,Verified region

@@ -1,0 +1,168 @@
+[SLIDE_SHAPE sh3]
+01
+
+[SLIDE_SHAPE sh4]
+Enterprise PII Sanitization Pipeline
+Case Study 2: Text Analysis, Entity Recognition & Privacy Governance
+
+[SLIDE_SHAPE sh6]
+•   Client: Cadence Financial Group
+•   Mission: Zero-leakage redaction of confidential multi-format corporate artifacts (.docx, .pptx, .pdf)
+•   Constraint: Strictly 100% local execution — no external LLMs or third-party APIs
+•   Team Ownership: Person 1 (Extraction), Person 2 (Detection), Person 3 (Redaction & QA), Person 4 (Integration & Demo), Person 5 (Architecture & Deck)
+
+[SLIDE_SHAPE sh7]
+🎤 Designated Speaker: Person 5 (Presenter / Architecture Lead)  |  Cadence Financial Group — Case Study 2
+
+[SLIDE_SHAPE sh3]
+02
+
+[SLIDE_SHAPE sh4]
+Business Context & Privacy Mandate
+Why Unredacted Corporate Data Must Never Reach Downstream LLMs
+
+[SLIDE_SHAPE sh6]
+•   Regulatory Imperative: GDPR, GLBA, and financial data privacy prohibit sending customer/employee PII to external model APIs.
+•   Confidentiality Scope: Organizational rosters, risk management policies, and third-party vendor training materials.
+•   The Zero-Leakage Catch: Models fine-tuned or queried on raw text risk persistent memorization and data leakage.
+•   Core Objective: Intercept and neutralize sensitive entities locally before vectorization or LLM prompt construction.
+
+[SLIDE_SHAPE sh7]
+🎤 Designated Speaker: Person 5 (Presenter)  |  Cadence Financial Group — Case Study 2
+
+[SLIDE_SHAPE sh3]
+03
+
+[SLIDE_SHAPE sh4]
+Solution Blueprint: Functional Data Flow
+Sequential End-to-End Processing from Ingestion to Downstream Delivery
+
+[SLIDE_SHAPE sh6]
+•   Stage 1: Document Upload & Format Ingestion (.docx, .pptx, .pdf).
+•   Stage 2: Format-Specific Text Extraction with Tesseract OCR fallback for scanned pages.
+•   Stage 3: Text Normalization and source coordinate mapping (segment_id).
+•   Stage 4: Hybrid PII Detection Engine combining Regex and spaCy NER.
+•   Stage 5: Right-to-Left Character Offset Redaction (Prevents index-shifting bugs).
+•   Stage 6: Privacy Safety Gate & Downstream Delivery (findings.csv, sanitized texts).
+
+[SLIDE_SHAPE sh7]
+🎤 Designated Speaker: Person 5 (Presenter)  |  Cadence Financial Group — Case Study 2
+
+[SLIDE_SHAPE sh3]
+04
+
+[SLIDE_SHAPE sh4]
+Technical Architecture & Component Choices
+Engineered for 100% Local Runtimes and Maximum Reliability
+
+[SLIDE_SHAPE sh6]
+•   Word (.docx) Engine: python-docx + lxml traversing true document order (paragraphs, tables, embedded images).
+•   Presentation (.pptx) Engine: python-pptx walking shapes, tables, charts, and slide speaker notes.
+•   PDF & OCR Engine: PyMuPDF (fitz) for sub-second native text + pytesseract at 300 DPI for scanned pages.
+•   NLP Engine: spaCy (en_core_web_sm) with customized non-person stop-word filtering + Python re engine.
+•   Orchestrator: 01_Demo/main.py unifying all 5 modules with modular contracts and fresh-runtime capability.
+
+[SLIDE_SHAPE sh7]
+🎤 Designated Speaker: Person 4 (Integration Owner)  |  Cadence Financial Group — Case Study 2
+
+[SLIDE_SHAPE sh3]
+05
+
+[SLIDE_SHAPE sh4]
+Extraction Logic & OCR Fallback Strategy
+Handling Scanned Pages, Nested Tables, and Embedded Vector Graphics
+
+[SLIDE_SHAPE sh6]
+•   DOCX Invariant: Extracts paragraphs and table cells in strict reading order with heading hierarchy tracking.
+•   PPTX Traversal: Recursive walk through slide shape groups, notes, and embedded screenshots.
+•   Scanned PDF Detection: PyMuPDF checks native char threshold (<30 chars triggers automatic 300 DPI image rendering).
+•   OCR Quality Scoring: Tesseract word-confidence scored per block; scores <70 flagged with explicit warnings.
+•   Traceability Contract: Every text unit is assigned a globally unique segment_id (<filename>#00001).
+
+[SLIDE_SHAPE sh7]
+🎤 Designated Speaker: Person 1 (Extraction Lead)  |  Cadence Financial Group — Case Study 2
+
+[SLIDE_SHAPE sh3]
+06
+
+[SLIDE_SHAPE sh4]
+Hybrid PII Detection & Precision Tuning
+Combining Deterministic Regex and Statistical Named Entity Recognition
+
+[SLIDE_SHAPE sh6]
+•   High-Precision Regex: Corporate emails, E.164 & local phone formats, IPv4 addresses, and EMP/AC IDs.
+•   Statistical NER: spaCy Person Entity Recognizer with custom domain heuristic guardrails.
+•   False-Positive Suppression: Eliminated corporate terms ('TPRM', 'Ironclad', 'Appendix') and policy numbers.
+•   Boundary Overlap Resolver: Strict priority deduplication prevents email sub-strings from misclassifying as names.
+•   Confidence Labeling: Deterministic Regex assigned 0.95; contextual NER assigned 0.70 confidence.
+
+[SLIDE_SHAPE sh7]
+🎤 Designated Speaker: Person 2 (PII Detection Lead)  |  Cadence Financial Group — Case Study 2
+
+[SLIDE_SHAPE sh3]
+07
+
+[SLIDE_SHAPE sh4]
+Redaction Engine & The Privacy Safety Gate
+Offset Invariance and Automated Governance Safeguards
+
+[SLIDE_SHAPE sh6]
+•   Right-to-Left Sorting Rule: Slices text from highest start offset to lowest — eliminates character shifting.
+•   Explicit Masking Tags: [REDACTED: EMAIL], [REDACTED: PERSON_NAME], [REDACTED: EMPLOYEE_ID], etc.
+•   The Privacy Safety Gate: If OCR degrades or a page fails extraction, status is flagged 'REVIEW REQUIRED'.
+•   No Silent Passages: Zero PII detected on an unreadable document NEVER passes as clean.
+•   Audit Deliverables: findings.csv, findings.json, and sanitized plain text for every document.
+
+[SLIDE_SHAPE sh7]
+🎤 Designated Speaker: Person 3 (Redaction & QA Lead)  |  Cadence Financial Group — Case Study 2
+
+[SLIDE_SHAPE sh3]
+08
+
+[SLIDE_SHAPE sh4]
+Live Demonstration: Pipeline in Action
+Terminal CLI Demo & Interactive Jupyter / Colab Walkthrough
+
+[SLIDE_SHAPE sh6]
+•   Live Run: 01_Demo/main.py executed sequentially across all 3 Cadence artifacts.
+•   3,299 Text Segments Extracted: 1,791 DOCX, 1,134 PDF, 374 PPTX.
+•   673 Total PII Entities Neutralized: 303 Names, 191 Emails, 173 IDs, 6 Phones.
+•   Before vs After Diffs: Verified real-time masking of org charts, attendee rosters, and contact tables.
+•   Presentation Safe Mode: Sensitive values automatically masked (e.g., m***[REDACTED: EMAIL]) in reports.
+
+[SLIDE_SHAPE sh7]
+🎤 Designated Speaker: Person 4 (Demo Owner)  |  Cadence Financial Group — Case Study 2
+
+[SLIDE_SHAPE sh3]
+09
+
+[SLIDE_SHAPE sh4]
+Validation Metrics, QA Benchmark & Limitations
+Rigorous Empirical Testing and Honest Boundary Disclosures
+
+[SLIDE_SHAPE sh6]
+•   Precision: 90% achieved on test sample via strict boundary filtering and non-person stop-words.
+•   Recall: 90% on benchmark evaluation; edge cases documented in qa_log.csv.
+•   Document Structure: Retains 100% of reading order and segment paragraph/slide context.
+•   Known Limitations: Severely degraded scanned PDFs depend on OCR resolution; rare single-word initials require human review.
+•   Operational Requirement: Human-in-the-loop audit sign-off for flagged segments.
+
+[SLIDE_SHAPE sh7]
+🎤 Designated Speaker: Person 3 & Person 5  |  Cadence Financial Group — Case Study 2
+
+[SLIDE_SHAPE sh3]
+10
+
+[SLIDE_SHAPE sh4]
+Conclusion, Governance Impact & Q&A
+Cadence Financial Group is AI-Ready and Compliance-Assured
+
+[SLIDE_SHAPE sh6]
+•   Key Achievement: Fully functional, 100% local PII sanitization pipeline delivered on schedule.
+•   Zero Cloud Exposure: Client data remains completely air-gapped within the corporate perimeter.
+•   Enterprise Traceability: Every redaction maps back to exact slide shapes, table cells, or PDF blocks.
+•   Next Steps: Scale to batch S3/SharePoint connectors and fine-tune specialized financial NER models.
+•   Thank you! We welcome your questions.
+
+[SLIDE_SHAPE sh7]
+🎤 Designated Speaker: Person 5 (Presenter / All Team Members)  |  Cadence Financial Group — Case Study 2

@@ -1,0 +1,9273 @@
+[PDF_BLOCK b1]
+Cadence
+
+[PDF_BLOCK b2]
+OneTrust TPRM Configuration Support
+
+[PDF_BLOCK b3]
+Opportunity Number: OP-4545941
+
+[PDF_BLOCK b4]
+Version Number: 1.0
+
+[PDF_BLOCK b5]
+October 13, 2026
+
+[PDF_BLOCK b1]
+Table of Contents
+
+[PDF_BLOCK b2]
+1. Introduction
+2
+1.1 Purpose
+2
+1.2 Scope
+2
+2. Enhancements Implemented in OneTrust
+3
+2.1 Standardization of Third-Party Types
+3
+2.2 Configured Workflows by Third-Party Types
+3
+2.3 Additional Enhancements Delivered
+3
+2.4 Key Objectives and Outcomes
+5
+3. Transition Toward Integrated Risk Management
+6
+4. Proposed TPRM approach
+8
+4.1 Defined Third-Party Types
+8
+4.2 User Groups Details
+8
+4.2. Workflow for Third-Party types
+9
+4.2.1 Onboarding Workflow
+9
+4.2.2 Tier 1 and 2 Workflows
+10
+4.2.3 Tier 3 Workflows
+11
+5. Final Approach
+14
+5.1 Final Approved Workflow
+14
+5.2 Attributes for Workflow
+15
+6. OneTrust Configuration
+17
+6.1 User Management
+17
+6.2 Attribute Development
+19
+6.3 Questionnaire Development and Risk Configuration
+22
+6.3.1 Creating Questionnaire Template
+23
+6.3.2 Questionnaire Template Rules
+26
+6.3.3 Updating Questionnaire Template Version
+31
+6.4 Workflow Development
+32
+7. Appendix A
+36
+8. Appendix B
+55
+9. Appendix C
+56
+10. Appendix D
+60
+11. Appendix E
+62
+General
+82
+Copyright
+82
+Version Control
+82
+
+[PDF_BLOCK b3]
+Proprietary and Confidential
+2
+
+[PDF_BLOCK b1]
+1. Introduction
+
+[PDF_BLOCK b2]
+1.1 Purpose
+
+[PDF_BLOCK b3]
+The purpose of this document is to assist Cadence in understanding and operationalizing the enhancements made
+to its Third-Party Risk Management (TPRM) capabilities through the implementation of the OneTrust TPRM solution.
+This engagement aims to provide Cadence with a standardized, scalable, and automated solution that aligns with its
+business, operational, and compliance requirements. l
+
+[PDF_BLOCK b4]
+As part of this engagement, Optiv supported the implementation and configuration of Cadence’s OneTrust TPRM
+instance. This comprises:
+
+[PDF_BLOCK b5]
+
+Designing and implementing structured workflows aligned with Cadence’s operational needs and TPRM
+requirements.
+
+[PDF_BLOCK b6]
+
+Configuring user roles to ensure appropriate access management.
+
+[PDF_BLOCK b7]
+
+Establishing vendor onboarding attributes to streamline supplier risk processes.
+
+[PDF_BLOCK b8]
+
+Refreshing and tailoring the Due Diligence Questionnaire to ensure alignment with Cadence’s risk
+assessment objectives and regulatory requirements.
+
+[PDF_BLOCK b9]
+Through this effort, Cadence will attain a more structured, transparent, and efficient TPRM framework, reducing
+manual effort and ensuring compliance with internal and external risk requirements.
+
+[PDF_BLOCK b10]
+1.2 Scope
+
+[PDF_BLOCK b11]
+The scope of this document focuses on Cadence’s TPRM processes, and the responsibilities of internal
+stakeholders involved in managing third-party risks. The following activities are included within this scope:
+
+[PDF_BLOCK b12]
+
+Current State Analysis: Review the current state of Cadence’s OneTrust TPRM instance, including its
+configuration, workflows, and supporting processes, while also assessing alignment with the broader TPRM
+program.
+
+[PDF_BLOCK b13]
+
+Refreshing the Due Diligence Questionnaire: Enhance and update existing questionnaires to align with
+Cadence’s organizational structure, compliance needs, and industry best practices.
+
+[PDF_BLOCK b14]
+
+Configuration of OneTrust TPRM: Document and configure custom workflows, rules, questionnaire
+templates, and notification processes in OneTrust tailored to Cadence’s requirements.
+
+[PDF_BLOCK b15]
+
+Training & Knowledge Transfer: Provide documentation covering OneTrust setup and configuration,
+workflow logics and questionnaire rules, ensuring Cadence stakeholders can effectively manage and
+operate the solution.
+
+[PDF_BLOCK b16]
+Proprietary and Confidential
+3
+
+[PDF_BLOCK b1]
+2. Enhancements Implemented in OneTrust
+
+[PDF_BLOCK b2]
+Building on the objectives outlined in Section 1, this section details the key enhancements implemented within
+Cadence’s OneTrust TPRM framework. These enhancements were designed to streamline vendor risk
+management, standardize due diligence processes, and improve visibility across the third-party lifecycle.
+
+[PDF_BLOCK b3]
+2.1 Standardization of Third-Party Types
+
+[PDF_BLOCK b4]
+A standardized third-party taxonomy has been established and configured within OneTrust to ensure consistency in
+vendor classification. This taxonomy defines clear categories that are consistently applied across onboarding and
+due diligence workflows, including:
+
+[PDF_BLOCK b5]
+
+Staffing Vendors
+
+[PDF_BLOCK b6]
+
+Service Providers and Vendors
+
+[PDF_BLOCK b7]
+
+Marketing Partners
+
+[PDF_BLOCK b8]
+
+Revenue Partners
+
+[PDF_BLOCK b9]
+
+International Vendors
+
+[PDF_BLOCK b10]
+
+Tier-3 Vendors
+
+[PDF_BLOCK b11]
+This standardization eliminates ambiguity and ensures all third parties are consistently classified, enabling risk
+assessments and routing of workflows.
+
+[PDF_BLOCK b12]
+2.2 Configured Workflows by Third-Party Types
+
+[PDF_BLOCK b13]
+End-to-end workflows have been designed and implemented in OneTrust to manage the lifecycle of each third-
+party type. These workflows ensure that third parties are automatically directed through the appropriate due
+diligence questionnaires, approvals, and process based on their classification (e.g., third-party type).
+
+[PDF_BLOCK b14]
+The following workflows have been configured in OneTrust:
+
+[PDF_BLOCK b15]
+
+Staffing Vendors Workflow
+
+[PDF_BLOCK b16]
+
+Service Providers and Vendors Workflow
+
+[PDF_BLOCK b17]
+
+Marketing Partners Workflow
+
+[PDF_BLOCK b18]
+
+Revenue Partners Workflow
+
+[PDF_BLOCK b19]
+
+International Vendors Workflow
+
+[PDF_BLOCK b20]
+
+Renewal Workflow
+
+[PDF_BLOCK b21]
+
+Offboarding Workflow
+
+[PDF_BLOCK b22]
+
+Tier-3 Vendors Workflow
+
+[PDF_BLOCK b23]
+Integration with Ironclad ensures that contract creation and execution trigger corresponding workflows in OneTrust,
+aligning contract and risk management activities.
+
+[PDF_BLOCK b24]
+2.3 Additional Enhancements Delivered
+
+[PDF_BLOCK b25]
+Due Diligence Questionnaires (DDQ):
+
+[PDF_BLOCK b26]
+The DDQ templates have been refreshed and aligned with Cadence’s requirements. The updated questionnaires
+capture critical information of the third party about data sensitivity, regulatory obligations, country risk, and
+geopolitical considerations.
+
+[PDF_BLOCK b27]
+Risk Methodology:
+
+[PDF_BLOCK b28]
+Proprietary and Confidential
+4
+
+[PDF_BLOCK b1]
+A standardized risk tiering methodology has been embedded into OneTrust. This model integrates multiple factors
+(financial, operational, compliance, and security) and supports a consistent evaluation process for all third parties.
+
+[PDF_BLOCK b2]
+In addition to tiering, risk statements have been developed along with associated mitigation recommendations
+mapped to due diligence questions. These enable Cadence to not only identify potential risks but also track
+mitigation activities and ensure accountability through the OneTrust platform.
+
+[PDF_BLOCK b3]
+Frequency of Reassessments:
+
+[PDF_BLOCK b4]
+Standard review cadences have been configured in OneTrust:
+
+[PDF_BLOCK b5]
+
+Tier 1 third parties: annual reviews
+
+[PDF_BLOCK b6]
+
+Tier 2 third parties: reviews every 24 months
+
+[PDF_BLOCK b7]
+
+Tier 3 third parties: reviews every 24 months
+
+[PDF_BLOCK b8]
+User Roles and Access Controls:
+
+[PDF_BLOCK b9]
+Role-based access has been fully defined and configured in OneTrust to ensure appropriate separation of duties,
+controlled visibility, and compliance with Cadence’s security requirements. The roles and associated permissions
+are as follows:
+
+[PDF_BLOCK b10]
+
+Vendor Risk Management (VRM) Team:
+
+[PDF_BLOCK b11]
+o
+Access Level: Full Admin for TPRM module
+
+[PDF_BLOCK b12]
+o
+Privileges: Full access to third party records and risk assessments
+
+[PDF_BLOCK b13]
+o
+Actions: Configure and administer risk assessments, oversee workflows, and manage risk
+management activities, approve or reject the third-party
+
+[PDF_BLOCK b14]
+
+Operation teams (Legal, Compliance, Finance, Procurement, IT, Data Quality)
+
+[PDF_BLOCK b15]
+o
+Access Level: Edit
+
+[PDF_BLOCK b16]
+o
+Privileges: Edit access for questionnaire review; focusing on different sections of questionnaire
+
+[PDF_BLOCK b17]
+o
+Actions: Review the third-party responses for corresponding sections focusing on major areas like
+country risks, financial statements and IT requirements. Reviewing and communicating risks to
+VRM team.
+
+[PDF_BLOCK b18]
+
+Privacy Teams
+
+[PDF_BLOCK b19]
+o
+Access Level: Edit
+
+[PDF_BLOCK b20]
+o
+Privileges: Review access to Privacy section
+
+[PDF_BLOCK b21]
+o
+Actions: Review questionnaire responses for Artificial Intelligence (AI), confidentiality, and data
+protection
+
+[PDF_BLOCK b22]
+
+Security Team
+
+[PDF_BLOCK b23]
+o
+Access Level: Edit (Security & Technical)
+
+[PDF_BLOCK b24]
+o
+Privileges: Edit access to IT/security assessments and certifications
+
+[PDF_BLOCK b25]
+o
+Actions: Review SOC/ISO/PCI certifications, perform technical assessments, validate security
+compliance
+
+[PDF_BLOCK b26]
+Proprietary and Confidential
+5
+
+[PDF_BLOCK b1]
+2.4 Key Objectives and Outcomes
+
+[PDF_BLOCK b2]
+The implemented enhancements provide Cadence with a standardized, automated, and auditable TPRM framework
+within OneTrust. The key objectives achieved are:
+
+[PDF_BLOCK b3]
+
+Elimination of manual and fragmented processes.
+
+[PDF_BLOCK b4]
+
+Centralized vendor classification and workflow automation.
+
+[PDF_BLOCK b5]
+
+Refreshed due diligence questionnaires aligned with industry standards.
+
+[PDF_BLOCK b6]
+
+Consistent application of risk tiering and review cadences.
+
+[PDF_BLOCK b7]
+
+Enhanced visibility, compliance, and scalability of the TPRM program.
+
+[PDF_BLOCK b8]
+Through these enhancements, Cadence’s TPRM program has an efficient, and scalable framework that reduces risk
+exposure and ensures compliance with both internal policies and external regulatory requirements.
+
+[PDF_BLOCK b9]
+Proprietary and Confidential
+6
+
+[PDF_BLOCK b1]
+3. Transition Toward Integrated Risk Management
+
+[PDF_BLOCK b2]
+Based on: OneTrust TPRM Training
+
+[PDF_BLOCK b3]
+The visual above, adapted from OneTrust’s framework, illustrates the maturity progression from compliance-driven
+and siloed risk functions toward integrated and business-enabling risk management.
+
+[PDF_BLOCK b4]
+Currently, Cadence’s TPRM program is positioned at the “Siloed Risk Function” stage, where risk ownership and
+assessment activities are distributed across functions such as Legal, Compliance, Security, and Procurement. Each
+area maintains its own risk processes, resulting in fragmented oversight.
+
+[PDF_BLOCK b5]
+The strategic objective of this engagement is to transition Cadence toward the “Integrated Risk Management (IRM)”
+stage - where all third-party risks are collectively managed through a unified, automated, and standardized
+framework within OneTrust. This will establish a single source of truth for vendor risk visibility, governance, and
+decision-making.
+
+[PDF_BLOCK b6]
+A key enabler of this transformation is the integration between Ironclad and OneTrust, which connects contract
+lifecycle management with third-party risk workflows. Through this integration:
+
+[PDF_BLOCK b7]
+
+Contract creation and execution in Ironclad automatically triggers corresponding due diligence and
+assessment workflows in OneTrust.
+
+[PDF_BLOCK b8]
+
+Vendor-related data (e.g., contract terms, renewal dates, risk tier, and compliance status) synchronizes
+between systems for continuous visibility.
+
+[PDF_BLOCK b9]
+
+Risk and contractual obligations are managed cohesively within a single ecosystem.
+
+[PDF_BLOCK b10]
+Proprietary and Confidential
+7
+
+[PDF_BLOCK b1]
+Optiv’s implementation approach supports this evolution by consolidating all risk-related processes into OneTrust
+and aligning them with two primary risk domains:
+
+[PDF_BLOCK b2]
+
+Operational Risks:
+
+[PDF_BLOCK b3]
+Identified through due diligence questionnaires covering Legal, Financial, Privacy, and Compliance areas.
+These assessments capture vendor-level dependencies, regulatory exposures, and process inefficiencies at
+both organizational and product/service levels.
+
+[PDF_BLOCK b4]
+
+Cyber Risks:
+
+[PDF_BLOCK b5]
+Identified through security questionnaires focusing on data protection, access control, incident
+management, and infrastructure security.
+
+[PDF_BLOCK b6]
+By structuring risk assessments around these two domains, and integrating Ironclad with OneTrust, Cadence can
+now:
+
+[PDF_BLOCK b7]
+
+Manage operational and cybersecurity risks in a unified workstream.
+
+[PDF_BLOCK b8]
+
+Automate due diligence, escalation, and remediation workflows.
+
+[PDF_BLOCK b9]
+
+Maintain cross-functional visibility across all risk stakeholders.
+
+[PDF_BLOCK b10]
+
+Strengthen accountability through consistent, platform-driven governance.
+
+[PDF_BLOCK b11]
+
+Progress toward a mature Integrated Risk Management model that aligns risk oversight with Cadence’s
+business objectives and growth strategy.
+
+[PDF_BLOCK b12]
+Proprietary and Confidential
+8
+
+[PDF_BLOCK b1]
+4. Proposed TPRM approach
+
+[PDF_BLOCK b2]
+4.1 Defined Third-Party Types
+
+[PDF_BLOCK b3]
+Cadence’s third parties are classified based on defined categories to ensure consistent application of due diligence,
+risk assessments, and workflow assignments within OneTrust.
+
+[PDF_BLOCK b4]
+The table below lists each Third-Party Type, with a description of its scope, the user groups responsible for
+reviewing associated workflows, and the approver accountable for final validation.
+
+[PDF_BLOCK b5]
+APPROVER
+
+[PDF_BLOCK b6]
+THIRD-PARTY TYPE
+DESCRIPTION
+USER
+GROUPS
+
+[PDF_BLOCK b7]
+Service Providers and
+Vendors
+
+[PDF_BLOCK b8]
+Includes consultants, contractors, business
+process outsourcing (BPO) providers, technology
+service vendors, and customer support partners
+that deliver operational or IT services critical to
+Cadence’s business functions.
+
+[PDF_BLOCK b9]
+Revenue Partners
+Vendors or partners contributing directly to
+revenue generation such as affiliate marketing
+platforms, financial partners, or other entities
+responsible for revenue-driving collaborations.
+
+[PDF_BLOCK b10]
+All reviewers
+Vendor Risk
+Management Group
+
+[PDF_BLOCK b11]
+Marketing Partners
+Vendors and third parties engaged in marketing,
+advertising, or promotional activities, including
+analytics service providers and digital campaign
+partners.
+
+[PDF_BLOCK b12]
+International Vendors
+Vendors located or operating outside [REDACTED: GPE], subject to cross-border data transfer,
+regulatory, and compliance requirements (e.g.,
+GDPR, [REDACTED: PERSON_NAME]).
+
+[PDF_BLOCK b13]
+Staffing Vendors
+Third parties provide temporary staffing,
+recruitment, or professional resourcing services
+supporting business operations.
+
+[PDF_BLOCK b14]
+4.2 User Groups Details
+
+[PDF_BLOCK b15]
+This section outlines the user groups established within Cadence’s OneTrust instance, their purpose, access
+permissions, and associated members. Each group is assigned review responsibilities aligned to its function and
+area of expertise.
+
+[PDF_BLOCK b16]
+The user details listed below represent the current configuration within OneTrust. These groups are reviewed
+annually to maintain data integrity and ensure proper access control.
+
+[PDF_BLOCK b17]
+USER GROUPS
+DESCRIPTION
+PERMISSIONS
+USERS
+
+[PDF_BLOCK b18]
+Admin
+
+[PDF_BLOCK b19]
+Daniela Figueroa
+Bridgett Gatewood
+KC Burney
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b20]
+Vendor Risk
+Management Group
+
+[PDF_BLOCK b21]
+Composed of senior or executive-level stakeholders.
+This group is the decision-making body for third-
+party assessments.
+
+[PDF_BLOCK b22]
+Edit
+
+[PDF_BLOCK b23]
+Tamika Oliver
+Shimane Smith
+[REDACTED: PERSON_NAME]
+Chris Ott
+Rob Tilney
+
+[PDF_BLOCK b24]
+Proprietary and Confidential
+9
+
+[PDF_BLOCK b1]
+Legal Group
+This group includes the users from the Legal team
+who are responsible for reviewing workflows.
+Edit
+[REDACTED: PERSON_NAME]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b2]
+Procurement Group
+This group includes the users from the Procurement
+team who are responsible for reviewing workflows.
+Edit
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b3]
+Finance Group
+This group includes the users from the Finance team
+who are responsible for reviewing workflows.
+Edit
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b4]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b5]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b6]
+IT Group
+This group includes the users from the IT team who
+are responsible for reviewing workflows.
+Edit
+
+[PDF_BLOCK b7]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b8]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b9]
+Compliance Group
+This group includes the users from the Compliance
+team who are responsible for reviewing workflows.
+Edit
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b10]
+Privacy Group
+
+[PDF_BLOCK b11]
+Edit
+Dayo Seton
+
+[PDF_BLOCK b12]
+This group includes the users from the Privacy team
+who are responsible for reviewing workflows and risk
+flagged for privacy section.
+
+[PDF_BLOCK b13]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b14]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b15]
+Security Group
+
+[PDF_BLOCK b16]
+Edit
+
+[PDF_BLOCK b17]
+DK Koran
+
+[PDF_BLOCK b18]
+This group includes the users from the Security team
+who are responsible for reviewing workflows and risk
+flagged for security section.
+
+[PDF_BLOCK b19]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b20]
+Data Quality Group
+This group includes the users from the Data Quality
+team who are responsible for reviewing workflows.
+Edit
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b21]
+4.2. Workflow for Third-Party types
+
+[PDF_BLOCK b22]
+Cadence’s third-party workflows in OneTrust are now fully automated and tailored to the criticality and type of
+vendor.
+
+[PDF_BLOCK b23]
+Third parties are classified based on data sensitivity and risk criticality, with separate workflows established for Tier 1,
+Tier 2, and Tier 3 vendors. Tier 3 third parties typically represent lower-risk engagements (e.g., limited data access
+or short-term service contracts), while Tiers 1 and 2 represent medium- and high-risk third parties requiring
+enhanced due diligence.
+
+[PDF_BLOCK b24]
+Additionally, classification by third-party Category ensures that distinct workflows are automatically triggered for
+Staffing Vendors, Service Providers, Marketing Partners, Revenue Partners, and International Vendors.
+
+[PDF_BLOCK b25]
+When a new third-party is added to the OneTrust platform, it is routed through an automated onboarding workflow
+that analyzes both third-party tier and category. Based on these attributes, the system assigns the appropriate
+workflow path for due diligence, assessment, and approval.
+
+[PDF_BLOCK b26]
+4.2.1 Onboarding Workflow
+
+[PDF_BLOCK b27]
+Cadence’s OneTrust environment has been configured with automated workflows that manage the lifecycle of third
+-party assessments based on both vendor category and risk tier. The integration between Ironclad and OneTrust
+ensures that every new vendor entering the system is automatically analyzed and assigned to the appropriate
+workflow.
+
+[PDF_BLOCK b28]
+Proprietary and Confidential
+10
+
+[PDF_BLOCK b1]
+WORKFLOWS NAME
+STAGE
+DESCRIPTION
+STAGE RULE
+WORKFLOW
+RULE
+
+[PDF_BLOCK b2]
+CD_Onboarding
+Workflow
+
+[PDF_BLOCK b3]
+New Third
+Party
+
+[PDF_BLOCK b4]
+No stage rule is
+applied here.
+
+[PDF_BLOCK b5]
+Trigger Name:
+On_T_Assign
+Workflow
+
+[PDF_BLOCK b6]
+Trigger Type:
+Vendor Created
+
+[PDF_BLOCK b7]
+The newly added Third-Party
+will enter OneTrust
+environment through this
+stage. This will be the major
+stage to analyze the type of
+Third-party as filled as one of
+the Vendor Attribute in
+Ironclad. This stage will
+analyze the type and then
+assign the respective
+workflow to the Third Party.
+
+[PDF_BLOCK b8]
+Analyze the
+vendor type
+attribute and
+perform action to
+assign workflow.
+
+[PDF_BLOCK b9]
+Live
+This stage will be in place but
+not be used.
+
+[PDF_BLOCK b10]
+4.2.2 Tier 1 and 2 Workflows
+
+[PDF_BLOCK b11]
+Vendors tiered under Tier 1 and Tier 2 undergo a comprehensive due diligence process, differentiated by data
+criticality and risk profile. The following vendor categories fall under this group: Staffing Vendors, Service Providers
+and Vendors, Marketing Partners, Revenue Partners, and International Vendors. Each category is assigned a
+tailored due diligence questionnaire, which is automatically sent to the Primary Vendor Contact upon workflow
+initiation.
+
+[PDF_BLOCK b12]
+WORKFLOW NAME
+
+[PDF_BLOCK b13]
+DESCRIPTION
+STAGE RULE
+WORKFLOW
+RULE
+
+[PDF_BLOCK b14]
+STAGE
+(These are
+not the exact
+stage
+names)
+
+[PDF_BLOCK b15]
+CD_Revenue
+Partners Workflow
+
+[PDF_BLOCK b16]
+New
+This stage will be in place but
+not be used.
+
+[PDF_BLOCK b17]
+No stage rule is
+applied here.
+
+[PDF_BLOCK b18]
+Trigger Name:
+mentioned in
+Appendix
+
+[PDF_BLOCK b19]
+CD_Marketing
+Partners Workflow
+
+[PDF_BLOCK b20]
+Trigger Type:
+Vendor Created
+
+[PDF_BLOCK b21]
+CD_Service
+Providers Workflow
+
+[PDF_BLOCK b22]
+Analyze the
+Vendor Category
+attribute and
+perform action to
+advance stage.
+
+[PDF_BLOCK b23]
+CD_Staffing Vendors
+Workflow
+
+[PDF_BLOCK b24]
+Stage Rule Name:
+Trigger Name:
+
+[PDF_BLOCK b25]
+Launch
+This stage will be used to
+send assessment to the
+
+[PDF_BLOCK b26]
+Proprietary and Confidential
+11
+
+[PDF_BLOCK b1]
+CD_International
+Vendors Workflow
+
+[PDF_BLOCK b2]
+Mentioned in
+Appendix
+
+[PDF_BLOCK b3]
+Primary Vendor Contact.
+The assessment will be
+initiated by sending a general
+security questionnaire (Due
+Diligence Questionnaire T1-2
+v1)
+
+[PDF_BLOCK b4]
+Stage rules to
+Launch the
+assessments are in
+place to send the
+due diligence
+questionnaire
+
+[PDF_BLOCK b5]
+Trigger Type:
+
+[PDF_BLOCK b6]
+Assessment
+Submitted
+
+[PDF_BLOCK b7]
+Rule Name:
+
+[PDF_BLOCK b8]
+Mentioned in
+Apendix
+
+[PDF_BLOCK b9]
+Review
+Reject
+
+[PDF_BLOCK b10]
+Rule to notify and
+review the
+rejection.
+
+[PDF_BLOCK b11]
+Rule for notifying
+offboarding of the
+third-party.
+
+[PDF_BLOCK b12]
+Rule to notify
+about approval.
+
+[PDF_BLOCK b13]
+Live
+The third-party will be in Live
+stage once the assessment
+is completed.
+
+[PDF_BLOCK b14]
+No Stage Rule
+No Workflow Rule
+
+[PDF_BLOCK b15]
+Closed
+The third-party is to be
+manually moved by the
+internal user to this stage
+after offboarding is
+completed. Post this, if
+required, the vendor record
+can be archived manually.
+
+[PDF_BLOCK b16]
+If required, automation rules
+can be added in this stage
+when further integrations for
+offboarding process are
+needed.
+
+[PDF_BLOCK b17]
+4.2.3 Tier 3 Workflows
+
+[PDF_BLOCK b18]
+Tier 3 third parties are subject to a simplified due diligence process, reflecting their lower criticality and risk exposure.
+A distinct questionnaire is designed for this tier, focusing on essential operational and security controls.
+
+[PDF_BLOCK b19]
+Proprietary and Confidential
+12
+
+[PDF_BLOCK b1]
+WORKFLOW NAME
+
+[PDF_BLOCK b2]
+DESCRIPTION
+STAGE RULE
+WORKFLOW
+RULE
+
+[PDF_BLOCK b3]
+STAGE
+(These are not the
+exact stage names)
+
+[PDF_BLOCK b4]
+CD_Tier3 Workflow
+New
+This stage will be in
+place but not be used.
+
+[PDF_BLOCK b5]
+No stage rule is
+applied here.
+
+[PDF_BLOCK b6]
+Trigger Name:
+mentioned in
+Appendix
+
+[PDF_BLOCK b7]
+Trigger Type:
+Vendor Created
+
+[PDF_BLOCK b8]
+Analyze the
+Vendor Tier
+attribute and
+perform action to
+advance stage.
+
+[PDF_BLOCK b9]
+Stage Rule Name:
+
+[PDF_BLOCK b10]
+Trigger Name:
+
+[PDF_BLOCK b11]
+Mentioned in
+Appendix
+
+[PDF_BLOCK b12]
+Trigger Type:
+
+[PDF_BLOCK b13]
+Stage rules to
+Launch the
+assessments are in
+place to send the
+due diligence
+questionnaire
+
+[PDF_BLOCK b14]
+Auto -approval rule
+
+[PDF_BLOCK b15]
+Manual reject rule
+(Please note, a
+review of the third-
+party before
+rejection is
+formulated)
+
+[PDF_BLOCK b16]
+Rule Name:
+
+[PDF_BLOCK b17]
+Launch
+This stage will be
+used to send
+assessment to the
+Primary Vendor
+Contact. The
+assessment will be
+initiated by sending a
+general security
+questionnaire (Due
+Diligence
+Questionnaire T3 v1).
+Auto-approval rule
+will be set in this
+questionnaire and the
+trigger in workflow
+rules to auto-approve
+the Tier 3 third party
+based on favorable
+responses.
+
+[PDF_BLOCK b18]
+Mentioned in
+Appendix
+
+[PDF_BLOCK b19]
+Review Reject
+Rule to notify and
+review the
+rejection.
+
+[PDF_BLOCK b20]
+Rule for notifying
+offboarding of the
+third-party.
+
+[PDF_BLOCK b21]
+Proprietary and Confidential
+13
+
+[PDF_BLOCK b1]
+Live
+Rule to [REDACTED: GPE]
+about approval.
+
+[PDF_BLOCK b2]
+(Please note: As
+per Cadence’s
+earlier process the
+reassessment of
+the Tier 3 was
+performed in a
+span of 3 years,
+that is now revised
+to 2 years)
+
+[PDF_BLOCK b3]
+Closed
+The third-party is to
+be manually moved
+by the internal user to
+this stage after
+offboarding is
+completed. Post this,
+if required, the vendor
+record can be
+archived manually.
+
+[PDF_BLOCK b4]
+If required,
+automation rules can
+be added in this stage
+when further
+integrations for
+offboarding process
+are needed.
+
+[PDF_BLOCK b5]
+Note: Renewal and offboarding processes are incorporated into the above workflows based on the tier of the third
+party. The offboarding workflow currently sends notifications to relevant stakeholders for review and approval of
+offboarding actions.
+
+[PDF_BLOCK b6]
+For future iterations, Cadence may consider expanding automation by developing an integration with [REDACTED: GPE] to
+streamline the offboarding workflow through API-triggered deprovisioning and asset revocation.
+
+[PDF_BLOCK b7]
+Proprietary and Confidential
+14
+
+[PDF_BLOCK b1]
+5. Final Approach
+
+[PDF_BLOCK b2]
+5.1 Final Approved Workflow
+
+[PDF_BLOCK b3]
+The following workflow diagram represents the approved configuration that was demonstrated and validated during
+the review sessions with the Cadence team.
+
+[PDF_BLOCK b4]
+The workflow begins in Ironclad, where a New Vendor Request Form or Contract Submission Form is initiated.
+Vendor details from Ironclad are automatically transmitted into OneTrust through integration. Once received, the
+vendor attributes are used to determine the appropriate workflow path and initiate the due diligence process.
+
+[PDF_BLOCK b5]
+The OneTrust configuration includes automated routing for vendor onboarding, assessment, renewal, and
+offboarding, driven by predefined rules and risk tier classification.
+
+[PDF_BLOCK b6]
+This workflow design ensures:
+
+[PDF_BLOCK b7]
+
+Consistent automation of vendor onboarding and assessment processes.
+
+[PDF_BLOCK b8]
+
+Centralized visibility of vendor risk posture across Legal, Security, and Compliance teams.
+
+[PDF_BLOCK b9]
+
+Seamless data synchronization between Ironclad and OneTrust for vendor metadata, renewal timelines, and
+workflow triggers.
+
+[PDF_BLOCK b10]
+
+Standardization of due diligence questionnaires and risk scoring logic across all vendor types and tiers.
+
+[PDF_BLOCK b11]
+5.2 Attributes for Workflow
+
+[PDF_BLOCK b12]
+The following attributes form the foundational elements used in workflow configuration and automation logic within
+
+[PDF_BLOCK b13]
+Proprietary and Confidential
+15
+
+[PDF_BLOCK b1]
+OneTrust. These attributes are populated in Ironclad and passed to OneTrust to enable rule-based actions such as
+third-party categorization, questionnaire assignment, and renewal triggers.
+
+[PDF_BLOCK b2]
+Third-party name
+From: Ironclad
+
+[PDF_BLOCK b3]
+To: OneTrust
+
+[PDF_BLOCK b4]
+ATTRIBUTE
+DESCRIPTION
+VALUE
+DIRECTION
+Name
+Default system attribute representing
+the third-party name, automatically
+imported from Ironclad into
+OneTrust.
+
+[PDF_BLOCK b5]
+From: Ironclad
+
+[PDF_BLOCK b6]
+To: OneTrust
+
+[PDF_BLOCK b7]
+Type
+Represents the nature of vendor
+engagement (e.g., Consulting,
+Operations, Regulatory). Used for
+classification and reporting.
+
+[PDF_BLOCK b8]
+Consulting,
+Operations,
+Regulatory,
+Strategic,
+Technology,
+Unknown
+
+[PDF_BLOCK b9]
+From: Ironclad
+
+[PDF_BLOCK b10]
+Critical, High,
+Medium, Low
+
+[PDF_BLOCK b11]
+Criticality
+It indicates the business importance
+of the third-party. Though optional, it
+can be used for prioritization.
+
+[PDF_BLOCK b12]
+To: OneTrust
+
+[PDF_BLOCK b13]
+From: Ironclad
+
+[PDF_BLOCK b14]
+Email ID of vendor
+POC
+
+[PDF_BLOCK b15]
+To: OneTrust
+
+[PDF_BLOCK b16]
+Primary vendor contact
+Mandatory attribute that stores the
+vendor point of contact (POC) email
+address. Used for automated
+questionnaire distribution.
+
+[PDF_BLOCK b17]
+From: Ironclad
+
+[PDF_BLOCK b18]
+Email ID of internal
+POC
+
+[PDF_BLOCK b19]
+Business Owner
+Identifies the internal requestor or
+process owner responsible for
+managing the third-party relationship.
+
+[PDF_BLOCK b20]
+To: OneTrust
+
+[PDF_BLOCK b21]
+Tier 1, Tier 2, Tier 3
+From: Ironclad
+
+[PDF_BLOCK b22]
+To: OneTrust
+
+[PDF_BLOCK b23]
+Vendor Tier
+Custom attribute used to classify
+vendors into Tier 1, Tier 2, or Tier 3
+based on data sensitivity and risk
+exposure. Determines reassessment
+and renewal cadence.
+
+[PDF_BLOCK b24]
+From: Ironclad
+
+[PDF_BLOCK b25]
+To: OneTrust
+
+[PDF_BLOCK b26]
+Vendor Category
+Custom attribute used to assign the
+appropriate workflow for a new
+vendor based on the vendor type
+(e.g., Service Provider, Marketing
+Partner, Staffing, etc.).
+
+[PDF_BLOCK b27]
+Service Provider
+and Vendor,
+Revenue Partner,
+Marketing Partner,
+Staffing Vendor,
+International
+Vendor
+
+[PDF_BLOCK b28]
+From: Ironclad
+
+[PDF_BLOCK b29]
+To: OneTrust
+
+[PDF_BLOCK b30]
+Website
+This is a system attribute that can be
+used to automatically connect the
+third-party to the Third-Party
+Exchange.
+
+[PDF_BLOCK b31]
+Domain of the
+vendor
+organization.
+Example:
+www.Vendor.com
+
+[PDF_BLOCK b32]
+These attributes are the primary configuration drivers for automation rules within OneTrust. Any future additions to
+vendor metadata (e.g., region, data processing scope) can be easily integrated using the same data mapping
+framework.
+
+[PDF_BLOCK b33]
+Proprietary and Confidential
+16
+
+[PDF_BLOCK b1]
+6. OneTrust Configuration
+
+[PDF_BLOCK b2]
+This section outlines the configuration activities performed within OneTrust to operationalize Cadence’s TPRM
+framework. It details the setup of user groups, custom attributes, questionnaires, and automation rules required to
+support the integrated workflows.
+
+[PDF_BLOCK b3]
+6.1 User Management
+
+[PDF_BLOCK b4]
+User groups were configured in OneTrust to define role-based permissions and streamline review workflows. These
+groups ensure that specific teams - such as Legal, Compliance, Security, and Finance - receive automated
+notifications and review tasks based on vendor category and workflow stage.
+
+[PDF_BLOCK b5]
+The configuration allows:
+
+[PDF_BLOCK b6]
+
+Centralized visibility of all assigned users per workflow.
+
+[PDF_BLOCK b7]
+
+Role-based access control to vendor data and questionnaires.
+
+[PDF_BLOCK b8]
+
+Efficient collaboration through automated task notifications and approvals.
+
+[PDF_BLOCK b9]
+To create or update user groups in OneTrust, the following process is applied:
+
+[PDF_BLOCK b10]
+1.
+Navigate to Settings User Management User Groups.
+
+[PDF_BLOCK b11]
+2.
+Click “Create User Group”.
+
+[PDF_BLOCK b12]
+3.
+Enter the “Group Name” and “Description” (as defined in section 4.2)
+
+[PDF_BLOCK b13]
+4.
+Search and add users by name or email address.
+
+[PDF_BLOCK b14]
+5.
+Assign “Roles and Organization” (e.g., “TPRM Administrator,” “Reviewer”).
+
+[PDF_BLOCK b15]
+6.
+Click “Add” and “Create” to finalize.
+
+[PDF_BLOCK b16]
+User groups and memberships are reviewed annually to maintain accurate access and ensure deactivation of users
+no longer participating in the TPRM program.
+
+[PDF_BLOCK b17]
+Proprietary and Confidential
+17
+
+[PDF_BLOCK b1]
+Proprietary and Confidential
+18
+
+[PDF_BLOCK b1]
+6.2 Attribute Development
+
+[PDF_BLOCK b2]
+Attributes are key data points used to categorize and automate third-party workflows. Based on Cadence’s
+requirements, both system and custom attributes were developed within OneTrust.
+
+[PDF_BLOCK b3]
+To create a new attribute:
+
+[PDF_BLOCK b4]
+1.
+Navigate to Attribute Manager Vendor Attributes
+
+[PDF_BLOCK b5]
+2.
+Click “Add Attribute”
+
+[PDF_BLOCK b6]
+3.
+Enter the “Name of Key” (e.g., Vendor Tier).
+
+[PDF_BLOCK b7]
+4.
+Provide a Description Key explaining the attribute’s purpose.
+
+[PDF_BLOCK b8]
+5.
+Set the “Response Type” (e.g., Single Select).
+
+[PDF_BLOCK b9]
+6.
+Add Options (e.g., Tier 1, Tier 2, Tier 3).
+
+[PDF_BLOCK b10]
+7.
+Click “Save Attribute”.
+
+[PDF_BLOCK b11]
+All attributes were verified to ensure they are in an Active state. Attributes can be edited or deactivated as needed
+using the three-dot menu in the Inventory Manager view.
+
+[PDF_BLOCK b12]
+Proprietary and Confidential
+19
+
+[PDF_BLOCK b1]
+Proprietary and Confidential
+20
+
+[PDF_BLOCK b1]
+An attribute can be deactivated and edited using the 3 dots option visible by hovering the [REDACTED: GPE] over the attribute in
+the above-mentioned section and seen in the image below:
+
+[PDF_BLOCK b2]
+Cadence should review these attributes annually to confirm ongoing relevance. New attributes can be added as the
+TPRM program evolves (for example, adding “Tier 4” or new data-handling classifications).
+
+[PDF_BLOCK b3]
+Proprietary and Confidential
+21
+
+[PDF_BLOCK b1]
+6.3 Questionnaire Development and Risk Configuration
+
+[PDF_BLOCK b2]
+Questionnaire development is a one-time configuration activity performed in OneTrust. Once developed, the
+questionnaires can be reused across multiple assessments. These questionnaires can be workflow specific or third-
+party specific, depending on the organization’s requirements.
+
+[PDF_BLOCK b3]
+As per Cadence’s requirements, two questionnaires were developed each aligned with the third-party tiering model
+to support automated due diligence activities. These questionnaires are designed to gather detailed information
+from vendors based on their assigned tier and risk exposure. Both questionnaires are accessible within the
+Templates section of the Third-Party Risk Management module in OneTrust.
+
+[PDF_BLOCK b4]
+The two developed questionnaires are:
+
+[PDF_BLOCK b5]
+
+Due Diligence Questionnaire T1–2 v1 – Applicable for Tier 1 and Tier 2 third parties.
+
+[PDF_BLOCK b6]
+
+Due Diligence Questionnaire T3 v1 – Applicable for Tier 3 third parties.
+
+[PDF_BLOCK b7]
+Each questionnaire consists of sections that cover the following key areas:
+
+[PDF_BLOCK b8]
+
+Contracting and Legal
+
+[PDF_BLOCK b9]
+
+Compliance and Legal
+
+[PDF_BLOCK b10]
+
+Finance
+
+[PDF_BLOCK b11]
+
+Data Privacy and Security
+
+[PDF_BLOCK b12]
+
+IT Systems and Integration
+
+[PDF_BLOCK b13]
+These sections collectively ensure comprehensive due diligence and risk coverage for all third-party engagements.
+
+[PDF_BLOCK b14]
+Proprietary and Confidential
+22
+
+[PDF_BLOCK b1]
+6.3.1 Creating Questionnaire Template
+
+[PDF_BLOCK b2]
+Creating a questionnaire template in OneTrust can be efficiently managed by first preparing a structured CSV
+version of the questions. This helps with version control and simplifies updates during later stages. It is strongly
+recommended to refer to and update the Final Due Diligence Questionnaire v1.0 before implementation within
+OneTrust.
+
+[PDF_BLOCK b3]
+This document also includes details of the rules applied within the questionnaire template. These rules should be
+referenced and updated as required for any future implementations or modifications to the template. The rules
+control question behavior, such as conditional visibility and response-based logic, ensuring that subsequent
+questions appear only when relevant answers are selected.
+
+[PDF_BLOCK b4]
+To build a questionnaire template in OneTrust, follow these steps:
+
+[PDF_BLOCK b5]
+1.
+Navigate to the “Templates” section within the “Third-Party Risk Management” module.
+
+[PDF_BLOCK b6]
+2.
+Click “Create custom template”.
+
+[PDF_BLOCK b7]
+3.
+Enter the “Name”, “Template language”, and “Description”.
+
+[PDF_BLOCK b8]
+4.
+Select an appropriate “Template icon”.
+
+[PDF_BLOCK b9]
+5.
+Click “Create template”.
+
+[PDF_BLOCK b10]
+Proprietary and Confidential
+23
+
+[PDF_BLOCK b1]
+Once created, the template will appear as a tile under the Templates section.
+
+[PDF_BLOCK b2]
+Within the Due Diligence Questionnaire T1–2 v1 template, a total of eight sections were developed, each containing
+approved questions mapped to Cadence’s TPRM requirements. These sections cover diverse operational and risk
+areas to ensure a comprehensive evaluation of third parties.
+
+[PDF_BLOCK b3]
+Scenario 1: Launching (Showing) follow-up questions depending on selection of “Yes”.
+
+[PDF_BLOCK b4]
+Conditional logic, also known as “Show logic,” has been configured across the questionnaire to trigger follow-up
+questions based on the respondent’s selections.
+
+[PDF_BLOCK b5]
+For example:
+
+[PDF_BLOCK b6]
+Proprietary and Confidential
+24
+
+[PDF_BLOCK b1]
+When a question requires a Yes/No response, selecting “Yes” automatically launches additional follow-up questions
+for detailed input, while selecting “No” hides those dependent questions. This ensures that the questionnaire
+remains dynamic and relevant to the vendor’s response profile.
+
+[PDF_BLOCK b2]
+Rule/Logic:
+
+[PDF_BLOCK b3]
+To add conditional logic for such scenarios, the following steps can be executed:
+
+[PDF_BLOCK b4]
+1.
+Select “Show logic” in the “Details” tab and click “Save.”
+
+[PDF_BLOCK b5]
+2.
+Add questions into the template.
+
+[PDF_BLOCK b6]
+3.
+Click on the “Show logic” symbol for the question where logic is to be applied.
+
+[PDF_BLOCK b7]
+Proprietary and Confidential
+25
+
+[PDF_BLOCK b1]
+4.
+Add “Condition”.
+
+[PDF_BLOCK b2]
+5.
+Add “Action”.
+
+[PDF_BLOCK b3]
+In the above scenario, if “Yes” is selected for question 4.4 (Condition), then question 4.5 will be automatically
+displayed to the user (Action). The configuration details of these conditions and actions are documented in
+Appendix C.
+
+[PDF_BLOCK b4]
+Scenario 2: Launching multiple questions after answering one question
+
+[PDF_BLOCK b5]
+If multiple questions are to be displayed based on the response to a single question, the “Copy logic to additional
+questions” option can be utilized. This enables the logic applied to one question to be extended to other related
+questions, streamlining configuration efforts.
+
+[PDF_BLOCK b6]
+For example, as per Cadence’s requirements, this logic is applied to questions related to Artificial Intelligence (AI).
+When the initial AI-related question is answered, three additional follow-up questions are automatically launched to
+gather more specific details.
+
+[PDF_BLOCK b7]
+This configuration allows efficient reuse of logic rules and helps maintain questionnaire consistency across related
+risk domains.
+
+[PDF_BLOCK b8]
+The method of adding rules is applied individually to all logic-based questions and documented in Appendix C. The
+configuration team has maintained distinct logic rules for each scenario to simplify future maintenance. This
+approach allows easier modification or removal of rules while minimizing the risk of errors during updates or version
+changes.
+
+[PDF_BLOCK b9]
+6.3.2 Questionnaire Template Rules
+
+[PDF_BLOCK b10]
+Automation rules are created within questionnaire templates to analyze responses provided by the Primary Vendor
+Contact (PVC). These rules automatically generate risk records based on the vendor’s answers and predefined
+logic.
+
+[PDF_BLOCK b11]
+To create a questionnaire rule:
+
+[PDF_BLOCK b12]
+1.
+Open “Third-Party Risk Management” in OneTrust.
+
+[PDF_BLOCK b13]
+Proprietary and Confidential
+26
+
+[PDF_BLOCK b1]
+2.
+Navigate to the “Templates” section.
+
+[PDF_BLOCK b2]
+3.
+Select the questionnaire in which rules are to be added.
+
+[PDF_BLOCK b3]
+4.
+Ensure all questions are created and saved before rule configuration.
+
+[PDF_BLOCK b4]
+5.
+Click on the “Rules” tab.
+
+[PDF_BLOCK b5]
+6.
+Click “Add Rule” to create a new logic condition.
+
+[PDF_BLOCK b6]
+To define the logic for a rule, perform the following steps:
+
+[PDF_BLOCK b7]
+1.
+Add “Rule Name”.
+
+[PDF_BLOCK b8]
+2.
+Select “Trigger” as Question.
+
+[PDF_BLOCK b9]
+3.
+Choose the relevant question from the list.
+
+[PDF_BLOCK b10]
+4.
+Set “Operator” as Equal To.
+
+[PDF_BLOCK b11]
+5.
+Choose Yes, No, or any other applicable option based on the question design.
+
+[PDF_BLOCK b12]
+6.
+Select “Action” as “Create risk”.
+
+[PDF_BLOCK b13]
+Proprietary and Confidential
+27
+
+[PDF_BLOCK b1]
+Action dropdown within the rule setup offers multiple options that can be used to generate risks, create tasks, or
+trigger follow-up actions.
+
+[PDF_BLOCK b2]
+Currently, the configuration focuses on the “Create risk” action type. When defining a rule, OneTrust provides two
+options for risk creation:
+
+[PDF_BLOCK b3]
+a)
+Create risk from the library
+
+[PDF_BLOCK b4]
+b)
+Create new risk
+
+[PDF_BLOCK b5]
+To use a risk from the library, users can select an existing predefined risk. If a new risk needs to be created, follow
+the process below:
+
+[PDF_BLOCK b6]
+1.
+Select “Create new risk”.
+
+[PDF_BLOCK b7]
+Proprietary and Confidential
+28
+
+[PDF_BLOCK b1]
+2.
+Assign a “Risk category”.
+
+[PDF_BLOCK b2]
+3.
+Define scoring parameters.
+
+[PDF_BLOCK b3]
+4.
+Add “Risk name” and “Description”.
+
+[PDF_BLOCK b4]
+5.
+Assign “Deadline” and “Reminder frequency” as per SLA.
+
+[PDF_BLOCK b5]
+6.
+Identify responsible stakeholders or approvers.
+
+[PDF_BLOCK b6]
+7.
+Determine whether a “Control” is to be added.
+
+[PDF_BLOCK b7]
+8.
+If no control is required, click “Save” to finalize the rule.
+
+[PDF_BLOCK b8]
+Proprietary and Confidential
+29
+
+[PDF_BLOCK b1]
+Adding Risk controls: Determining the correct risk scoring and associated controls is critical, as it influences the
+mitigation timeline and monitoring cadence. To add a control for a documented risk, follow the steps below:
+
+[PDF_BLOCK b2]
+1.
+Click “Add risk control”.
+
+[PDF_BLOCK b3]
+2.
+Choose whether to add a control from the “Control library” or to create a Custom control.
+
+[PDF_BLOCK b4]
+3.
+For custom controls, select “Create custom control” and complete the required fields.
+
+[PDF_BLOCK b5]
+4.
+Add control details including the control name, category, and implementation guidance.
+
+[PDF_BLOCK b6]
+5.
+Click “Save” once the control information is finalized.
+
+[PDF_BLOCK b7]
+Proprietary and Confidential
+30
+
+[PDF_BLOCK b1]
+The control becomes linked to the risk within OneTrust and is displayed whenever the risk is triggered during an
+assessment. This ensures consistent tracking and documentation of mitigation measures across third parties and
+assessments.
+
+[PDF_BLOCK b2]
+6.3.3 Updating Questionnaire Template Version
+
+[PDF_BLOCK b3]
+Two questionnaire templates - Due Diligence Questionnaire T1–2 v1 and Due Diligence Questionnaire T3 v1 are
+currently in use for third-party due diligence activities under the TPRM program. Each template includes multiple
+sections and questions tailored to third-party tiers and risk exposure.
+
+[PDF_BLOCK b4]
+These templates can be reviewed annually and updated as needed. New questions or sections may be added to
+address emerging regulatory or operational requirements.
+
+[PDF_BLOCK b5]
+To create a newer version of an existing questionnaire template:
+
+[PDF_BLOCK b6]
+1.
+Open the questionnaire template in OneTrust.
+
+[PDF_BLOCK b7]
+2.
+Use the “Copy version” or “Duplicate template” option to create a draft version.
+
+[PDF_BLOCK b8]
+3.
+Update questions, sections, or logic rules as required.
+
+[PDF_BLOCK b9]
+4.
+Save and validate the new version with the Vendor Risk Management team before publishing.
+
+[PDF_BLOCK b10]
+Using the above method will require the user to manually update new questionnaire into the published workflows.
+There is a preferred alternative way to develop a new version of the questionnaire that is as follows:
+
+[PDF_BLOCK b11]
+If only limited changes are to be made in the questionnaire template such that it should automatically be updated in
+all published workflows, then following steps are to be executed:
+
+[PDF_BLOCK b12]
+1.
+Open the existing published questionnaire template.
+
+[PDF_BLOCK b13]
+2.
+Click on “Create new version” button
+
+[PDF_BLOCK b14]
+3.
+Make changes in questions and rules
+
+[PDF_BLOCK b15]
+4.
+Publish the new version of the questionnaire.
+
+[PDF_BLOCK b16]
+Please note: in this scenario the name of the questionnaire will remain same, but the version number will get
+changed as seen on the top left corner near the “Template details” option.
+
+[PDF_BLOCK b17]
+Proprietary and Confidential
+31
+
+[PDF_BLOCK b1]
+6.4 Workflow Development
+
+[PDF_BLOCK b2]
+The workflows have been developed based on the attributes “Vendor Tier” and “Vendor Category.” This section
+outlines the configuration process for creating and managing workflows within OneTrust, as determined by the
+details mentioned in Section 4.2.
+
+[PDF_BLOCK b3]
+Each workflow governs the automation of specific vendor management activities such as onboarding, assessment,
+renewal, and offboarding. These workflows ensure that third parties are appropriately categorized and routed
+through the correct due diligence process.
+
+[PDF_BLOCK b4]
+To create a new workflow in OneTrust, follow the steps below:
+
+[PDF_BLOCK b5]
+1.
+Click on the “Workflow” section in the left navigation panel.
+
+[PDF_BLOCK b6]
+2.
+Click on the “View” button under the “Vendor Workflows” tile.
+
+[PDF_BLOCK b7]
+3.
+Click on “Default Onboarding Workflow” (a new workflow can also be created directly).
+
+[PDF_BLOCK b8]
+4.
+Click on the “Clone” button located in the top-right corner of the screen.
+
+[PDF_BLOCK b9]
+5.
+Enter the workflow name as “CD_Onboarding_Workflow.”
+
+[PDF_BLOCK b10]
+6.
+Click “Clone” to finalize.
+
+[PDF_BLOCK b11]
+Proprietary and Confidential
+32
+
+[PDF_BLOCK b1]
+Cloning an existing workflow (or creating a new one) will generate a draft version within the Vendor Workflow page.
+This draft can then be customized further to match the expected workflow design and requirements.
+
+[PDF_BLOCK b2]
+“”
+
+[PDF_BLOCK b3]
+Once the new workflow is created, it will appear under the Vendor Workflows menu. To configure it, open the
+workflow and modify its stages as required.
+
+[PDF_BLOCK b4]
+Current stages:
+
+[PDF_BLOCK b5]
+Proprietary and Confidential
+33
+
+[PDF_BLOCK b1]
+Follow the steps below to update the stages for the onboarding workflow:
+
+[PDF_BLOCK b2]
+
+Delete any unnecessary stages using the delete icon on the stage name tile.
+
+[PDF_BLOCK b3]
+
+Rename “Stage 1” to “New Third Party” using the edit option in the Stage Details tab.
+
+[PDF_BLOCK b4]
+
+Assign the “Badge Color” as “New.”
+
+[PDF_BLOCK b5]
+
+Retain the Live stage as the final stage.
+
+[PDF_BLOCK b6]
+This configuration ensures that the onboarding workflow includes the necessary entry and exit points to handle
+vendor initiation and post-assessment activation within OneTrust.
+
+[PDF_BLOCK b7]
+Workflow Customization:
+
+[PDF_BLOCK b8]
+The above setup represents the basic structure of the onboarding workflow. The same approach can be followed to
+
+[PDF_BLOCK b9]
+Proprietary and Confidential
+34
+
+[PDF_BLOCK b1]
+configure or edit stages for other workflows, such as Tier 1, Tier 2, and Tier 3 workflows.
+
+[PDF_BLOCK b2]
+Once stages are defined, additional automation rules and triggers are added within the workflow tabs. These rules
+control actions such as:
+
+[PDF_BLOCK b3]
+
+Sending notifications.
+
+[PDF_BLOCK b4]
+
+Launching due diligence questionnaires.
+
+[PDF_BLOCK b5]
+
+Advancing workflow stages automatically based on responses.
+
+[PDF_BLOCK b6]
+
+Changing workflow paths (for reassessments or renewals).
+
+[PDF_BLOCK b7]
+This stage-wise automation ensures smooth progression of vendors through their respective assessment
+processes.
+
+[PDF_BLOCK b8]
+Workflow Dependencies and Publishing:
+
+[PDF_BLOCK b9]
+Before adding rules to the onboarding workflow, all other workflows (for Tier 1, Tier 2, and Tier 3 third parties) must
+be developed and finalized. This is because the onboarding workflow relies on these workflows for routing vendors
+to the correct due diligence stream.
+
+[PDF_BLOCK b10]
+Therefore, it is essential to first complete and publish the Tier-specific workflows before assigning them to the
+onboarding workflow configuration.
+
+[PDF_BLOCK b11]
+Once all workflows are created and validated, they can be viewed in the Vendor Workflows list.
+
+[PDF_BLOCK b12]
+Note: A workflow should only be published after all rules, triggers, and automation logic have been configured and
+validated. Publishing prematurely may lead to incomplete routing or broken dependencies within the automation.
+
+[PDF_BLOCK b13]
+Proprietary and Confidential
+35
+
+[PDF_BLOCK b1]
+7. Appendix A
+
+[PDF_BLOCK b2]
+This appendix covers the details of the rules that are created and added in the workflows and in every stage.
+
+[PDF_BLOCK b3]
+SR. NO.
+RULE NAME
+PLACE
+DESCRIPTION
+RULE
+
+[PDF_BLOCK b4]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b5]
+WR.RP.1
+RP_R_Push to Next
+Workflow:
+CD_Revenue
+Partners Workflow
+
+[PDF_BLOCK b6]
+Condition:
+
+[PDF_BLOCK b7]
+To push the third-
+party to the next
+stage in Revenue
+Partners
+Workflow
+
+[PDF_BLOCK b8]
+Attribute: Vendor Category
+
+[PDF_BLOCK b9]
+Stage: Initiated
+
+[PDF_BLOCK b10]
+Contains Any: Revenue Partner
+
+[PDF_BLOCK b11]
+AND
+
+[PDF_BLOCK b12]
+Trigger:
+RP_T_Push to Next
+
+[PDF_BLOCK b13]
+Attribute: Vendor Category
+
+[PDF_BLOCK b14]
+Trigger Type:
+
+[PDF_BLOCK b15]
+Does not contain: Tier 3
+
+[PDF_BLOCK b16]
+Vendor Created
+
+[PDF_BLOCK b17]
+Actions:
+
+[PDF_BLOCK b18]
+Advance to stage
+
+[PDF_BLOCK b19]
+Stage: Launching RevPart
+
+[PDF_BLOCK b20]
+Rule Type: Stage Rule
+
+[PDF_BLOCK b21]
+WR.RP.2
+Send RevPart
+Questionnaire
+
+[PDF_BLOCK b22]
+Workflow:
+CD_Revenue
+Partners Workflow
+
+[PDF_BLOCK b23]
+Condition:
+
+[PDF_BLOCK b24]
+To launch third-
+party due
+diligence
+assessment for
+the third-party
+
+[PDF_BLOCK b25]
+Attribute: Vendor Category
+
+[PDF_BLOCK b26]
+Stage: Launching
+RevPart
+
+[PDF_BLOCK b27]
+Contains Any: Revenue Partner
+
+[PDF_BLOCK b28]
+AND
+
+[PDF_BLOCK b29]
+Attribute: Vendor Tier
+
+[PDF_BLOCK b30]
+Does not contain: Tier 3
+
+[PDF_BLOCK b31]
+Actions:
+
+[PDF_BLOCK b32]
+Launch Assessment
+
+[PDF_BLOCK b33]
+Template:
+
+[PDF_BLOCK b34]
+Due Diligence Questionnaire T1-2 v1
+
+[PDF_BLOCK b35]
+Approver:
+
+[PDF_BLOCK b36]
+TPRM_Vendor Risk Management
+Team
+
+[PDF_BLOCK b37]
+Proprietary and Confidential
+36
+
+[PDF_BLOCK b1]
+Respondent:
+
+[PDF_BLOCK b2]
+Primary Vendor Contact
+
+[PDF_BLOCK b3]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b4]
+WR.RP.3
+RP_R_Assessment
+Approved
+
+[PDF_BLOCK b5]
+Workflow:
+CD_Revenue
+Partners Workflow
+
+[PDF_BLOCK b6]
+Condition:
+
+[PDF_BLOCK b7]
+To move the third
+party to the next
+stage when the
+third-party is
+approved.
+
+[PDF_BLOCK b8]
+Assessment stage – By template:
+Completed
+
+[PDF_BLOCK b9]
+Stage: Launching
+RevPart
+
+[PDF_BLOCK b10]
+AND
+
+[PDF_BLOCK b11]
+Template name: Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b12]
+Trigger:
+RP_T_Assessment
+Approved
+
+[PDF_BLOCK b13]
+Actions:
+
+[PDF_BLOCK b14]
+Advance to stage
+
+[PDF_BLOCK b15]
+Trigger Type:
+Approved
+
+[PDF_BLOCK b16]
+Stage:
+
+[PDF_BLOCK b17]
+Live
+
+[PDF_BLOCK b18]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b19]
+PWR.RP.4
+RP_R_Assessment
+Rejected
+
+[PDF_BLOCK b20]
+Workflow:
+CD_Revenue
+Partners Workflow
+
+[PDF_BLOCK b21]
+Condition:
+
+[PDF_BLOCK b22]
+To move the
+rejected third-
+party to the
+appropriate stage
+Review Reject
+RevPart
+
+[PDF_BLOCK b23]
+Stage: Launching
+RevPart
+
+[PDF_BLOCK b24]
+Assessment stage – By template:
+Completed
+
+[PDF_BLOCK b25]
+AND
+
+[PDF_BLOCK b26]
+Trigger:
+RP_T_Assessment
+Rejected
+
+[PDF_BLOCK b27]
+Template name: Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b28]
+Actions:
+
+[PDF_BLOCK b29]
+Trigger Type:
+Rejected
+
+[PDF_BLOCK b30]
+Advance to stage
+
+[PDF_BLOCK b31]
+Stage:
+
+[PDF_BLOCK b32]
+Review Reject RevPart
+
+[PDF_BLOCK b33]
+Rule Type: Stage Rule
+
+[PDF_BLOCK b34]
+WR.RP.5
+Notify RevPart Reject
+Workflow:
+CD_Revenue
+Partners Workflow
+
+[PDF_BLOCK b35]
+Condition:
+
+[PDF_BLOCK b36]
+To notify the
+respective
+internal users of
+the rejection of
+the third-party
+
+[PDF_BLOCK b37]
+Stage: Review
+Reject RevPart
+
+[PDF_BLOCK b38]
+Attribute: Vendor Category
+Contains: Revenue Partner
+
+[PDF_BLOCK b39]
+Actions:
+
+[PDF_BLOCK b40]
+Proprietary and Confidential
+37
+
+[PDF_BLOCK b1]
+Send Notification
+
+[PDF_BLOCK b2]
+AND
+
+[PDF_BLOCK b3]
+Create Task
+Assignee: Business Owner
+Collaborator: TPRM_Vendor Risk
+Management Team
+Deadline 14 Days
+
+[PDF_BLOCK b4]
+Rule Type: Stage Rule
+
+[PDF_BLOCK b5]
+[REDACTED: GPE]
+Notify RevPart Approval
+Workflow:
+CD_Revenue
+Partners Workflow
+
+[PDF_BLOCK b6]
+Condition:
+
+[PDF_BLOCK b7]
+To notify the
+respective
+internal users of
+the approval of
+the third-party
+
+[PDF_BLOCK b8]
+Stage: Live
+
+[PDF_BLOCK b9]
+Attribute: Vendor Category
+Contains: Revenue Partner
+
+[PDF_BLOCK b10]
+Actions:
+
+[PDF_BLOCK b11]
+Send Notification
+
+[PDF_BLOCK b12]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b13]
+WR.T3.1
+T3_R_Push to Next
+Workflow:
+CD_Tier3
+Workflow
+
+[PDF_BLOCK b14]
+To push the third-
+party to the next
+stage in Tier 3
+Workflow
+
+[PDF_BLOCK b15]
+Condition:
+
+[PDF_BLOCK b16]
+Attribute: Vendor Category
+
+[PDF_BLOCK b17]
+Stage: Initiated
+
+[PDF_BLOCK b18]
+Contains Any: ALL categories
+
+[PDF_BLOCK b19]
+Actions:
+
+[PDF_BLOCK b20]
+Trigger:
+T3_T_Push to Next
+
+[PDF_BLOCK b21]
+Advance to stage
+
+[PDF_BLOCK b22]
+Trigger Type:
+
+[PDF_BLOCK b23]
+Stage: Launching Tier3
+
+[PDF_BLOCK b24]
+Vendor Created
+
+[PDF_BLOCK b25]
+Rule Type: Stage Rule
+
+[PDF_BLOCK b26]
+WR.T3.2
+Send Tier3 Questionnaire
+Workflow:
+CD_Tier3
+Workflow
+
+[PDF_BLOCK b27]
+Condition:
+
+[PDF_BLOCK b28]
+To launch third-
+party due
+diligence
+assessment for
+the third-party
+
+[PDF_BLOCK b29]
+Attribute: Vendor Tier
+
+[PDF_BLOCK b30]
+Stage: Launching
+Tier3
+
+[PDF_BLOCK b31]
+Contains: Tier 3
+
+[PDF_BLOCK b32]
+Actions:
+
+[PDF_BLOCK b33]
+Launch Assessment
+
+[PDF_BLOCK b34]
+Template:
+
+[PDF_BLOCK b35]
+Due Diligence Questionnaire T3 v1
+
+[PDF_BLOCK b36]
+Approver:
+
+[PDF_BLOCK b37]
+Proprietary and Confidential
+38
+
+[PDF_BLOCK b1]
+TPRM_Vendor Risk Management
+Team
+
+[PDF_BLOCK b2]
+Respondent:
+
+[PDF_BLOCK b3]
+Primary Vendor Contact
+
+[PDF_BLOCK b4]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b5]
+WR.T3.3
+T3_R_Assessment Auto-
+approve
+
+[PDF_BLOCK b6]
+Workflow:
+CD_Tier3
+Workflow
+
+[PDF_BLOCK b7]
+Condition:
+
+[PDF_BLOCK b8]
+To move the third
+party to the next
+stage when the
+third-party is
+approved.
+
+[PDF_BLOCK b9]
+Assessment stage – By template:
+Completed
+
+[PDF_BLOCK b10]
+Stage: Launching
+Tier3
+
+[PDF_BLOCK b11]
+AND
+
+[PDF_BLOCK b12]
+Template name: Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b13]
+Trigger:
+T3_T_Assessment
+Auto-approve
+
+[PDF_BLOCK b14]
+Actions:
+Advance to stage
+
+[PDF_BLOCK b15]
+Stage:
+
+[PDF_BLOCK b16]
+Live
+
+[PDF_BLOCK b17]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b18]
+WR.T3.4
+T3_R_Assessment
+Rejected
+
+[PDF_BLOCK b19]
+Workflow:
+CD_Tier3
+Workflow
+
+[PDF_BLOCK b20]
+Condition:
+
+[PDF_BLOCK b21]
+To move the
+rejected third-
+party to the
+Review Reject
+Tier 3 stage.
+
+[PDF_BLOCK b22]
+Stage: Launching
+Tier3
+
+[PDF_BLOCK b23]
+Assessment stage – By template:
+Completed
+
+[PDF_BLOCK b24]
+AND
+
+[PDF_BLOCK b25]
+Trigger:
+T3_T_Assessment
+Rejected
+
+[PDF_BLOCK b26]
+Template name: Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b27]
+Actions:
+
+[PDF_BLOCK b28]
+Advance to stage
+
+[PDF_BLOCK b29]
+Stage:
+
+[PDF_BLOCK b30]
+Review Reject Tier3
+
+[PDF_BLOCK b31]
+Rule Type: Stage Rule
+
+[PDF_BLOCK b32]
+WR.T3.5
+Notify Tier3 Reject
+Workflow:
+CD_Tier3
+Workflow
+
+[PDF_BLOCK b33]
+Condition:
+
+[PDF_BLOCK b34]
+To notify the
+respective
+internal users of
+the rejection of
+the third-party
+
+[PDF_BLOCK b35]
+Stage: Review
+Reject Tier3
+
+[PDF_BLOCK b36]
+Attribute: Vendor Tier
+Contains: Tier 3
+
+[PDF_BLOCK b37]
+Actions:
+
+[PDF_BLOCK b38]
+Proprietary and Confidential
+39
+
+[PDF_BLOCK b1]
+Send Notification
+
+[PDF_BLOCK b2]
+AND
+
+[PDF_BLOCK b3]
+Create Task
+Assignee: Business Owner
+Collaborator: TPRM_Vendor Risk
+Management Team
+Deadline 14 Days
+
+[PDF_BLOCK b4]
+Rule Type: Stage Rule
+
+[PDF_BLOCK b5]
+WR.T3.6
+Notify Tier3 Approval
+Workflow:
+CD_Tier3
+Workflow
+
+[PDF_BLOCK b6]
+Condition:
+
+[PDF_BLOCK b7]
+To notify the
+respective
+internal users of
+the approval of
+the third-party
+
+[PDF_BLOCK b8]
+Stage: Live
+
+[PDF_BLOCK b9]
+Attribute: Vendor Tier
+Contains: Tier 3
+
+[PDF_BLOCK b10]
+Actions:
+
+[PDF_BLOCK b11]
+Send Notification
+
+[PDF_BLOCK b12]
+Frequency:
+Daily
+
+[PDF_BLOCK b13]
+AR.T1.1
+Tier 1 Reassessment rule
+Rule Group:
+TPRM
+Reassessment
+Rules
+
+[PDF_BLOCK b14]
+This is the
+automation rules
+in the
+“Automation
+Rules” section in
+OneTrust TPRM.
+
+[PDF_BLOCK b15]
+Conditions:
+Last Assessment Completion Date –
+By Template
+
+[PDF_BLOCK b16]
+Operator:
+Greater than equal to
+
+[PDF_BLOCK b17]
+Rule Type:
+Vendor
+
+[PDF_BLOCK b18]
+Days: 275
+
+[PDF_BLOCK b19]
+This rule will send
+reassessments to
+Tier 1 third parties
+on an annual
+basis.
+
+[PDF_BLOCK b20]
+Equal to: Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b21]
+AND
+
+[PDF_BLOCK b22]
+Condition:
+Attribute: Vendor Tier
+Contains any: Tier 1
+
+[PDF_BLOCK b23]
+Actions:
+Send vendor assessment
+
+[PDF_BLOCK b24]
+Copy Previous Assessment = Yes
+
+[PDF_BLOCK b25]
+Please note: The
+reassessment
+rule will be
+executed 90 days
+prior to
+completion of one
+year from the
+previous
+assessment
+completion date.
+
+[PDF_BLOCK b26]
+Template:
+Due Diligence Questionnaire T1-2 v1
+
+[PDF_BLOCK b27]
+Select respondents: User type
+attributes : Primary Vendor Contact
+
+[PDF_BLOCK b28]
+AND
+
+[PDF_BLOCK b29]
+Action:
+
+[PDF_BLOCK b30]
+Please note: To
+set the frequency
+option enabled for
+the automation
+rule Go to Global
+Settings >
+Automation rules
+
+[PDF_BLOCK b31]
+Send vendor email
+
+[PDF_BLOCK b32]
+> Set automation
+run frequency.
+
+[PDF_BLOCK b33]
+Email template:
+
+[PDF_BLOCK b34]
+Proprietary and Confidential
+40
+
+[PDF_BLOCK b1]
+Vendor Upcoming Re-Assessment
+
+[PDF_BLOCK b2]
+Recipients:
+User type attributes: Business
+Owners
+
+[PDF_BLOCK b3]
+Frequency:
+Daily
+
+[PDF_BLOCK b4]
+AR.T2.1
+Tier 2 Reassessment rule
+Rule Group:
+TPRM
+Reassessment
+Rules
+
+[PDF_BLOCK b5]
+This is the
+automation rules
+in the
+“Automation
+Rules” section in
+OneTrust TPRM.
+
+[PDF_BLOCK b6]
+Conditions:
+Last Assessment Completion Date –
+By Template
+
+[PDF_BLOCK b7]
+Operator:
+Greater than equal to
+
+[PDF_BLOCK b8]
+Rule Type:
+Vendor
+
+[PDF_BLOCK b9]
+Days: 640
+
+[PDF_BLOCK b10]
+This rule will send
+reassessments to
+Tier 2 third parties
+in a period of two
+years.
+
+[PDF_BLOCK b11]
+Equal to: Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b12]
+AND
+
+[PDF_BLOCK b13]
+Condition:
+Attribute: Vendor Tier
+Contains any: Tier 2
+
+[PDF_BLOCK b14]
+Actions:
+Send vendor assessment
+
+[PDF_BLOCK b15]
+Please note: The
+reassessment
+rule will be
+executed 90 days
+prior to
+completion of two
+years from the
+previous
+assessment
+completion date.
+
+[PDF_BLOCK b16]
+Copy Previous Assessment = Yes
+
+[PDF_BLOCK b17]
+Template:
+Due Diligence Questionnaire T1-2 v1
+
+[PDF_BLOCK b18]
+Select respondents: User type
+attributes : Primary Vendor Contact
+
+[PDF_BLOCK b19]
+AND
+
+[PDF_BLOCK b20]
+Action:
+
+[PDF_BLOCK b21]
+Send vendor email
+
+[PDF_BLOCK b22]
+Email template:
+Vendor Upcoming Re-Assessment
+
+[PDF_BLOCK b23]
+Recipients:
+User type attributes: Business
+Owners
+
+[PDF_BLOCK b24]
+Frequency:
+Daily
+
+[PDF_BLOCK b25]
+AR.T3.1
+Tier 3 Reassessment rule
+Rule Group:
+TPRM
+Reassessment
+Rules
+
+[PDF_BLOCK b26]
+This is the
+automation rules
+in the
+“Automation
+Rules” section in
+OneTrust TPRM.
+
+[PDF_BLOCK b27]
+Conditions:
+Last Assessment Completion Date –
+By Template
+
+[PDF_BLOCK b28]
+Operator:
+Greater than equal to
+
+[PDF_BLOCK b29]
+Rule Type:
+Vendor
+
+[PDF_BLOCK b30]
+Days: 640
+
+[PDF_BLOCK b31]
+This rule will send
+reassessments to
+Tier 3 third parties
+in a period of two
+years.
+
+[PDF_BLOCK b32]
+Proprietary and Confidential
+41
+
+[PDF_BLOCK b1]
+Equal to: Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b2]
+AND
+
+[PDF_BLOCK b3]
+Condition:
+Attribute: Vendor Tier
+Contains any: Tier 3
+
+[PDF_BLOCK b4]
+Please note: The
+reassessment
+rule will be
+executed 90 days
+prior to
+completion of two
+years from the
+previous
+assessment
+completion date.
+
+[PDF_BLOCK b5]
+Actions:
+Send vendor assessment
+
+[PDF_BLOCK b6]
+Copy Previous Assessment = Yes
+
+[PDF_BLOCK b7]
+Template:
+Due Diligence Questionnaire T3 v1
+
+[PDF_BLOCK b8]
+Select respondents: User type
+attributes : Primary Vendor Contact
+
+[PDF_BLOCK b9]
+AND
+
+[PDF_BLOCK b10]
+Action:
+
+[PDF_BLOCK b11]
+Send vendor email
+
+[PDF_BLOCK b12]
+Email template:
+Vendor Upcoming Re-Assessment
+
+[PDF_BLOCK b13]
+Recipients:
+User type attributes: Business
+Owners
+
+[PDF_BLOCK b14]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b15]
+WR.MP.1
+MP_R_Push to Next
+Workflow:
+CD_Marketing
+Partners Workflow
+
+[PDF_BLOCK b16]
+Condition:
+
+[PDF_BLOCK b17]
+To push the third-
+party to the next
+stage in
+Marketing
+Partners
+Workflow
+
+[PDF_BLOCK b18]
+Attribute: Vendor Category
+
+[PDF_BLOCK b19]
+Stage: Initiated
+
+[PDF_BLOCK b20]
+Contains Any: Marketing Partner
+
+[PDF_BLOCK b21]
+AND
+
+[PDF_BLOCK b22]
+Attribute: Vendor Tier
+
+[PDF_BLOCK b23]
+Trigger:
+MP_T_Push to
+Next
+
+[PDF_BLOCK b24]
+Does not contain: Tier 3
+
+[PDF_BLOCK b25]
+Trigger Type:
+
+[PDF_BLOCK b26]
+Vendor Created
+
+[PDF_BLOCK b27]
+Actions:
+
+[PDF_BLOCK b28]
+Advance to stage
+
+[PDF_BLOCK b29]
+Stage: Launching MarPart
+
+[PDF_BLOCK b30]
+Rule Type: Stage Rule
+
+[PDF_BLOCK b31]
+WR.MP.2
+Send MarPart
+Questionnaire
+
+[PDF_BLOCK b32]
+Workflow:
+CD_Marketing
+Partners Workflow
+
+[PDF_BLOCK b33]
+Condition:
+
+[PDF_BLOCK b34]
+To launch third-
+party due
+diligence
+assessment for
+the third-party
+
+[PDF_BLOCK b35]
+Proprietary and Confidential
+42
+
+[PDF_BLOCK b1]
+Attribute: Vendor Category
+
+[PDF_BLOCK b2]
+Contains Any: Marketing Partner
+
+[PDF_BLOCK b3]
+Stage: Launching
+MarPart
+
+[PDF_BLOCK b4]
+AND
+
+[PDF_BLOCK b5]
+Attribute: Vendor Tier
+
+[PDF_BLOCK b6]
+Does not contain: Tier 3
+
+[PDF_BLOCK b7]
+Actions:
+
+[PDF_BLOCK b8]
+Launch Assessment
+
+[PDF_BLOCK b9]
+Template:
+
+[PDF_BLOCK b10]
+Due Diligence Questionnaire T1-2 v1
+
+[PDF_BLOCK b11]
+Approver:
+
+[PDF_BLOCK b12]
+TPRM_Vendor Risk Management
+Team
+
+[PDF_BLOCK b13]
+Respondent:
+
+[PDF_BLOCK b14]
+Primary Vendor Contact
+
+[PDF_BLOCK b15]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b16]
+WR.MP.3
+MP_R_Assessment
+Approved
+
+[PDF_BLOCK b17]
+Workflow:
+CD_Marketing
+Partners Workflow
+
+[PDF_BLOCK b18]
+Condition:
+
+[PDF_BLOCK b19]
+To move the third
+party to the next
+stage when the
+third-party is
+approved.
+
+[PDF_BLOCK b20]
+Assessment stage – By template:
+Completed
+
+[PDF_BLOCK b21]
+Stage: Launching
+MarPart
+
+[PDF_BLOCK b22]
+AND
+
+[PDF_BLOCK b23]
+Template name: Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b24]
+Trigger:
+MP_T_Assessment
+Approved
+
+[PDF_BLOCK b25]
+Actions:
+
+[PDF_BLOCK b26]
+Advance to stage
+
+[PDF_BLOCK b27]
+Trigger Type:
+Approved
+
+[PDF_BLOCK b28]
+Stage:
+
+[PDF_BLOCK b29]
+Live
+
+[PDF_BLOCK b30]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b31]
+WR.MP.4
+MP_R_Assessment
+Rejected
+
+[PDF_BLOCK b32]
+Workflow:
+CD_Marketing
+Partners Workflow
+
+[PDF_BLOCK b33]
+Condition:
+
+[PDF_BLOCK b34]
+To move the
+rejected third-
+party to the
+appropriate stage
+Review Reject
+MarPart
+
+[PDF_BLOCK b35]
+Stage: Launching
+MarPart
+
+[PDF_BLOCK b36]
+Assessment stage – By template:
+Completed
+
+[PDF_BLOCK b37]
+AND
+
+[PDF_BLOCK b38]
+Proprietary and Confidential
+43
+
+[PDF_BLOCK b1]
+Template name: Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b2]
+Trigger:
+MP_T_Assessment
+Rejected
+
+[PDF_BLOCK b3]
+Actions:
+
+[PDF_BLOCK b4]
+Trigger Type:
+Rejected
+
+[PDF_BLOCK b5]
+Advance to stage
+
+[PDF_BLOCK b6]
+Stage:
+
+[PDF_BLOCK b7]
+Review Reject MarPart
+
+[PDF_BLOCK b8]
+Rule Type: Stage Rule
+
+[PDF_BLOCK b9]
+WR.MP.5
+Notify MarPart Reject
+Workflow:
+CD_Marketing
+Partners Workflow
+
+[PDF_BLOCK b10]
+Condition:
+
+[PDF_BLOCK b11]
+To notify the
+respective
+internal users of
+the rejection of
+the third-party
+
+[PDF_BLOCK b12]
+Stage: Review
+Reject MarPart
+
+[PDF_BLOCK b13]
+Attribute: Vendor Category
+Contains: Marketing Partner
+
+[PDF_BLOCK b14]
+Actions:
+
+[PDF_BLOCK b15]
+Send Notification
+
+[PDF_BLOCK b16]
+AND
+
+[PDF_BLOCK b17]
+Create Task
+Assignee: Business Owner
+Collaborator: TPRM_Vendor Risk
+Management Team
+Deadline 14 Days
+
+[PDF_BLOCK b18]
+Rule Type: Stage Rule
+
+[PDF_BLOCK b19]
+[REDACTED: GPE]
+Notify MarPart Approval
+Workflow:
+CD_Marketing
+Partners Workflow
+
+[PDF_BLOCK b20]
+Condition:
+
+[PDF_BLOCK b21]
+To notify the
+respective
+internal users of
+the approval of
+the third-party
+
+[PDF_BLOCK b22]
+Stage: Live
+
+[PDF_BLOCK b23]
+Attribute: Vendor Category
+Contains: Marketing Partner
+
+[PDF_BLOCK b24]
+Actions:
+
+[PDF_BLOCK b25]
+Send Notification
+
+[PDF_BLOCK b26]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b27]
+WR.IV.1
+IV_R_Push to Next
+Workflow:
+CD_International
+Vendors Workflow
+
+[PDF_BLOCK b28]
+Condition:
+
+[PDF_BLOCK b29]
+To push the third-
+party to the next
+stage in
+International
+Vendors
+Workflow
+
+[PDF_BLOCK b30]
+Attribute: Vendor Category
+
+[PDF_BLOCK b31]
+Stage: Initiated
+
+[PDF_BLOCK b32]
+Contains Any: International Vendors
+
+[PDF_BLOCK b33]
+AND
+
+[PDF_BLOCK b34]
+Trigger: IV_T_Push
+to Next
+
+[PDF_BLOCK b35]
+Attribute: Vendor Tier
+
+[PDF_BLOCK b36]
+Trigger Type:
+
+[PDF_BLOCK b37]
+Does not contain: Tier 3
+
+[PDF_BLOCK b38]
+Proprietary and Confidential
+44
+
+[PDF_BLOCK b1]
+Vendor Created
+
+[PDF_BLOCK b2]
+Actions:
+
+[PDF_BLOCK b3]
+Advance to stage
+
+[PDF_BLOCK b4]
+Stage: Launching IntVen
+
+[PDF_BLOCK b5]
+Rule Type: Stage Rule
+
+[PDF_BLOCK b6]
+WR.IV.2
+Send IntVen Questionnaire
+Workflow:
+CD_International
+Vendors Workflow
+
+[PDF_BLOCK b7]
+Condition:
+
+[PDF_BLOCK b8]
+To launch third-
+party due
+diligence
+assessment for
+the third-party
+
+[PDF_BLOCK b9]
+Attribute: Vendor Category
+
+[PDF_BLOCK b10]
+Stage: Launching
+IntVen
+
+[PDF_BLOCK b11]
+Contains Any: International Vendors
+
+[PDF_BLOCK b12]
+AND
+
+[PDF_BLOCK b13]
+Attribute: Vendor Tier
+
+[PDF_BLOCK b14]
+Does not contain: Tier 3
+
+[PDF_BLOCK b15]
+Actions:
+
+[PDF_BLOCK b16]
+Launch Assessment
+
+[PDF_BLOCK b17]
+Template:
+
+[PDF_BLOCK b18]
+Due Diligence Questionnaire T1-2 v1
+
+[PDF_BLOCK b19]
+Approver:
+
+[PDF_BLOCK b20]
+TPRM_Vendor Risk Management
+Team
+
+[PDF_BLOCK b21]
+Respondent:
+
+[PDF_BLOCK b22]
+Primary Vendor Contact
+
+[PDF_BLOCK b23]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b24]
+WR.IV.3
+IV_R_Assessment
+Approved
+
+[PDF_BLOCK b25]
+Workflow:
+CD_International
+Vendors Workflow
+
+[PDF_BLOCK b26]
+Condition:
+
+[PDF_BLOCK b27]
+To move the third
+party to the next
+stage when the
+third-party is
+approved.
+
+[PDF_BLOCK b28]
+Assessment stage – By template:
+Completed
+
+[PDF_BLOCK b29]
+Stage: Launching
+IntVen
+
+[PDF_BLOCK b30]
+AND
+
+[PDF_BLOCK b31]
+Template name: Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b32]
+Trigger:
+IV_T_Assessment
+Approved
+
+[PDF_BLOCK b33]
+Actions:
+
+[PDF_BLOCK b34]
+Advance to stage
+
+[PDF_BLOCK b35]
+Trigger Type:
+Approved
+
+[PDF_BLOCK b36]
+Proprietary and Confidential
+45
+
+[PDF_BLOCK b1]
+Stage:
+
+[PDF_BLOCK b2]
+Live
+
+[PDF_BLOCK b3]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b4]
+WR.IV.4
+IV_R_Assessment
+Rejected
+
+[PDF_BLOCK b5]
+Workflow:
+CD_International
+Vendors Workflow
+
+[PDF_BLOCK b6]
+Condition:
+
+[PDF_BLOCK b7]
+To move the
+rejected third-
+party to the
+appropriate stage
+Review Reject
+IntVen
+
+[PDF_BLOCK b8]
+Stage: Launching
+IntVen
+
+[PDF_BLOCK b9]
+Assessment stage – By template:
+Completed
+
+[PDF_BLOCK b10]
+AND
+
+[PDF_BLOCK b11]
+Trigger:
+IV_T_Assessment
+Rejected
+
+[PDF_BLOCK b12]
+Template name: Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b13]
+Actions:
+
+[PDF_BLOCK b14]
+Trigger Type:
+Rejected
+
+[PDF_BLOCK b15]
+Advance to stage
+
+[PDF_BLOCK b16]
+Stage:
+
+[PDF_BLOCK b17]
+Review Reject IntVen
+
+[PDF_BLOCK b18]
+Rule Type: Stage Rule
+
+[PDF_BLOCK b19]
+WR.IV.5
+Notify IntVen Reject
+Workflow:
+CD_International
+Vendors Workflow
+
+[PDF_BLOCK b20]
+Condition:
+
+[PDF_BLOCK b21]
+To notify the
+respective
+internal users of
+the rejection of
+the third-party
+
+[PDF_BLOCK b22]
+Stage: Review
+Reject IntVen
+
+[PDF_BLOCK b23]
+Attribute: Vendor Category
+Contains: International Vendors
+
+[PDF_BLOCK b24]
+Actions:
+
+[PDF_BLOCK b25]
+Send Notification
+
+[PDF_BLOCK b26]
+AND
+
+[PDF_BLOCK b27]
+Create Task
+Assignee: Business Owner
+Collaborator: TPRM_Vendor Risk
+Management Team
+Deadline 14 Days
+
+[PDF_BLOCK b28]
+Rule Type: Stage Rule
+
+[PDF_BLOCK b29]
+WR.IV.6
+Notify IntVen Approval
+Workflow:
+CD_International
+Vendors Workflow
+
+[PDF_BLOCK b30]
+Condition:
+
+[PDF_BLOCK b31]
+To notify the
+respective
+internal users of
+the approval of
+the third-party
+
+[PDF_BLOCK b32]
+Stage: Live
+
+[PDF_BLOCK b33]
+Attribute: Vendor Category
+Contains: International Vendors
+
+[PDF_BLOCK b34]
+Actions:
+
+[PDF_BLOCK b35]
+Send Notification
+
+[PDF_BLOCK b36]
+Proprietary and Confidential
+46
+
+[PDF_BLOCK b1]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b2]
+WR.SP.1
+SP_R_Push to Next
+Workflow:
+CD_Service
+Providers
+Workflow
+
+[PDF_BLOCK b3]
+Condition:
+
+[PDF_BLOCK b4]
+To push the third-
+party to the next
+stage in Service
+Providers
+Workflow
+
+[PDF_BLOCK b5]
+Attribute: Vendor Category
+
+[PDF_BLOCK b6]
+Stage: Initiated
+
+[PDF_BLOCK b7]
+Contains Any: Service Provider and
+Vendor
+
+[PDF_BLOCK b8]
+AND
+
+[PDF_BLOCK b9]
+Trigger:
+SP_T_Push to Next
+
+[PDF_BLOCK b10]
+Attribute: Vendor Tier
+
+[PDF_BLOCK b11]
+Trigger Type:
+
+[PDF_BLOCK b12]
+Does not contain: Tier 3
+
+[PDF_BLOCK b13]
+Vendor Created
+
+[PDF_BLOCK b14]
+Actions:
+
+[PDF_BLOCK b15]
+Advance to stage
+
+[PDF_BLOCK b16]
+Stage: Launching ServPro
+
+[PDF_BLOCK b17]
+Rule Type: Stage Rule
+
+[PDF_BLOCK b18]
+WR.SP.2
+Send ServPro
+Questionnaire
+
+[PDF_BLOCK b19]
+Workflow:
+CD_Service
+Providers
+Workflow
+
+[PDF_BLOCK b20]
+Condition:
+
+[PDF_BLOCK b21]
+To launch third-
+party due
+diligence
+assessment for
+the third-party
+
+[PDF_BLOCK b22]
+Attribute: Vendor Category
+
+[PDF_BLOCK b23]
+Stage: Launching
+ServPro
+
+[PDF_BLOCK b24]
+Contains Any: Service Provider and
+Vendor
+
+[PDF_BLOCK b25]
+AND
+
+[PDF_BLOCK b26]
+Attribute: Vendor Tier
+
+[PDF_BLOCK b27]
+Does not contain: Tier 3
+
+[PDF_BLOCK b28]
+Actions:
+
+[PDF_BLOCK b29]
+Launch Assessment
+
+[PDF_BLOCK b30]
+Template:
+
+[PDF_BLOCK b31]
+Due Diligence Questionnaire T1-2 v1
+
+[PDF_BLOCK b32]
+Approver:
+
+[PDF_BLOCK b33]
+TPRM_Vendor Risk Management
+Team
+
+[PDF_BLOCK b34]
+Respondent:
+
+[PDF_BLOCK b35]
+Primary Vendor Contact
+
+[PDF_BLOCK b36]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b37]
+WR.SP.3
+SP_R_Assessment
+Approved
+
+[PDF_BLOCK b38]
+Workflow:
+CD_Service
+
+[PDF_BLOCK b39]
+To move the third
+party to the next
+
+[PDF_BLOCK b40]
+Proprietary and Confidential
+47
+
+[PDF_BLOCK b1]
+Condition:
+
+[PDF_BLOCK b2]
+Providers
+Workflow
+
+[PDF_BLOCK b3]
+stage when the
+third-party is
+approved.
+
+[PDF_BLOCK b4]
+Assessment stage – By template:
+Completed
+
+[PDF_BLOCK b5]
+AND
+
+[PDF_BLOCK b6]
+Stage: Launching
+ServPro
+
+[PDF_BLOCK b7]
+Template name: Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b8]
+Actions:
+
+[PDF_BLOCK b9]
+Trigger:
+SP_T_Assessment
+Approved
+
+[PDF_BLOCK b10]
+Advance to stage
+
+[PDF_BLOCK b11]
+Trigger Type:
+Approved
+
+[PDF_BLOCK b12]
+Stage:
+
+[PDF_BLOCK b13]
+Live
+
+[PDF_BLOCK b14]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b15]
+WR.SP.4
+SP_R_Assessment
+Rejected
+
+[PDF_BLOCK b16]
+Workflow:
+CD_Service
+Providers
+Workflow
+
+[PDF_BLOCK b17]
+Condition:
+
+[PDF_BLOCK b18]
+To move the
+rejected third-
+party to the
+appropriate stage
+Review Reject
+ServPro
+
+[PDF_BLOCK b19]
+Assessment stage – By template:
+Completed
+
+[PDF_BLOCK b20]
+Stage: Launching
+ServPro
+
+[PDF_BLOCK b21]
+AND
+
+[PDF_BLOCK b22]
+Template name: Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b23]
+Trigger:
+SP_T_Assessment
+Rejected
+
+[PDF_BLOCK b24]
+Actions:
+
+[PDF_BLOCK b25]
+Trigger Type:
+Rejected
+
+[PDF_BLOCK b26]
+Advance to stage
+
+[PDF_BLOCK b27]
+Stage:
+
+[PDF_BLOCK b28]
+Review Reject ServPro
+
+[PDF_BLOCK b29]
+Rule Type: Stage Rule
+
+[PDF_BLOCK b30]
+WR.SP.5
+Notify ServPro Reject
+Workflow:
+CD_Service
+Providers
+Workflow
+
+[PDF_BLOCK b31]
+Condition:
+
+[PDF_BLOCK b32]
+To notify the
+respective
+internal users of
+the rejection of
+the third-party
+
+[PDF_BLOCK b33]
+Stage: Review
+Reject ServPro
+
+[PDF_BLOCK b34]
+Attribute: Vendor Category
+Contains: Service Provider and
+Vendor
+
+[PDF_BLOCK b35]
+Actions:
+
+[PDF_BLOCK b36]
+Send Notification
+
+[PDF_BLOCK b37]
+AND
+
+[PDF_BLOCK b38]
+Create Task
+Assignee: Business Owner
+Collaborator: TPRM_Vendor Risk
+
+[PDF_BLOCK b39]
+Proprietary and Confidential
+48
+
+[PDF_BLOCK b1]
+Management Team
+Deadline 14 Days
+
+[PDF_BLOCK b2]
+Rule Type: Stage Rule
+
+[PDF_BLOCK b3]
+WR.SP.6
+Notify ServPro Approval
+Workflow:
+CD_Service
+Providers
+Workflow
+
+[PDF_BLOCK b4]
+Condition:
+
+[PDF_BLOCK b5]
+To notify the
+respective
+internal users of
+the approval of
+the third-party
+
+[PDF_BLOCK b6]
+Stage: Live
+
+[PDF_BLOCK b7]
+Attribute: Vendor Category
+Contains: Service Provider and
+Vendor
+
+[PDF_BLOCK b8]
+Actions:
+
+[PDF_BLOCK b9]
+Send Notification
+
+[PDF_BLOCK b10]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b11]
+WR.SV.1
+SV_R_Push to Next
+Workflow:
+CD_Staffing
+Vendors Workflow
+
+[PDF_BLOCK b12]
+Condition:
+
+[PDF_BLOCK b13]
+To push the third-
+party to the next
+stage in Staffing
+Vendors
+Workflow
+
+[PDF_BLOCK b14]
+Attribute: Vendor Category
+
+[PDF_BLOCK b15]
+Stage: Initiated
+
+[PDF_BLOCK b16]
+Contains Any: Staffing Vendor
+
+[PDF_BLOCK b17]
+AND
+
+[PDF_BLOCK b18]
+Trigger:
+SV_T_Push to Next
+
+[PDF_BLOCK b19]
+Attribute: Vendor Tier
+
+[PDF_BLOCK b20]
+Trigger Type:
+
+[PDF_BLOCK b21]
+Does not contain: Tier 3
+
+[PDF_BLOCK b22]
+Vendor Created
+
+[PDF_BLOCK b23]
+Actions:
+
+[PDF_BLOCK b24]
+Advance to stage
+
+[PDF_BLOCK b25]
+Stage: Launching StafVen
+
+[PDF_BLOCK b26]
+Rule Type: Stage Rule
+
+[PDF_BLOCK b27]
+WR.SV.2
+Send StafVen
+Questionnaire
+
+[PDF_BLOCK b28]
+Workflow:
+CD_Staffing
+Vendors Workflow
+
+[PDF_BLOCK b29]
+Condition:
+
+[PDF_BLOCK b30]
+To launch third-
+party due
+diligence
+assessment for
+the third-party
+
+[PDF_BLOCK b31]
+Attribute: Vendor Category
+
+[PDF_BLOCK b32]
+Stage: Launching
+StafVen
+
+[PDF_BLOCK b33]
+Contains Any: Staffing Vendor
+
+[PDF_BLOCK b34]
+AND
+
+[PDF_BLOCK b35]
+Attribute: Vendor Tier
+
+[PDF_BLOCK b36]
+Does not contain: Tier 3
+
+[PDF_BLOCK b37]
+Actions:
+
+[PDF_BLOCK b38]
+Launch Assessment
+
+[PDF_BLOCK b39]
+Proprietary and Confidential
+49
+
+[PDF_BLOCK b1]
+Template:
+
+[PDF_BLOCK b2]
+Due Diligence Questionnaire T1-2 v1
+
+[PDF_BLOCK b3]
+Approver:
+
+[PDF_BLOCK b4]
+TPRM_Vendor Risk Management
+Team
+
+[PDF_BLOCK b5]
+Respondent:
+
+[PDF_BLOCK b6]
+Primary Vendor Contact
+
+[PDF_BLOCK b7]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b8]
+WR.SV.3
+SV_R_Assessment
+Approved
+
+[PDF_BLOCK b9]
+Workflow:
+CD_Staffing
+Vendors Workflow
+
+[PDF_BLOCK b10]
+Condition:
+
+[PDF_BLOCK b11]
+To move the third
+party to the next
+stage when the
+third-party is
+approved.
+
+[PDF_BLOCK b12]
+Assessment stage – By template:
+Completed
+
+[PDF_BLOCK b13]
+Stage: Launching
+StafVen
+
+[PDF_BLOCK b14]
+AND
+
+[PDF_BLOCK b15]
+Template name: Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b16]
+Trigger:
+SV_T_Assessment
+Approved
+
+[PDF_BLOCK b17]
+AND
+
+[PDF_BLOCK b18]
+Trigger Type:
+Approved
+
+[PDF_BLOCK b19]
+Attribute: Vendor Category
+Contains Any: Staffing Vendor
+
+[PDF_BLOCK b20]
+Actions:
+
+[PDF_BLOCK b21]
+Advance to stage
+
+[PDF_BLOCK b22]
+Stage:
+
+[PDF_BLOCK b23]
+Live
+
+[PDF_BLOCK b24]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b25]
+WR.SV.4
+SV_R_Assessment
+Rejected
+
+[PDF_BLOCK b26]
+Workflow:
+CD_Staffing
+Vendors Workflow
+
+[PDF_BLOCK b27]
+Condition:
+
+[PDF_BLOCK b28]
+To move the
+rejected third-
+party to the
+appropriate stage
+Review Reject
+StafVen
+
+[PDF_BLOCK b29]
+Stage: Launching
+StafVen
+
+[PDF_BLOCK b30]
+Assessment stage – By template:
+Completed
+
+[PDF_BLOCK b31]
+AND
+
+[PDF_BLOCK b32]
+Trigger:
+SV_T_Assessment
+Rejected
+
+[PDF_BLOCK b33]
+Template name: Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b34]
+Trigger Type:
+Rejected
+
+[PDF_BLOCK b35]
+AND
+
+[PDF_BLOCK b36]
+Attribute: Vendor Category
+Contains Any: Staffing Vendor
+
+[PDF_BLOCK b37]
+Proprietary and Confidential
+50
+
+[PDF_BLOCK b1]
+Actions:
+
+[PDF_BLOCK b2]
+Advance to stage
+
+[PDF_BLOCK b3]
+Stage:
+
+[PDF_BLOCK b4]
+Review Reject StafVen
+
+[PDF_BLOCK b5]
+Rule Type: Stage Rule
+
+[PDF_BLOCK b6]
+WR.SV.5
+Notify StafVen Reject
+Workflow:
+CD_Staffing
+Vendors Workflow
+
+[PDF_BLOCK b7]
+Condition:
+
+[PDF_BLOCK b8]
+To notify the
+respective
+internal users of
+the rejection of
+the third-party
+
+[PDF_BLOCK b9]
+Stage: Review
+Reject StafVen
+
+[PDF_BLOCK b10]
+Attribute: Vendor Category
+Contains: Staffing Vendor
+
+[PDF_BLOCK b11]
+Actions:
+
+[PDF_BLOCK b12]
+Send Notification
+
+[PDF_BLOCK b13]
+AND
+
+[PDF_BLOCK b14]
+Create Task
+Assignee: Business Owner
+Collaborator: TPRM_Vendor Risk
+Management Team
+Deadline 14 Days
+
+[PDF_BLOCK b15]
+Rule Type: Stage Rule
+
+[PDF_BLOCK b16]
+WR.SV.6
+Notify StafVen Approval
+Workflow:
+CD_Staffing
+Vendors Workflow
+
+[PDF_BLOCK b17]
+Condition:
+
+[PDF_BLOCK b18]
+To notify the
+respective
+internal users of
+the approval of
+the third-party
+
+[PDF_BLOCK b19]
+Stage: Live
+
+[PDF_BLOCK b20]
+Attribute: Vendor Category
+Contains: Staffing Vendor
+
+[PDF_BLOCK b21]
+Actions:
+
+[PDF_BLOCK b22]
+Send Notification
+
+[PDF_BLOCK b23]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b24]
+WR.ON.1
+On_R_Assign RevPart
+Workflow:
+CD_Onboarding
+Workflow
+
+[PDF_BLOCK b25]
+To assign
+workflow for
+Revenue
+Partners.
+
+[PDF_BLOCK b26]
+Condition:
+
+[PDF_BLOCK b27]
+Stage: New Third
+Party
+
+[PDF_BLOCK b28]
+Attribute: Vendor Category
+Contains Any: Revenue Partner
+
+[PDF_BLOCK b29]
+AND
+
+[PDF_BLOCK b30]
+Attribute: Vendor Tier
+Contains Any: Tier 1, Tier 2
+
+[PDF_BLOCK b31]
+Trigger:
+On_T_Assign
+Workflow
+
+[PDF_BLOCK b32]
+Actions:
+
+[PDF_BLOCK b33]
+Change Workflow
+
+[PDF_BLOCK b34]
+Proprietary and Confidential
+51
+
+[PDF_BLOCK b1]
+Workflows: CD_Revenue Partners
+Workflow
+
+[PDF_BLOCK b2]
+Stage:
+
+[PDF_BLOCK b3]
+Launching RevPart
+
+[PDF_BLOCK b4]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b5]
+WR.ON.2
+On_R_Assign MarPart
+Workflow:
+CD_Onboarding
+Workflow
+
+[PDF_BLOCK b6]
+To assign
+workflow for
+Marketing
+Partners.
+
+[PDF_BLOCK b7]
+Condition:
+
+[PDF_BLOCK b8]
+Stage: New Third
+Party
+
+[PDF_BLOCK b9]
+Attribute: Vendor Category
+Contains Any: Marketing Partner
+
+[PDF_BLOCK b10]
+AND
+
+[PDF_BLOCK b11]
+Trigger:
+On_T_Assign
+Workflow
+
+[PDF_BLOCK b12]
+Attribute: Vendor Tier
+Contains Any: Tier 1, Tier 2
+
+[PDF_BLOCK b13]
+Actions:
+
+[PDF_BLOCK b14]
+Change Workflow
+
+[PDF_BLOCK b15]
+Workflows: CD_Marketing Partners
+Workflow
+
+[PDF_BLOCK b16]
+Stage:
+
+[PDF_BLOCK b17]
+Launching MarPart
+
+[PDF_BLOCK b18]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b19]
+WR.ON.3
+On_R_Assign IntVen
+Workflow:
+CD_Onboarding
+Workflow
+
+[PDF_BLOCK b20]
+To assign
+workflow for
+International
+Vendors.
+
+[PDF_BLOCK b21]
+Condition:
+
+[PDF_BLOCK b22]
+Stage: New Third
+Party
+
+[PDF_BLOCK b23]
+Attribute: Vendor Category
+Contains Any: International Vendor
+
+[PDF_BLOCK b24]
+AND
+
+[PDF_BLOCK b25]
+Trigger:
+On_T_Assign
+Workflow
+
+[PDF_BLOCK b26]
+Attribute: Vendor Tier
+Contains Any: Tier 1, Tier 2
+
+[PDF_BLOCK b27]
+Actions:
+
+[PDF_BLOCK b28]
+Change Workflow
+
+[PDF_BLOCK b29]
+Workflows: CD_International
+Vendors Workflow
+
+[PDF_BLOCK b30]
+Stage:
+
+[PDF_BLOCK b31]
+Launching IntVen
+
+[PDF_BLOCK b32]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b33]
+WR.ON.4
+On_R_Assign ServPro
+Workflow:
+CD_Onboarding
+Workflow
+
+[PDF_BLOCK b34]
+To assign
+workflow for
+Service Providers
+
+[PDF_BLOCK b35]
+Proprietary and Confidential
+52
+
+[PDF_BLOCK b1]
+and Vendors.
+Condition:
+
+[PDF_BLOCK b2]
+Stage: New Third
+Party
+
+[PDF_BLOCK b3]
+Attribute: Vendor Category
+Contains Any: Service Provider and
+Vendor
+
+[PDF_BLOCK b4]
+AND
+
+[PDF_BLOCK b5]
+Trigger:
+On_T_Assign
+Workflow
+
+[PDF_BLOCK b6]
+Attribute: Vendor Tier
+Contains Any: Tier 1, Tier 2
+
+[PDF_BLOCK b7]
+Actions:
+
+[PDF_BLOCK b8]
+Change Workflow
+
+[PDF_BLOCK b9]
+Workflows: CD_Service Providers
+Workflow
+
+[PDF_BLOCK b10]
+Stage:
+
+[PDF_BLOCK b11]
+Launching ServPro
+
+[PDF_BLOCK b12]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b13]
+WR.ON.5
+On_R_Assign StafVen
+Workflow:
+CD_Onboarding
+Workflow
+
+[PDF_BLOCK b14]
+To assign
+workflow for
+Staffing Vendors.
+
+[PDF_BLOCK b15]
+Condition:
+
+[PDF_BLOCK b16]
+Stage: New Third
+Party
+
+[PDF_BLOCK b17]
+Attribute: Vendor Category
+Contains Any: Staffing Vendor
+
+[PDF_BLOCK b18]
+AND
+
+[PDF_BLOCK b19]
+Trigger:
+On_T_Assign
+Workflow
+
+[PDF_BLOCK b20]
+Attribute: Vendor Tier
+Contains Any: Tier 1, Tier 2
+
+[PDF_BLOCK b21]
+Actions:
+
+[PDF_BLOCK b22]
+Change Workflow
+
+[PDF_BLOCK b23]
+Workflows: CD_Staffing Vendors
+Workflow
+
+[PDF_BLOCK b24]
+Stage:
+
+[PDF_BLOCK b25]
+Launching StafVen
+
+[PDF_BLOCK b26]
+Rule Type: Workflow Rule
+
+[PDF_BLOCK b27]
+WR.ON.6
+On_R_Assign Tier3
+Workflow:
+CD_Onboarding
+Workflow
+
+[PDF_BLOCK b28]
+To assign
+workflow for Tier
+3 Vendors.
+
+[PDF_BLOCK b29]
+Condition:
+
+[PDF_BLOCK b30]
+Stage: New Third
+Party
+
+[PDF_BLOCK b31]
+Attribute: Vendor Category
+Contains Any: All
+
+[PDF_BLOCK b32]
+AND
+
+[PDF_BLOCK b33]
+Trigger:
+On_T_Assign
+Workflow
+
+[PDF_BLOCK b34]
+Attribute: Vendor Tier
+Contains Any: Tier 3
+
+[PDF_BLOCK b35]
+Actions:
+
+[PDF_BLOCK b36]
+Proprietary and Confidential
+53
+
+[PDF_BLOCK b1]
+Change Workflow
+
+[PDF_BLOCK b2]
+Workflows: CD_Tier3 Workflow
+
+[PDF_BLOCK b3]
+Stage:
+
+[PDF_BLOCK b4]
+Launching Tier3
+
+[PDF_BLOCK b5]
+Proprietary and Confidential
+54
+
+[PDF_BLOCK b1]
+8. Appendix B
+
+[PDF_BLOCK b2]
+This appendix covers the details of the questionnaire that are created and added in the workflows in different stages.
+
+[PDF_BLOCK b3]
+QUESTIONNAIRE
+NAME
+PLACE
+DESCRIPTION
+APPROVERS
+
+[PDF_BLOCK b4]
+QUESTIONNAIRE
+NO.
+
+[PDF_BLOCK b5]
+Q.1
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b6]
+Vendor Risk
+Management Group
+
+[PDF_BLOCK b7]
+This is a general
+security questionnaire
+that will be sent to all
+the third parties who
+will be added in
+OneTrust.
+
+[PDF_BLOCK b8]
+Workflow:
+1. CD_Revenue
+Partners Workflow
+2. CD_Marketing
+Partners Workflow
+3. CD_Service
+Providers Workflow
+4. CD_Staffing
+Vendors
+5. CD_Intrnational
+Vendors
+
+[PDF_BLOCK b9]
+Stage: Launching
+stage for all above
+workflows.
+
+[PDF_BLOCK b10]
+File Name: Final Due
+Diligence
+Questionnaire v1.0
+
+[PDF_BLOCK b11]
+Q.2
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b12]
+Workflow:
+CD_Tier3 Workflow
+
+[PDF_BLOCK b13]
+Vendor Risk
+Management Group
+
+[PDF_BLOCK b14]
+This is a specific
+questionnaire that will
+be sent to all third
+parties whose Vendor
+Tier attribute will be
+selected as Tier 3.
+
+[PDF_BLOCK b15]
+Stage: Launch
+RevPart Assessment
+
+[PDF_BLOCK b16]
+File Name: Final Due
+Diligence
+Questionnaire v1.0
+
+[PDF_BLOCK b17]
+Proprietary and Confidential
+55
+
+[PDF_BLOCK b1]
+9. Appendix C
+
+[PDF_BLOCK b2]
+In this appendix, all the show logic rules added in both the questionnaires are documented. These rules can be
+referred to locating, understanding and updating to new rules in the tool as per later requirements.
+
+[PDF_BLOCK b3]
+LOGIC NO.
+PLACE
+CONDITION
+ACTION
+QUESTION SHOWN
+
+[PDF_BLOCK b4]
+Show Question: 1.6
+
+[PDF_BLOCK b5]
+IF: Any
+
+[PDF_BLOCK b6]
+CL.1
+Questionnaire: Due
+Diligence Questionnaire
+T1-2 v1
+
+[PDF_BLOCK b7]
+Copy logic to additional
+questions: 1.7, 1.8
+
+[PDF_BLOCK b8]
+Section: Contracting
+and Legal
+
+[PDF_BLOCK b9]
+Question: 1.6
+
+[PDF_BLOCK b10]
+Question: 1.5
+
+[PDF_BLOCK b11]
+1.6 Please provide the
+following: State of
+Incorporation, Principal
+Place of Business, Parent
+Company / Affiliates,
+Ownership/investment by
+foreign governments?
+
+[PDF_BLOCK b12]
+Operator: Equal To
+
+[PDF_BLOCK b13]
+1.7 Please provide the date
+of incorporation.
+
+[PDF_BLOCK b14]
+Response: Yes
+
+[PDF_BLOCK b15]
+1.8 How long has your
+company been in business?
+
+[PDF_BLOCK b16]
+IF: Any
+
+[PDF_BLOCK b17]
+CL.2
+Questionnaire: Due
+Diligence Questionnaire
+T1-2 v1
+
+[PDF_BLOCK b18]
+Show Question: 2.5
+2.5 Please provide a copy of
+your policy for handling
+consumer complaints.
+
+[PDF_BLOCK b19]
+Section: Compliance
+and Legal
+
+[PDF_BLOCK b20]
+Question: 2.5
+
+[PDF_BLOCK b21]
+Question: 2.4
+
+[PDF_BLOCK b22]
+Operator: Equal To
+
+[PDF_BLOCK b23]
+Response: Yes
+
+[PDF_BLOCK b24]
+IF: Any
+
+[PDF_BLOCK b25]
+CL.3
+Questionnaire: Due
+Diligence Questionnaire
+T1-2 v1
+
+[PDF_BLOCK b26]
+Section: Finance
+
+[PDF_BLOCK b27]
+Question: 3.7
+
+[PDF_BLOCK b28]
+Question: 3.6
+
+[PDF_BLOCK b29]
+Show Question: 3.7
+3.7 If no, please complete
+the form here: Oracle
+Vendor Onboarding Form
+(link). Please provide the
+confirmation or upload
+evidence once completed.
+
+[PDF_BLOCK b30]
+Operator: Equal To
+
+[PDF_BLOCK b31]
+Response: No
+
+[PDF_BLOCK b32]
+Show Question: 4.5
+
+[PDF_BLOCK b33]
+IF: Any
+
+[PDF_BLOCK b34]
+4.5 Select Cadence data
+subjects.
+
+[PDF_BLOCK b35]
+CL.4
+Questionnaire: Due
+Diligence Questionnaire
+T1-2 v1
+
+[PDF_BLOCK b36]
+Copy logic to additional
+questions: 4.6
+
+[PDF_BLOCK b37]
+Section: Data Privacy
+and Security
+
+[PDF_BLOCK b38]
+Question: 4.5
+
+[PDF_BLOCK b39]
+4.6 Describe (Select)
+personal data categories.
+
+[PDF_BLOCK b40]
+Question: 4.4
+
+[PDF_BLOCK b41]
+Operator: Equal To
+
+[PDF_BLOCK b42]
+Response: Yes
+
+[PDF_BLOCK b43]
+Proprietary and Confidential
+56
+
+[PDF_BLOCK b1]
+Show Question: 4.11
+
+[PDF_BLOCK b2]
+IF: Any
+
+[PDF_BLOCK b3]
+CL.5
+Questionnaire: Due
+Diligence Questionnaire
+T1-2 v1
+
+[PDF_BLOCK b4]
+Copy logic to additional
+questions: 4.12. 4.13
+
+[PDF_BLOCK b5]
+Section: Data Privacy
+and Security
+
+[PDF_BLOCK b6]
+Question: 4.11
+
+[PDF_BLOCK b7]
+Question: 4.10
+
+[PDF_BLOCK b8]
+4.11 Will the AI a) interact
+with Cadence customers, b)
+have access to customer
+data (PI), or sensitive
+employee information (i.e.,
+race, gender, religion, etc.).
+Please describe in detail.
+
+[PDF_BLOCK b9]
+Operator: Equal To
+
+[PDF_BLOCK b10]
+Response: Yes
+
+[PDF_BLOCK b11]
+4.12 Does the organization
+use AI or large language
+models in data processing?
+
+[PDF_BLOCK b12]
+4.13 Are there processes
+established for managing
+risks related to Artificial
+Intelligence? If Yes, describe
+in detail.
+
+[PDF_BLOCK b13]
+IF: Any
+
+[PDF_BLOCK b14]
+CL.6
+Questionnaire: Due
+Diligence Questionnaire
+T1-2 v1
+
+[PDF_BLOCK b15]
+Show Question: 4.19
+4.19 If No - Please explain
+why MFA is not required
+(e.g., compensating
+controls, acceptable risk)
+
+[PDF_BLOCK b16]
+Section: Data Privacy
+and Security
+
+[PDF_BLOCK b17]
+Question: 4.19
+
+[PDF_BLOCK b18]
+Question: 4.18
+
+[PDF_BLOCK b19]
+Operator: Equal To
+
+[PDF_BLOCK b20]
+Response: No
+
+[PDF_BLOCK b21]
+IF: Any
+
+[PDF_BLOCK b22]
+Show Question: 4.21
+4.21 If Yes -
+
+[PDF_BLOCK b23]
+CL.7
+Questionnaire: Due
+Diligence Questionnaire
+T1-2 v1
+
+[PDF_BLOCK b24]
+(a) How is VPN secured?
+
+[PDF_BLOCK b25]
+Section: Data Privacy
+and Security
+
+[PDF_BLOCK b26]
+Question: 4.21
+
+[PDF_BLOCK b27]
+Question: 4.20
+
+[PDF_BLOCK b28]
+(b) Is access control based
+on user role or uniform for
+all users?
+
+[PDF_BLOCK b29]
+Operator: Equal To
+
+[PDF_BLOCK b30]
+Response: Yes
+
+[PDF_BLOCK b31]
+IF: Any
+
+[PDF_BLOCK b32]
+[REDACTED: GPE]
+Questionnaire: Due
+Diligence Questionnaire
+T1-2 v1
+
+[PDF_BLOCK b33]
+Show Question: 4.25
+4.25 If Yes - Please describe
+separation method (Logical,
+Physical, VLAN, Cloud
+tenant separation, Other)
+
+[PDF_BLOCK b34]
+Section: Data Privacy
+and Security
+
+[PDF_BLOCK b35]
+Question: 4.25
+
+[PDF_BLOCK b36]
+Question: 4.24
+
+[PDF_BLOCK b37]
+Operator: Equal To
+
+[PDF_BLOCK b38]
+Response: Yes
+
+[PDF_BLOCK b39]
+CL.9
+Questionnaire: Due
+IF: Any
+Show Question: 4.27
+4.27 Do you have a process
+
+[PDF_BLOCK b40]
+Proprietary and Confidential
+57
+
+[PDF_BLOCK b1]
+Diligence Questionnaire
+T1-2 v1
+
+[PDF_BLOCK b2]
+Section: Data Privacy
+and Security
+
+[PDF_BLOCK b3]
+Question: 4.27
+
+[PDF_BLOCK b4]
+Question: 4.26
+
+[PDF_BLOCK b5]
+Operator: Equal To
+
+[PDF_BLOCK b6]
+for remediating critical and
+high-risk findings from
+penetration tests, including
+your defined timelines for
+remediation and how you
+communicate updates to
+clients?
+
+[PDF_BLOCK b7]
+Response: Yes
+
+[PDF_BLOCK b8]
+IF: Any
+
+[PDF_BLOCK b9]
+Show Question: 4.31
+4.31 If Yes - Please describe:
+
+[PDF_BLOCK b10]
+CL.10
+Questionnaire: Due
+Diligence Questionnaire
+T1-2 v1
+
+[PDF_BLOCK b11]
+Section: Data Privacy
+and Security
+
+[PDF_BLOCK b12]
+Question: 4.31
+
+[PDF_BLOCK b13]
+(a) Incident type (Data
+breach, Ransomware,
+Unauthorized Access,
+Other)
+
+[PDF_BLOCK b14]
+Question: 4.30
+
+[PDF_BLOCK b15]
+(b) Remediation actions
+
+[PDF_BLOCK b16]
+Operator: Equal To
+
+[PDF_BLOCK b17]
+(c) Timeline
+
+[PDF_BLOCK b18]
+Response: Yes
+
+[PDF_BLOCK b19]
+(d) Any residual risk or
+findings post remediation.
+
+[PDF_BLOCK b20]
+IF: Any
+
+[PDF_BLOCK b21]
+CL.11
+Questionnaire: Due
+Diligence Questionnaire
+T1-2 v1
+
+[PDF_BLOCK b22]
+Show Question: 4.35
+4.35 How do you manage
+and store encryption keys?
+(e.g., access restrictions,
+storage method)
+
+[PDF_BLOCK b23]
+Section: Data Privacy
+and Security
+
+[PDF_BLOCK b24]
+Question: 4.35
+
+[PDF_BLOCK b25]
+Question: 4.34
+
+[PDF_BLOCK b26]
+Operator: Equal To
+
+[PDF_BLOCK b27]
+Response: Yes
+
+[PDF_BLOCK b28]
+IF: Any
+
+[PDF_BLOCK b29]
+CL.12
+Questionnaire: Due
+Diligence Questionnaire
+T1-2 v1
+
+[PDF_BLOCK b30]
+Section: Data Privacy
+and Security
+
+[PDF_BLOCK b31]
+Question: 4.37
+
+[PDF_BLOCK b32]
+Show Question: 4.37
+4.37 If Yes - Indicate scope
+of DLP (End-user devices,
+Email, File storage,
+Database, Cloud apps,
+Other).
+
+[PDF_BLOCK b33]
+Question: 4.36
+
+[PDF_BLOCK b34]
+Operator: Equal To
+
+[PDF_BLOCK b35]
+Response: Yes
+
+[PDF_BLOCK b36]
+IF: Any
+
+[PDF_BLOCK b37]
+CL.13
+Questionnaire: Due
+Diligence Questionnaire
+T1-2 v1
+
+[PDF_BLOCK b38]
+Show Question: 8.2
+8.2 What KPIs or SLAs are
+linked to this engagement?
+Please provide details.
+
+[PDF_BLOCK b39]
+Section: Data Privacy
+and Security
+
+[PDF_BLOCK b40]
+Question: 8.2
+
+[PDF_BLOCK b41]
+Question: 8.1
+
+[PDF_BLOCK b42]
+Operator: Equal To
+
+[PDF_BLOCK b43]
+Response: Yes
+
+[PDF_BLOCK b44]
+CL.14
+Questionnaire: Due
+IF: Any
+Show Question: 3.5
+3.5 If No, please complete
+
+[PDF_BLOCK b45]
+Proprietary and Confidential
+58
+
+[PDF_BLOCK b1]
+Section: Finance
+
+[PDF_BLOCK b2]
+Diligence Questionnaire
+T3 v1
+
+[PDF_BLOCK b3]
+Question: 3.4
+
+[PDF_BLOCK b4]
+Question: 3.5
+
+[PDF_BLOCK b5]
+the form here: Oracle
+Vendor Onboarding Form
+(link). Please provide the
+confirmation or upload
+evidence once completed.
+
+[PDF_BLOCK b6]
+Operator: Equal To
+
+[PDF_BLOCK b7]
+Response: No
+
+[PDF_BLOCK b8]
+Proprietary and Confidential
+59
+
+[PDF_BLOCK b1]
+10. Appendix D
+
+[PDF_BLOCK b2]
+This appendix contains data of the approved Service Level Agreement (SLA) or Timelines associated with different
+aspects of the configuration.
+
+[PDF_BLOCK b3]
+9
+5
+
+[PDF_BLOCK b4]
+SLA NO.
+SLA NAME
+DESCRIPTION
+TIMELINE (DAYS)
+REMINDER
+SLA.1
+Assessment
+Completion
+
+[PDF_BLOCK b5]
+When a new
+assessment is sent to
+the Primary Vendor
+Contact, it must be
+completed within the
+specified timeline.
+
+[PDF_BLOCK b6]
+4
+2
+
+[PDF_BLOCK b7]
+SLA.2
+Review Responses
+User Groups are
+responsible for
+reviewing the
+responses provided by
+the Primary Vendor
+Contact in the
+questionnaire and for
+analyzing any flagged
+risks.
+
+[PDF_BLOCK b8]
+5
+3
+
+[PDF_BLOCK b9]
+SLA.3
+High Risk Response
+The Primary Vendor
+Contact must provide
+a response within the
+defined timeframe to
+address a documented
+high risk. This stage is
+for acknowledging and
+analyzing the risk, it is
+not a remediation
+period. (The
+calculation for this
+duration starts after
+deadline period for
+[REDACTED: PERSON_NAME] (4
+days, see SLA.2).
+Therefore, actual
+deadline will be 5+4 =
+9 days)
+
+[PDF_BLOCK b10]
+10
+7
+
+[PDF_BLOCK b11]
+SLA.4
+Medium Risk Response
+The Primary Vendor
+Contact must provide
+a response within the
+defined timeframe to
+address a documented
+medium risk. This
+stage is for
+acknowledging and
+analyzing the risk, it is
+not a remediation
+period. (The
+calculation for this
+duration starts after
+deadline period for
+[REDACTED: PERSON_NAME] (4
+days, see SLA.2).
+Therefore, actual
+
+[PDF_BLOCK b12]
+Proprietary and Confidential
+60
+
+[PDF_BLOCK b1]
+deadline will be 10+4 =
+14 days)
+
+[PDF_BLOCK b2]
+15
+10
+
+[PDF_BLOCK b3]
+SLA.5
+Low Risk Response
+The Primary Vendor
+Contact must provide
+a response within the
+defined timeframe to
+address a documented
+low risk. This stage is
+for acknowledging and
+analyzing the risk, it is
+not a remediation
+period. (The
+calculation for this
+duration starts after
+deadline period for
+[REDACTED: PERSON_NAME] (4
+days, see SLA.2).
+Therefore, actual
+deadline will be 15+4 =
+19 days)
+
+[PDF_BLOCK b4]
+275
+-
+
+[PDF_BLOCK b5]
+SLA.6
+Renewal Process
+Initiation – Tier 1
+
+[PDF_BLOCK b6]
+For Tier 1 third parties,
+the reassessment
+process begins 90
+days prior to the
+completion of the one-
+year period. An
+assessment
+questionnaire is issued,
+and the results are
+used to inform renewal
+decisions.
+
+[PDF_BLOCK b7]
+640
+-
+
+[PDF_BLOCK b8]
+SLA.7
+Renewal Process
+Initiation – Tier 2 and
+Tier 3
+
+[PDF_BLOCK b9]
+For Tier 2 and Tier 3
+third parties, the
+reassessment process
+begins 90 days prior to
+the completion of the
+two-year. An
+assessment
+questionnaire is issued,
+and the results are
+used to inform renewal
+decisions.
+
+[PDF_BLOCK b10]
+Proprietary and Confidential
+61
+
+[PDF_BLOCK b1]
+11. Appendix E
+
+[PDF_BLOCK b2]
+This appendix contains details of rules added into the questionnaire that can automatically analyze the responses
+provided by the third-party and flag a risk. This content would also cover rules developed for creating tasks and
+scoring.
+
+[PDF_BLOCK b3]
+QR_Non US Company
+IF: Any
+
+[PDF_BLOCK b4]
+Action: Create risk
+
+[PDF_BLOCK b5]
+RULE NO.
+PLACE
+RULE NAME
+CONDITION
+ACTION
+QR.1
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b6]
+Trigger: Question
+
+[PDF_BLOCK b7]
+Risk Name: QRN_Non US
+Company
+
+[PDF_BLOCK b8]
+Question: 1.3
+
+[PDF_BLOCK b9]
+Inherent risk: High
+
+[PDF_BLOCK b10]
+Operator: Equal To
+
+[PDF_BLOCK b11]
+Control ID: QRC_CL_1.1
+
+[PDF_BLOCK b12]
+Response: No
+
+[PDF_BLOCK b13]
+Control Name: QRC_Non
+US Company
+
+[PDF_BLOCK b14]
+IF: Any
+
+[PDF_BLOCK b15]
+Action: Create risk
+
+[PDF_BLOCK b16]
+QR.2
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b17]
+QR_Business
+duration_less
+
+[PDF_BLOCK b18]
+Trigger: Question
+
+[PDF_BLOCK b19]
+Risk Name: QRN_Business
+duration_less
+
+[PDF_BLOCK b20]
+Question: 1.8
+
+[PDF_BLOCK b21]
+Inherent risk: High
+
+[PDF_BLOCK b22]
+Operator: Equal To
+
+[PDF_BLOCK b23]
+Control ID: QRC_CL_1.2
+
+[PDF_BLOCK b24]
+Response: 0-5
+
+[PDF_BLOCK b25]
+Control Name: QRC_
+Business duration_less
+
+[PDF_BLOCK b26]
+IF: Any
+
+[PDF_BLOCK b27]
+Action: Create risk
+
+[PDF_BLOCK b28]
+QR.3
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b29]
+QR_Business
+duration_medium
+
+[PDF_BLOCK b30]
+Trigger: Question
+
+[PDF_BLOCK b31]
+Risk Name: QRN_Business
+duration_medium
+
+[PDF_BLOCK b32]
+Question: 1.8
+
+[PDF_BLOCK b33]
+Inherent risk: Medium
+
+[PDF_BLOCK b34]
+Operator: Equal To
+
+[PDF_BLOCK b35]
+Control ID: QRC_CL_1.3
+
+[PDF_BLOCK b36]
+Response: 5-10
+
+[PDF_BLOCK b37]
+Control Name: QRC_
+Business duration_medium
+
+[PDF_BLOCK b38]
+IF: Any
+
+[PDF_BLOCK b39]
+Action: Create risk
+
+[PDF_BLOCK b40]
+QR.4
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b41]
+QR_Subsidiaries and
+Affiliates
+
+[PDF_BLOCK b42]
+Trigger: Question
+
+[PDF_BLOCK b43]
+Question: 1.9
+
+[PDF_BLOCK b44]
+Risk Name:
+QRN_Subsidiaries and
+Affiliates
+
+[PDF_BLOCK b45]
+Operator: Equal To
+
+[PDF_BLOCK b46]
+Inherent risk: Medium
+
+[PDF_BLOCK b47]
+Proprietary and Confidential
+62
+
+[PDF_BLOCK b1]
+Response: Yes
+
+[PDF_BLOCK b2]
+Control ID: QRC_CL_1.4
+
+[PDF_BLOCK b3]
+Control Name:
+QRC_Subsidiaries and
+Affiliates
+
+[PDF_BLOCK b4]
+QR_Recent M and A
+IF: Any
+
+[PDF_BLOCK b5]
+Action: Create risk
+
+[PDF_BLOCK b6]
+QR.5
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b7]
+Trigger: Question
+
+[PDF_BLOCK b8]
+Risk Name: QRN_Recent M
+and A
+
+[PDF_BLOCK b9]
+Question: 1.11
+
+[PDF_BLOCK b10]
+Inherent risk: Medium
+
+[PDF_BLOCK b11]
+Operator: Equal To
+
+[PDF_BLOCK b12]
+Control ID: QRC_CL_1.5
+
+[PDF_BLOCK b13]
+Response: Yes
+
+[PDF_BLOCK b14]
+Control Name: QRC_Recent
+M and A
+
+[PDF_BLOCK b15]
+IF: Any
+
+[PDF_BLOCK b16]
+Action: Create risk
+
+[PDF_BLOCK b17]
+QR.6
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b18]
+QR_No Compliance
+Report
+
+[PDF_BLOCK b19]
+Trigger: Question
+
+[PDF_BLOCK b20]
+Risk Name: QRN_No
+Compliance Report
+
+[PDF_BLOCK b21]
+Question: 2.2
+
+[PDF_BLOCK b22]
+Inherent risk: High
+
+[PDF_BLOCK b23]
+Operator: Equal To
+
+[PDF_BLOCK b24]
+Control ID: QRC_CmL_2.1
+
+[PDF_BLOCK b25]
+Response: No
+
+[PDF_BLOCK b26]
+Control Name: QRC_No
+Compliance Report
+
+[PDF_BLOCK b27]
+QR_No Strong Laws
+IF: Any
+
+[PDF_BLOCK b28]
+Action: Create risk
+
+[PDF_BLOCK b29]
+QR.7
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b30]
+Trigger: Question
+
+[PDF_BLOCK b31]
+Risk Name: QRN_No Strong
+Laws
+
+[PDF_BLOCK b32]
+Question: 2.3
+
+[PDF_BLOCK b33]
+Inherent risk: Medium
+
+[PDF_BLOCK b34]
+Operator: Equal To
+
+[PDF_BLOCK b35]
+Control ID: QRC_CmL_2.2
+
+[PDF_BLOCK b36]
+Response: No
+
+[PDF_BLOCK b37]
+Control Name: QRC_No
+Strong Laws
+
+[PDF_BLOCK b38]
+QR_AML Requirement
+IF: Any
+
+[PDF_BLOCK b39]
+Action: Create risk
+
+[PDF_BLOCK b40]
+QR.8
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b41]
+Trigger: Question
+
+[PDF_BLOCK b42]
+Risk Name: QRN_AML
+Requirement
+
+[PDF_BLOCK b43]
+Question: 2.6
+
+[PDF_BLOCK b44]
+Inherent risk: Medium
+
+[PDF_BLOCK b45]
+Operator: Equal To
+
+[PDF_BLOCK b46]
+Control ID: QRC_CmL_2.3
+
+[PDF_BLOCK b47]
+Response: Yes
+
+[PDF_BLOCK b48]
+Proprietary and Confidential
+63
+
+[PDF_BLOCK b1]
+Control Name: QRC_AML
+Requirement
+
+[PDF_BLOCK b2]
+QR_No AML Audit
+IF: Any
+
+[PDF_BLOCK b3]
+Action: Create risk
+
+[PDF_BLOCK b4]
+QR.9
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b5]
+Trigger: Question
+
+[PDF_BLOCK b6]
+Risk Name: QRN_No AML
+Audit
+
+[PDF_BLOCK b7]
+Question: 2.7
+
+[PDF_BLOCK b8]
+Inherent risk: Medium
+
+[PDF_BLOCK b9]
+Operator: Equal To
+
+[PDF_BLOCK b10]
+Control ID: QRC_CmL_2.4
+
+[PDF_BLOCK b11]
+Response: No
+
+[PDF_BLOCK b12]
+Control Name: QRC_No
+AML Audit
+
+[PDF_BLOCK b13]
+IF: Any
+
+[PDF_BLOCK b14]
+Action: Create risk
+
+[PDF_BLOCK b15]
+QR.10
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b16]
+QR_No Financial
+Statement
+
+[PDF_BLOCK b17]
+Trigger: Question
+
+[PDF_BLOCK b18]
+Risk Name: QRN_No
+Financial Statement
+
+[PDF_BLOCK b19]
+Question: 3.3
+
+[PDF_BLOCK b20]
+Inherent risk: High
+
+[PDF_BLOCK b21]
+Operator: Equal To
+
+[PDF_BLOCK b22]
+Control ID: QRC_Fin_3.1
+
+[PDF_BLOCK b23]
+Response: No
+
+[PDF_BLOCK b24]
+Control Name: QRC_No
+Financial Statement
+
+[PDF_BLOCK b25]
+IF: Any
+
+[PDF_BLOCK b26]
+Action: Create risk
+
+[PDF_BLOCK b27]
+QR.11
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b28]
+QR_No Financial
+Audits
+
+[PDF_BLOCK b29]
+Trigger: Question
+
+[PDF_BLOCK b30]
+Risk Name: QRN_No
+Financial Audits
+
+[PDF_BLOCK b31]
+Question: 3.5
+
+[PDF_BLOCK b32]
+Inherent risk: High
+
+[PDF_BLOCK b33]
+Operator: Equal To
+
+[PDF_BLOCK b34]
+Control ID: QRC_Fin_3.2
+
+[PDF_BLOCK b35]
+Response: No
+
+[PDF_BLOCK b36]
+Control Name: QRC_No
+Financial Audits
+
+[PDF_BLOCK b37]
+IF: Any
+
+[PDF_BLOCK b38]
+Action: Create risk
+
+[PDF_BLOCK b39]
+QR_Cust_Data Outside
+US
+
+[PDF_BLOCK b40]
+QR.12
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b41]
+Trigger: Question
+
+[PDF_BLOCK b42]
+Risk Name:
+QRN_Cust_Data Outside US
+
+[PDF_BLOCK b43]
+Question: 4.1
+
+[PDF_BLOCK b44]
+Inherent risk: High
+
+[PDF_BLOCK b45]
+Operator: Equal To
+
+[PDF_BLOCK b46]
+Control ID: QRC_Pri_4.1
+
+[PDF_BLOCK b47]
+Response: Yes
+
+[PDF_BLOCK b48]
+Control Name:
+QRC_Cust_Data Outside US
+
+[PDF_BLOCK b49]
+IF: Any
+
+[PDF_BLOCK b50]
+Action: Create risk
+
+[PDF_BLOCK b51]
+QR.13
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b52]
+QR_Operations_Risk
+Regions
+
+[PDF_BLOCK b53]
+Trigger: Question
+
+[PDF_BLOCK b54]
+Risk Name:
+
+[PDF_BLOCK b55]
+Proprietary and Confidential
+64
+
+[PDF_BLOCK b1]
+Question: 4.2
+
+[PDF_BLOCK b2]
+QRN_Operations_Risk
+Regions
+
+[PDF_BLOCK b3]
+Operator: Equal To
+
+[PDF_BLOCK b4]
+Inherent risk: High
+
+[PDF_BLOCK b5]
+Response: Yes
+
+[PDF_BLOCK b6]
+Control ID: QRC_Pri_4.2
+
+[PDF_BLOCK b7]
+Control Name:
+QRC_Operations_Risk
+Regions
+
+[PDF_BLOCK b8]
+IF: Any
+
+[PDF_BLOCK b9]
+Action: Create risk
+
+[PDF_BLOCK b10]
+QR.14
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b11]
+QR_Personal Data
+Collected
+
+[PDF_BLOCK b12]
+Trigger: Question
+
+[PDF_BLOCK b13]
+Risk Name: QRN_Personal
+Data Collected
+
+[PDF_BLOCK b14]
+Question: 4.4
+
+[PDF_BLOCK b15]
+Inherent risk: Medium
+
+[PDF_BLOCK b16]
+Operator: Equal To
+
+[PDF_BLOCK b17]
+Control ID: QRC_Pri_4.3
+
+[PDF_BLOCK b18]
+Response: Yes
+
+[PDF_BLOCK b19]
+Control Name:
+QRC_Personal Data
+Collected
+
+[PDF_BLOCK b20]
+IF: Any
+
+[PDF_BLOCK b21]
+Action: Create risk
+
+[PDF_BLOCK b22]
+QR.15
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b23]
+QR_Sub-processor
+Used
+
+[PDF_BLOCK b24]
+Trigger: Question
+
+[PDF_BLOCK b25]
+Risk Name: QRN_Sub-
+processor Used
+
+[PDF_BLOCK b26]
+Question: 4.8
+
+[PDF_BLOCK b27]
+Inherent risk: Medium
+
+[PDF_BLOCK b28]
+Operator: Equal To
+
+[PDF_BLOCK b29]
+Control ID: QRC_Pri_4.4
+
+[PDF_BLOCK b30]
+Response: Yes
+
+[PDF_BLOCK b31]
+Control Name: QRC_Sub-
+processor Used
+
+[PDF_BLOCK b32]
+IF: Any
+
+[PDF_BLOCK b33]
+Action: Create risk
+
+[PDF_BLOCK b34]
+QR.16
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b35]
+QR_AI Interaction with
+Data
+
+[PDF_BLOCK b36]
+Trigger: Question
+
+[PDF_BLOCK b37]
+Risk Name: QRN_AI
+Interaction with Data
+
+[PDF_BLOCK b38]
+Question: 4.11
+
+[PDF_BLOCK b39]
+Inherent risk: Medium
+
+[PDF_BLOCK b40]
+Operator: Equal To
+
+[PDF_BLOCK b41]
+Control ID: QRC_Pri_4.5
+
+[PDF_BLOCK b42]
+Response: Yes
+
+[PDF_BLOCK b43]
+Control Name: QRC_AI
+Interaction with Data
+
+[PDF_BLOCK b44]
+IF: Any
+
+[PDF_BLOCK b45]
+Action: Create risk
+
+[PDF_BLOCK b46]
+QR.17
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b47]
+QR_LLM Use in Data
+Processing
+
+[PDF_BLOCK b48]
+Trigger: Question
+
+[PDF_BLOCK b49]
+Risk Name: QRN_LLM Use
+in Data Processing
+
+[PDF_BLOCK b50]
+Question: 4.12
+
+[PDF_BLOCK b51]
+Inherent risk: Medium
+
+[PDF_BLOCK b52]
+Proprietary and Confidential
+65
+
+[PDF_BLOCK b1]
+Operator: Equal To
+
+[PDF_BLOCK b2]
+Control ID: QRC_Pri_4.6
+
+[PDF_BLOCK b3]
+Response: Yes
+
+[PDF_BLOCK b4]
+Control Name: QRC_LLM
+Use in Data Processing
+
+[PDF_BLOCK b5]
+QR_No RM for AI
+IF: Any
+
+[PDF_BLOCK b6]
+Action: Create risk
+
+[PDF_BLOCK b7]
+QR.18
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b8]
+Trigger: Question
+
+[PDF_BLOCK b9]
+Risk Name: QRN_No RM for
+AI
+
+[PDF_BLOCK b10]
+Question: 4.13
+
+[PDF_BLOCK b11]
+Inherent risk: Medium
+
+[PDF_BLOCK b12]
+Operator: Equal To
+
+[PDF_BLOCK b13]
+Control ID: QRC_Pri_4.7
+
+[PDF_BLOCK b14]
+Response: No
+
+[PDF_BLOCK b15]
+Control Name: QRC_No RM
+for AI
+
+[PDF_BLOCK b16]
+QR_No Privacy Policy
+IF: Any
+
+[PDF_BLOCK b17]
+Action: Create risk
+
+[PDF_BLOCK b18]
+QR.19
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b19]
+Trigger: Question
+
+[PDF_BLOCK b20]
+Risk Name: QRN_No
+Privacy Policy
+
+[PDF_BLOCK b21]
+Question: 4.14
+
+[PDF_BLOCK b22]
+Inherent risk: High
+
+[PDF_BLOCK b23]
+Operator: Equal To
+
+[PDF_BLOCK b24]
+Control ID: QRC_Pri_4.8
+
+[PDF_BLOCK b25]
+Response: No
+
+[PDF_BLOCK b26]
+Control Name: QRC_No
+Privacy Policy
+
+[PDF_BLOCK b27]
+QR_No IAM Policy
+IF: Any
+
+[PDF_BLOCK b28]
+Action: Create risk
+
+[PDF_BLOCK b29]
+QR.20
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b30]
+Trigger: Question
+
+[PDF_BLOCK b31]
+Risk Name: QRN_No IAM
+Policy
+
+[PDF_BLOCK b32]
+Question: 4.15
+
+[PDF_BLOCK b33]
+Inherent risk: High
+
+[PDF_BLOCK b34]
+Operator: Equal To
+
+[PDF_BLOCK b35]
+Control ID: QRC_Sec_4.9
+
+[PDF_BLOCK b36]
+Response: No
+
+[PDF_BLOCK b37]
+Control Name: QRC_No
+IAM Policy
+
+[PDF_BLOCK b38]
+IF: Any
+
+[PDF_BLOCK b39]
+Action: Create risk
+
+[PDF_BLOCK b40]
+QR.21
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b41]
+QR_No Least Privilege
+Access
+
+[PDF_BLOCK b42]
+Trigger: Question
+
+[PDF_BLOCK b43]
+Risk Name: QRN_No Least
+Privilege Access
+
+[PDF_BLOCK b44]
+Question: 4.16
+
+[PDF_BLOCK b45]
+Inherent risk: Medium
+
+[PDF_BLOCK b46]
+Operator: Equal To
+
+[PDF_BLOCK b47]
+Control ID: QRC_Sec_4.10
+
+[PDF_BLOCK b48]
+Response: No
+
+[PDF_BLOCK b49]
+Control Name: QRC_No
+Least Privilege Access
+
+[PDF_BLOCK b50]
+IF: Any
+
+[PDF_BLOCK b51]
+Action: Create risk
+
+[PDF_BLOCK b52]
+QR.22
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b53]
+QR_No Password
+Policy
+
+[PDF_BLOCK b54]
+Trigger: Question
+
+[PDF_BLOCK b55]
+Risk Name: QRN_No
+Password Policy
+
+[PDF_BLOCK b56]
+Question: 4.17
+
+[PDF_BLOCK b57]
+Inherent risk: Medium
+
+[PDF_BLOCK b58]
+Proprietary and Confidential
+66
+
+[PDF_BLOCK b1]
+Operator: Equal To
+
+[PDF_BLOCK b2]
+Control ID: QRC_Sec_4.11
+
+[PDF_BLOCK b3]
+Response: No
+
+[PDF_BLOCK b4]
+Control Name: QRC_No
+Password Policy
+
+[PDF_BLOCK b5]
+QR_No MFA
+IF: Any
+
+[PDF_BLOCK b6]
+Action: Create risk
+
+[PDF_BLOCK b7]
+QR.23
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b8]
+Trigger: Question
+
+[PDF_BLOCK b9]
+Risk Name: QRN_No MFA
+
+[PDF_BLOCK b10]
+Question: 4.18
+
+[PDF_BLOCK b11]
+Inherent risk: Medium
+
+[PDF_BLOCK b12]
+Control ID: QRC_Sec_4.12
+
+[PDF_BLOCK b13]
+Operator: Equal To
+
+[PDF_BLOCK b14]
+Response: No
+
+[PDF_BLOCK b15]
+Control Name: QRC_No
+MFA
+
+[PDF_BLOCK b16]
+IF: Any
+
+[PDF_BLOCK b17]
+Action: Create risk
+
+[PDF_BLOCK b18]
+QR.24
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b19]
+QR_Employee Remote
+Access
+
+[PDF_BLOCK b20]
+Trigger: Question
+
+[PDF_BLOCK b21]
+Risk Name: [REDACTED: GPE]
+Remote Access
+
+[PDF_BLOCK b22]
+Question: 4.20
+
+[PDF_BLOCK b23]
+Inherent risk: Medium
+
+[PDF_BLOCK b24]
+Operator: Equal To
+
+[PDF_BLOCK b25]
+Control ID: QRC_Sec_4.13
+
+[PDF_BLOCK b26]
+Response: Yes
+
+[PDF_BLOCK b27]
+Control Name:
+QRC_Employee Remote
+Access
+
+[PDF_BLOCK b28]
+IF: Any
+
+[PDF_BLOCK b29]
+Action: Create risk
+
+[PDF_BLOCK b30]
+QR.25
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b31]
+QR_Network Not
+Monitored
+
+[PDF_BLOCK b32]
+Trigger: Question
+
+[PDF_BLOCK b33]
+Risk Name: QRN_Network
+Not Monitored
+
+[PDF_BLOCK b34]
+Question: 4.22
+
+[PDF_BLOCK b35]
+Inherent risk: High
+
+[PDF_BLOCK b36]
+Operator: Equal To
+
+[PDF_BLOCK b37]
+Control ID: QRC_Sec_4.14
+
+[PDF_BLOCK b38]
+Response: No
+
+[PDF_BLOCK b39]
+Control Name:
+QRC_Network Not
+Monitored
+
+[PDF_BLOCK b40]
+IF: Any
+
+[PDF_BLOCK b41]
+Action: Create risk
+
+[PDF_BLOCK b42]
+QR.26
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b43]
+QR_No Tools for
+Vulnerability Scan
+
+[PDF_BLOCK b44]
+Trigger: Question
+
+[PDF_BLOCK b45]
+Risk Name: QRN_No Tools
+for Vulnerability Scan
+
+[PDF_BLOCK b46]
+Question: 4.23
+
+[PDF_BLOCK b47]
+Inherent risk: Medium
+
+[PDF_BLOCK b48]
+Operator: Equal To
+
+[PDF_BLOCK b49]
+Control ID: QRC_Sec_4.15
+
+[PDF_BLOCK b50]
+Response: No
+
+[PDF_BLOCK b51]
+Control Name: QRC_No
+Tools for Vulnerability Scan
+
+[PDF_BLOCK b52]
+IF: Any
+
+[PDF_BLOCK b53]
+Action: Create risk
+
+[PDF_BLOCK b54]
+QR.27
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b55]
+QR_System Not
+Segrated
+
+[PDF_BLOCK b56]
+Trigger: Question
+
+[PDF_BLOCK b57]
+Risk Name: QRN_System
+Not Segrated
+
+[PDF_BLOCK b58]
+Question: 4.24
+
+[PDF_BLOCK b59]
+Proprietary and Confidential
+67
+
+[PDF_BLOCK b1]
+Operator: Equal To
+
+[PDF_BLOCK b2]
+Inherent risk: Medium
+
+[PDF_BLOCK b3]
+Control ID: QRC_Sec_4.16
+
+[PDF_BLOCK b4]
+Response: No
+
+[PDF_BLOCK b5]
+Control Name:
+QRC_System Not Segrated
+
+[PDF_BLOCK b6]
+QR_No Pen Test
+IF: Any
+
+[PDF_BLOCK b7]
+Action: Create risk
+
+[PDF_BLOCK b8]
+QR.28
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b9]
+Trigger: Question
+
+[PDF_BLOCK b10]
+Risk Name: QRN_No Pen
+Test
+
+[PDF_BLOCK b11]
+Question: 4.26
+
+[PDF_BLOCK b12]
+Inherent risk: High
+
+[PDF_BLOCK b13]
+Operator: Equal To
+
+[PDF_BLOCK b14]
+Control ID: QRC_Sec_4.17
+
+[PDF_BLOCK b15]
+Response: No
+
+[PDF_BLOCK b16]
+Control Name: QRC_No
+Pen Test
+
+[PDF_BLOCK b17]
+IF: Any
+
+[PDF_BLOCK b18]
+Action: Create risk
+
+[PDF_BLOCK b19]
+QR.29
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b20]
+QR_No Remediation
+for Findings
+
+[PDF_BLOCK b21]
+Trigger: Question
+
+[PDF_BLOCK b22]
+Risk Name: QRN_No
+Remediation for Findings
+
+[PDF_BLOCK b23]
+Question: 4.27
+
+[PDF_BLOCK b24]
+Inherent risk: Medium
+
+[PDF_BLOCK b25]
+Operator: Equal To
+
+[PDF_BLOCK b26]
+Control ID: QRC_Sec_4.18
+
+[PDF_BLOCK b27]
+Response: No
+
+[PDF_BLOCK b28]
+Control Name: QRC_No
+Remediation for Findings
+
+[PDF_BLOCK b29]
+IF: Any
+
+[PDF_BLOCK b30]
+Action: Create risk
+
+[PDF_BLOCK b31]
+QR.30
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b32]
+QR_No Security App
+Dev Policy
+
+[PDF_BLOCK b33]
+Trigger: Question
+
+[PDF_BLOCK b34]
+Risk Name: QRN_No
+Security App Dev Policy
+
+[PDF_BLOCK b35]
+Question: 4.28
+
+[PDF_BLOCK b36]
+Inherent risk: Medium
+
+[PDF_BLOCK b37]
+Operator: Equal To
+
+[PDF_BLOCK b38]
+Control ID: QRC_Sec_4.19
+
+[PDF_BLOCK b39]
+Response: No
+
+[PDF_BLOCK b40]
+Control Name: QRC_No
+Security App Dev Policy
+
+[PDF_BLOCK b41]
+IF: Any
+
+[PDF_BLOCK b42]
+Action: Create risk
+
+[PDF_BLOCK b43]
+QR.31
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b44]
+QR_No Incident
+Response Plan
+
+[PDF_BLOCK b45]
+Trigger: Question
+
+[PDF_BLOCK b46]
+Risk Name: QRN_No
+Incident Response Plan
+
+[PDF_BLOCK b47]
+Question: 4.29
+
+[PDF_BLOCK b48]
+Inherent risk: High
+
+[PDF_BLOCK b49]
+Operator: Equal To
+
+[PDF_BLOCK b50]
+Control ID: QRC_Sec_4.20
+
+[PDF_BLOCK b51]
+Response: No
+
+[PDF_BLOCK b52]
+Control Name: QRC_No
+Incident Response Plan
+
+[PDF_BLOCK b53]
+IF: Any
+
+[PDF_BLOCK b54]
+Action: Create risk
+
+[PDF_BLOCK b55]
+QR.32
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b56]
+QR_24 Mon Security
+Incident
+
+[PDF_BLOCK b57]
+Trigger: Question
+
+[PDF_BLOCK b58]
+Risk Name: QRN_24 Mon
+Security Incident
+
+[PDF_BLOCK b59]
+Question: 4.30
+
+[PDF_BLOCK b60]
+Proprietary and Confidential
+68
+
+[PDF_BLOCK b1]
+Operator: Equal To
+
+[PDF_BLOCK b2]
+Inherent risk: High
+
+[PDF_BLOCK b3]
+Control ID: QRC_Sec_4.21
+
+[PDF_BLOCK b4]
+Response: Yes
+
+[PDF_BLOCK b5]
+Control Name: QRC_24
+Mon Security Incident
+
+[PDF_BLOCK b6]
+IF: Any
+
+[PDF_BLOCK b7]
+Action: Create risk
+
+[PDF_BLOCK b8]
+QR.33
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b9]
+QR_No Breach
+Notification Process
+
+[PDF_BLOCK b10]
+Trigger: Question
+
+[PDF_BLOCK b11]
+Risk Name: QRN_No Breach
+Notification Process
+
+[PDF_BLOCK b12]
+Question: 4.32
+
+[PDF_BLOCK b13]
+Inherent risk: High
+
+[PDF_BLOCK b14]
+Operator: Equal To
+
+[PDF_BLOCK b15]
+Control ID: QRC_Sec_4.22
+
+[PDF_BLOCK b16]
+Response: No
+
+[PDF_BLOCK b17]
+Control Name: QRC_No
+Breach Notification Process
+
+[PDF_BLOCK b18]
+IF: Any
+
+[PDF_BLOCK b19]
+Action: Create risk
+
+[PDF_BLOCK b20]
+QR.34
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b21]
+QR_No Notification to
+Cadence
+
+[PDF_BLOCK b22]
+Trigger: Question
+
+[PDF_BLOCK b23]
+Risk Name: QRN_No
+Notification to Cadence
+
+[PDF_BLOCK b24]
+Question: 4.33
+
+[PDF_BLOCK b25]
+Inherent risk: High
+
+[PDF_BLOCK b26]
+Operator: Equal To
+
+[PDF_BLOCK b27]
+Control ID: QRC_Sec_4.23
+
+[PDF_BLOCK b28]
+Response: No
+
+[PDF_BLOCK b29]
+Control Name: QRC_No
+Notification to Cadence
+
+[PDF_BLOCK b30]
+IF: Any
+
+[PDF_BLOCK b31]
+Action: Create risk
+
+[PDF_BLOCK b32]
+QR.35
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b33]
+QR_No Encryption
+Used
+
+[PDF_BLOCK b34]
+Trigger: Question
+
+[PDF_BLOCK b35]
+Risk Name: QRN_No
+Encryption Used
+
+[PDF_BLOCK b36]
+Question: 4.34
+
+[PDF_BLOCK b37]
+Inherent risk: High
+
+[PDF_BLOCK b38]
+Operator: Equal To
+
+[PDF_BLOCK b39]
+Control ID: QRC_Sec_4.24
+
+[PDF_BLOCK b40]
+Response: No
+
+[PDF_BLOCK b41]
+Control Name: QRC_No
+Encryption Used
+
+[PDF_BLOCK b42]
+IF: Any
+
+[PDF_BLOCK b43]
+Action: Create risk
+
+[PDF_BLOCK b44]
+QR.36
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b45]
+QR_No Data Loss
+Prevention
+
+[PDF_BLOCK b46]
+Trigger: Question
+
+[PDF_BLOCK b47]
+Risk Name: QRN_No Data
+Loss Prevention
+
+[PDF_BLOCK b48]
+Question: 4.36
+
+[PDF_BLOCK b49]
+Inherent risk: Medium
+
+[PDF_BLOCK b50]
+Operator: Equal To
+
+[PDF_BLOCK b51]
+Control ID: QRC_Sec_4.25
+
+[PDF_BLOCK b52]
+Response: No
+
+[PDF_BLOCK b53]
+Control Name: QRC_No
+Data Loss Prevention
+
+[PDF_BLOCK b54]
+IF: Any
+
+[PDF_BLOCK b55]
+Action: Create risk
+
+[PDF_BLOCK b56]
+QR.37
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b57]
+QR_No Data Retention
+Policy
+
+[PDF_BLOCK b58]
+Trigger: Question
+
+[PDF_BLOCK b59]
+Risk Name: QRN_No Data
+Retention Policy
+
+[PDF_BLOCK b60]
+Question: 4.38
+
+[PDF_BLOCK b61]
+Proprietary and Confidential
+69
+
+[PDF_BLOCK b1]
+Operator: Equal To
+
+[PDF_BLOCK b2]
+Inherent risk: Medium
+
+[PDF_BLOCK b3]
+Control ID: QRC_Sec_4.26
+
+[PDF_BLOCK b4]
+Response: No
+
+[PDF_BLOCK b5]
+Control Name: QRC_No
+Data Retention Policy
+
+[PDF_BLOCK b6]
+IF: Any
+
+[PDF_BLOCK b7]
+Action: Create risk
+
+[PDF_BLOCK b8]
+QR.38
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b9]
+QR_No Information
+Security Policy
+
+[PDF_BLOCK b10]
+Trigger: Question
+
+[PDF_BLOCK b11]
+Risk Name: QRN_No
+Information Security Policy
+
+[PDF_BLOCK b12]
+Question: 4.39
+
+[PDF_BLOCK b13]
+Inherent risk: High
+
+[PDF_BLOCK b14]
+Operator: Equal To
+
+[PDF_BLOCK b15]
+Control ID: QRC_Sec_4.27
+
+[PDF_BLOCK b16]
+Response: No
+
+[PDF_BLOCK b17]
+Control Name: QRC_No
+Information Security Policy
+
+[PDF_BLOCK b18]
+IF: Any
+
+[PDF_BLOCK b19]
+Action: Create risk
+
+[PDF_BLOCK b20]
+QR.39
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b21]
+QR_No RM for
+Information Security
+
+[PDF_BLOCK b22]
+Trigger: Question
+
+[PDF_BLOCK b23]
+Risk Name: QRN_No RM for
+Information Security
+
+[PDF_BLOCK b24]
+Question: 4.40
+
+[PDF_BLOCK b25]
+Inherent risk: High
+
+[PDF_BLOCK b26]
+Operator: Equal To
+
+[PDF_BLOCK b27]
+Control ID: QRC_Sec_4.28
+
+[PDF_BLOCK b28]
+Response: No
+
+[PDF_BLOCK b29]
+Control Name: QRC_No RM
+for Information Security
+
+[PDF_BLOCK b30]
+IF: Any
+
+[PDF_BLOCK b31]
+Action: Create risk
+
+[PDF_BLOCK b32]
+QR.40
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b33]
+QR_No Background
+checks for Emp
+
+[PDF_BLOCK b34]
+Trigger: Question
+
+[PDF_BLOCK b35]
+Risk Name: QRN_No
+Background checks for Emp
+
+[PDF_BLOCK b36]
+Question: 4.42
+
+[PDF_BLOCK b37]
+Inherent risk: Medium
+
+[PDF_BLOCK b38]
+Operator: Equal To
+
+[PDF_BLOCK b39]
+Control ID: QRC_Sec_4.29
+
+[PDF_BLOCK b40]
+Response: No
+
+[PDF_BLOCK b41]
+Control Name: QRC_No
+Background checks for Emp
+
+[PDF_BLOCK b42]
+IF: Any
+
+[PDF_BLOCK b43]
+Action: Create risk
+
+[PDF_BLOCK b44]
+QR.41
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b45]
+QR_No Offboarding
+Process
+
+[PDF_BLOCK b46]
+Trigger: Question
+
+[PDF_BLOCK b47]
+Risk Name: QRN_No
+Offboarding Process
+
+[PDF_BLOCK b48]
+Question: 4.44
+
+[PDF_BLOCK b49]
+Inherent risk: Medium
+
+[PDF_BLOCK b50]
+Operator: Equal To
+
+[PDF_BLOCK b51]
+Control ID: QRC_Sec_4.30
+
+[PDF_BLOCK b52]
+Response: No
+
+[PDF_BLOCK b53]
+Control Name: QRC_No
+Offboarding Process
+
+[PDF_BLOCK b54]
+QR_BYOD Allowed
+IF: Any
+
+[PDF_BLOCK b55]
+Action: Create risk
+
+[PDF_BLOCK b56]
+QR.42
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b57]
+Trigger: Question
+
+[PDF_BLOCK b58]
+Risk Name: QRN_BYOD
+Allowed
+
+[PDF_BLOCK b59]
+Question: 4.45
+
+[PDF_BLOCK b60]
+Proprietary and Confidential
+70
+
+[PDF_BLOCK b1]
+Operator: Equal To
+
+[PDF_BLOCK b2]
+Inherent risk: Medium
+
+[PDF_BLOCK b3]
+Control ID: QRC_Sec_4.31
+
+[PDF_BLOCK b4]
+Response: Yes
+
+[PDF_BLOCK b5]
+Control Name: QRC_BYOD
+Allowed
+
+[PDF_BLOCK b6]
+QR_No MDM Policy
+IF: Any
+
+[PDF_BLOCK b7]
+Action: Create risk
+
+[PDF_BLOCK b8]
+QR.43
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b9]
+Trigger: Question
+
+[PDF_BLOCK b10]
+Risk Name: QRN_No MDM
+Policy
+
+[PDF_BLOCK b11]
+Question: 4.46
+
+[PDF_BLOCK b12]
+Inherent risk: Medium
+
+[PDF_BLOCK b13]
+Operator: Equal To
+
+[PDF_BLOCK b14]
+Control ID: QRC_Sec_4.32
+
+[PDF_BLOCK b15]
+Response: No
+
+[PDF_BLOCK b16]
+Control Name: QRC_No
+MDM Policy
+
+[PDF_BLOCK b17]
+IF: Any
+
+[PDF_BLOCK b18]
+Action: Create risk
+
+[PDF_BLOCK b19]
+QR.44
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b20]
+QR_No Data Deletion
+Supported
+
+[PDF_BLOCK b21]
+Trigger: Question
+
+[PDF_BLOCK b22]
+Risk Name: QRN_No Data
+Deletion Supported
+
+[PDF_BLOCK b23]
+Question: 4.48
+
+[PDF_BLOCK b24]
+Inherent risk: Medium
+
+[PDF_BLOCK b25]
+Operator: Equal To
+
+[PDF_BLOCK b26]
+Control ID: QRC_Sec_4.33
+
+[PDF_BLOCK b27]
+Response: No
+
+[PDF_BLOCK b28]
+Control Name: QRC_No
+Data Deletion Supported
+
+[PDF_BLOCK b29]
+IF: Any
+
+[PDF_BLOCK b30]
+Action: Create risk
+
+[PDF_BLOCK b31]
+QR.45
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b32]
+QR_No Security
+Certifications
+
+[PDF_BLOCK b33]
+Trigger: Question
+
+[PDF_BLOCK b34]
+Risk Name: QRN_No
+Security Certifications
+
+[PDF_BLOCK b35]
+Question: 4.49
+
+[PDF_BLOCK b36]
+Inherent risk: High
+
+[PDF_BLOCK b37]
+Operator: Equal To
+
+[PDF_BLOCK b38]
+Control ID: QRC_Sec_4.34
+
+[PDF_BLOCK b39]
+Response: No
+
+[PDF_BLOCK b40]
+Control Name: QRC_No
+Security Certifications
+
+[PDF_BLOCK b41]
+IF: Any
+
+[PDF_BLOCK b42]
+Action: Create risk
+
+[PDF_BLOCK b43]
+QR.46
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b44]
+QR_No Cyber
+Insurance
+
+[PDF_BLOCK b45]
+Trigger: Question
+
+[PDF_BLOCK b46]
+Risk Name: QRN_No Cyber
+Insurance
+
+[PDF_BLOCK b47]
+Question: 4.50
+
+[PDF_BLOCK b48]
+Inherent risk: High
+
+[PDF_BLOCK b49]
+Operator: Equal To
+
+[PDF_BLOCK b50]
+Control ID: QRC_Sec_4.35
+
+[PDF_BLOCK b51]
+Response: No
+
+[PDF_BLOCK b52]
+Control Name: QRC_No
+Cyber Insurance
+
+[PDF_BLOCK b53]
+IF: Any
+
+[PDF_BLOCK b54]
+Action: Create risk
+
+[PDF_BLOCK b55]
+QR.47
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b56]
+QR_No SSO_SCIM
+Provisioning
+
+[PDF_BLOCK b57]
+Trigger: Question
+
+[PDF_BLOCK b58]
+Risk Name: QRN_No
+SSO_SCIM Provisioning
+
+[PDF_BLOCK b59]
+Question: 5.6
+
+[PDF_BLOCK b60]
+Proprietary and Confidential
+71
+
+[PDF_BLOCK b1]
+Operator: Equal To
+
+[PDF_BLOCK b2]
+Inherent risk: Medium
+
+[PDF_BLOCK b3]
+Control ID: QRC_IT_5.1
+
+[PDF_BLOCK b4]
+Response: No
+
+[PDF_BLOCK b5]
+Control Name: QRC_No
+SSO_SCIM Provisioning
+
+[PDF_BLOCK b6]
+IF: Any
+
+[PDF_BLOCK b7]
+Action: Create risk
+
+[PDF_BLOCK b8]
+QR.48
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b9]
+QR_Sensitive
+Targeting Data
+
+[PDF_BLOCK b10]
+Trigger: Question
+
+[PDF_BLOCK b11]
+Risk Name: QRN_Sensitive
+Targeting Data
+
+[PDF_BLOCK b12]
+Question: 6.1
+
+[PDF_BLOCK b13]
+Inherent risk: Medium
+
+[PDF_BLOCK b14]
+Operator: Equal To
+
+[PDF_BLOCK b15]
+Control ID: QRC_Mar_6.1
+
+[PDF_BLOCK b16]
+Response: Yes
+
+[PDF_BLOCK b17]
+Control Name:
+QRC_Sensitive Targeting
+Data
+
+[PDF_BLOCK b18]
+QR_Publicity Rights
+IF: Any
+
+[PDF_BLOCK b19]
+Action: Create risk
+
+[PDF_BLOCK b20]
+QR.49
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b21]
+Trigger: Question
+
+[PDF_BLOCK b22]
+Risk Name: QRN_Publicity
+Rights
+
+[PDF_BLOCK b23]
+Question: 6.2
+
+[PDF_BLOCK b24]
+Inherent risk: Medium
+
+[PDF_BLOCK b25]
+Operator: Equal To
+
+[PDF_BLOCK b26]
+Control ID: QRC_Mar_6.2
+
+[PDF_BLOCK b27]
+Response: Yes
+
+[PDF_BLOCK b28]
+Control Name:
+QRC_Publicity Rights
+
+[PDF_BLOCK b29]
+IF: Any
+
+[PDF_BLOCK b30]
+Action: Create risk
+
+[PDF_BLOCK b31]
+QR.50
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b32]
+QR_No Co-branding
+Disclosures
+
+[PDF_BLOCK b33]
+Trigger: Question
+
+[PDF_BLOCK b34]
+Risk Name: QRN_No Co-
+branding Disclosures
+
+[PDF_BLOCK b35]
+Question: 6.3
+
+[PDF_BLOCK b36]
+Inherent risk: Medium
+
+[PDF_BLOCK b37]
+Operator: Equal To
+
+[PDF_BLOCK b38]
+Control ID: QRC_Mar_6.3
+
+[PDF_BLOCK b39]
+Response: No
+
+[PDF_BLOCK b40]
+Control Name: QRC_No Co-
+branding Disclosures
+
+[PDF_BLOCK b41]
+IF: Any
+
+[PDF_BLOCK b42]
+Action: Create risk
+
+[PDF_BLOCK b43]
+QR.51
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b44]
+QR_No Employee
+Poaching Policy
+
+[PDF_BLOCK b45]
+Trigger: Question
+
+[PDF_BLOCK b46]
+Risk Name: QRN_No
+Employee Poaching Policy
+
+[PDF_BLOCK b47]
+Question: 7.2
+
+[PDF_BLOCK b48]
+Inherent risk: Medium
+
+[PDF_BLOCK b49]
+Operator: Equal To
+
+[PDF_BLOCK b50]
+Control ID: QRC_Pcr_7.1
+
+[PDF_BLOCK b51]
+Response: No
+
+[PDF_BLOCK b52]
+Control Name: QRC_No
+Employee Poaching Policy
+
+[PDF_BLOCK b53]
+QR_No ESG Policy
+IF: Any
+
+[PDF_BLOCK b54]
+Action: Create risk
+
+[PDF_BLOCK b55]
+QR.52
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b56]
+Trigger: Question
+
+[PDF_BLOCK b57]
+Risk Name: QRN_No ESG
+Policy
+
+[PDF_BLOCK b58]
+Proprietary and Confidential
+72
+
+[PDF_BLOCK b1]
+Question: 7.3
+
+[PDF_BLOCK b2]
+Inherent risk: Medium
+
+[PDF_BLOCK b3]
+Control ID: QRC_Pcr_7.2
+
+[PDF_BLOCK b4]
+Operator: Equal To
+
+[PDF_BLOCK b5]
+Response: No
+
+[PDF_BLOCK b6]
+Control Name: QRC_No
+ESG Policy
+
+[PDF_BLOCK b7]
+IF: Any
+
+[PDF_BLOCK b8]
+Action: Create risk
+
+[PDF_BLOCK b9]
+QR.53
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b10]
+QR_No SLA KPI in
+Contract
+
+[PDF_BLOCK b11]
+Trigger: Question
+
+[PDF_BLOCK b12]
+Risk Name: QRN_No SLA
+KPI in [REDACTED: GPE]
+
+[PDF_BLOCK b13]
+Question: 8.1
+
+[PDF_BLOCK b14]
+Inherent risk: High
+
+[PDF_BLOCK b15]
+Operator: Equal To
+
+[PDF_BLOCK b16]
+Control ID: QRC_RR_8.1
+
+[PDF_BLOCK b17]
+Response: No
+
+[PDF_BLOCK b18]
+Control Name: QRC_No
+SLA KPI in [REDACTED: GPE]
+
+[PDF_BLOCK b19]
+IF: Any
+
+[PDF_BLOCK b20]
+Action: Create risk
+
+[PDF_BLOCK b21]
+QR.54
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b22]
+QR_No Business
+Continuity Plan
+
+[PDF_BLOCK b23]
+Trigger: Question
+
+[PDF_BLOCK b24]
+Risk Name: QRN_No
+Business Continuity Plan
+
+[PDF_BLOCK b25]
+Question: 8.3
+
+[PDF_BLOCK b26]
+Inherent risk: High
+
+[PDF_BLOCK b27]
+Operator: Equal To
+
+[PDF_BLOCK b28]
+Control ID: QRC_RR_8.2
+
+[PDF_BLOCK b29]
+Response: No
+
+[PDF_BLOCK b30]
+Control Name: QRC_No
+Business Continuity Plan
+
+[PDF_BLOCK b31]
+IF: Any
+
+[PDF_BLOCK b32]
+Action: Create risk
+
+[PDF_BLOCK b33]
+QR.55
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b34]
+QR_No Disaster
+Recovery Plan
+
+[PDF_BLOCK b35]
+Trigger: Question
+
+[PDF_BLOCK b36]
+Risk Name: QRN_No
+Disaster Recovery Plan
+
+[PDF_BLOCK b37]
+Question: 8.4
+
+[PDF_BLOCK b38]
+Inherent risk: High
+
+[PDF_BLOCK b39]
+Operator: Equal To
+
+[PDF_BLOCK b40]
+Control ID: QRC_RR_8.3
+
+[PDF_BLOCK b41]
+Response: No
+
+[PDF_BLOCK b42]
+Control Name: QRC_No
+Disaster Recovery Plan
+
+[PDF_BLOCK b43]
+QR.56
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b44]
+QR_Task Assessment
+Completed
+
+[PDF_BLOCK b45]
+Condition 1:
+IF: Any
+
+[PDF_BLOCK b46]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b47]
+Trigger: Question
+
+[PDF_BLOCK b48]
+Task Name: Assessment
+Submitted
+
+[PDF_BLOCK b49]
+Question: 1.3
+
+[PDF_BLOCK b50]
+Operator: Contains Any
+
+[PDF_BLOCK b51]
+Assignee: Assessment
+workflow approvers
+
+[PDF_BLOCK b52]
+Response: Yes and No
+
+[PDF_BLOCK b53]
+Collaborators: ALL TPRM
+Groups
+
+[PDF_BLOCK b54]
+OR
+
+[PDF_BLOCK b55]
+Condition 2:
+IF: Any
+
+[PDF_BLOCK b56]
+Trigger: Question
+
+[PDF_BLOCK b57]
+Proprietary and Confidential
+73
+
+[PDF_BLOCK b1]
+Question: 4.50
+
+[PDF_BLOCK b2]
+Operator: Contains Any
+
+[PDF_BLOCK b3]
+Response: Yes and No
+
+[PDF_BLOCK b4]
+IF: Any
+
+[PDF_BLOCK b5]
+QR.57
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b6]
+QR_Template score
+rule
+
+[PDF_BLOCK b7]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b8]
+Trigger: Assessment
+Score
+
+[PDF_BLOCK b9]
+Task Name: Low
+Assessment Score
+
+[PDF_BLOCK b10]
+Question: Tier 1 and 2
+assessment scoring
+
+[PDF_BLOCK b11]
+Assignee: N/A
+
+[PDF_BLOCK b12]
+Operator: Less than
+
+[PDF_BLOCK b13]
+Collaborators:
+TPRM_Vendor Risk
+Management Team
+
+[PDF_BLOCK b14]
+Response: 40
+
+[PDF_BLOCK b15]
+Scoring Type: Average
+
+[PDF_BLOCK b16]
+QR.58
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b17]
+Tier1 and 2
+assessment scoring
+
+[PDF_BLOCK b18]
+Questions: ALL Yes and
+No and one Options
+based (O-5,5-10 and
+10+)
+
+[PDF_BLOCK b19]
+IF: Any
+
+[PDF_BLOCK b20]
+Action: Create risk
+
+[PDF_BLOCK b21]
+QR.59
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b22]
+QR_T3_Non-US
+Company
+
+[PDF_BLOCK b23]
+Trigger: Question
+
+[PDF_BLOCK b24]
+Risk Name: QRN_T3_ Non-
+US Company
+
+[PDF_BLOCK b25]
+Question: 1.2
+
+[PDF_BLOCK b26]
+Inherent risk: High
+
+[PDF_BLOCK b27]
+Operator: Equal To
+
+[PDF_BLOCK b28]
+Control ID: QRC_T3_CL_1.1
+
+[PDF_BLOCK b29]
+Response: No
+
+[PDF_BLOCK b30]
+Control Name:
+QRC_T3_Non US Company
+
+[PDF_BLOCK b31]
+IF: Any
+
+[PDF_BLOCK b32]
+Action: Create risk
+
+[PDF_BLOCK b33]
+QR.60
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b34]
+QR_T3_AML
+Requirement
+
+[PDF_BLOCK b35]
+Trigger: Question
+
+[PDF_BLOCK b36]
+Risk Name: QRN_T3_AML
+Requirement
+
+[PDF_BLOCK b37]
+Question: 2.2
+
+[PDF_BLOCK b38]
+Inherent risk: Medium
+
+[PDF_BLOCK b39]
+Operator: Equal To
+
+[PDF_BLOCK b40]
+Control ID: QRC_CmL_2.3
+
+[PDF_BLOCK b41]
+Response: Yes
+
+[PDF_BLOCK b42]
+Control Name: QRC_AML
+Requirement
+
+[PDF_BLOCK b43]
+IF: Any
+
+[PDF_BLOCK b44]
+Action: Create risk
+
+[PDF_BLOCK b45]
+QR.61
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b46]
+QR_T3_No Financial
+Audits
+
+[PDF_BLOCK b47]
+Trigger: Question
+
+[PDF_BLOCK b48]
+Risk Name: QRN_T3_No
+Financial Audits
+
+[PDF_BLOCK b49]
+Question: 3.3
+
+[PDF_BLOCK b50]
+Inherent risk: High
+
+[PDF_BLOCK b51]
+Operator: Equal To
+
+[PDF_BLOCK b52]
+Control ID: QRC_Fin_3.2
+
+[PDF_BLOCK b53]
+Response: No
+
+[PDF_BLOCK b54]
+Proprietary and Confidential
+74
+
+[PDF_BLOCK b1]
+Control Name: QRC_No
+Financial Audits
+
+[PDF_BLOCK b2]
+IF: Any
+
+[PDF_BLOCK b3]
+Action: Create risk
+
+[PDF_BLOCK b4]
+QR.62
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b5]
+QR_T3_No Privacy
+Policy
+
+[PDF_BLOCK b6]
+Trigger: Question
+
+[PDF_BLOCK b7]
+Risk Name: QRN_T3_No
+Privacy Policy
+
+[PDF_BLOCK b8]
+Question: 4.1
+
+[PDF_BLOCK b9]
+Inherent risk: High
+
+[PDF_BLOCK b10]
+Operator: Equal To
+
+[PDF_BLOCK b11]
+Control ID: QRC_Pri_4.8
+
+[PDF_BLOCK b12]
+Response: No
+
+[PDF_BLOCK b13]
+Control Name: QRC_No
+Privacy Policy
+
+[PDF_BLOCK b14]
+IF: Any
+
+[PDF_BLOCK b15]
+Action: Create risk
+
+[PDF_BLOCK b16]
+QR.63
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b17]
+QR_T3_No Information
+Security Policy
+
+[PDF_BLOCK b18]
+Trigger: Question
+
+[PDF_BLOCK b19]
+Risk Name: QRN_T3_No
+Information Security Policy
+
+[PDF_BLOCK b20]
+Question: 4.2
+
+[PDF_BLOCK b21]
+Inherent risk: High
+
+[PDF_BLOCK b22]
+Operator: Equal To
+
+[PDF_BLOCK b23]
+Control ID: QRC_Sec_4.27
+
+[PDF_BLOCK b24]
+Response: No
+
+[PDF_BLOCK b25]
+Control Name: QRC_No
+Information Security Policy
+
+[PDF_BLOCK b26]
+IF: Any
+
+[PDF_BLOCK b27]
+Action: Create risk
+
+[PDF_BLOCK b28]
+QR.64
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b29]
+QR_T3_No RM for
+Information Security
+
+[PDF_BLOCK b30]
+Trigger: Question
+
+[PDF_BLOCK b31]
+Risk Name: QRN_T3_No
+RM for Information Security
+
+[PDF_BLOCK b32]
+Question: 4.3
+
+[PDF_BLOCK b33]
+Inherent risk: High
+
+[PDF_BLOCK b34]
+Operator: Equal To
+
+[PDF_BLOCK b35]
+Control ID: QRC_Sec_4.28
+
+[PDF_BLOCK b36]
+Response: No
+
+[PDF_BLOCK b37]
+Control Name: QRC_No RM
+for Information Security
+
+[PDF_BLOCK b38]
+IF: Any
+
+[PDF_BLOCK b39]
+Action: Create risk
+
+[PDF_BLOCK b40]
+QR.65
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b41]
+QR_T3_No Encryption
+Used
+
+[PDF_BLOCK b42]
+Trigger: Question
+
+[PDF_BLOCK b43]
+Risk Name: QRN_T3_No
+Encryption Used
+
+[PDF_BLOCK b44]
+Question: 4.4
+
+[PDF_BLOCK b45]
+Inherent risk: High
+
+[PDF_BLOCK b46]
+Operator: Equal To
+
+[PDF_BLOCK b47]
+Control ID: QRC_Sec_4.24
+
+[PDF_BLOCK b48]
+Response: No
+
+[PDF_BLOCK b49]
+Control Name: QRC_No
+Encryption Used
+
+[PDF_BLOCK b50]
+IF: Any
+
+[PDF_BLOCK b51]
+Action: Create risk
+
+[PDF_BLOCK b52]
+QR.66
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b53]
+QR_T3_No Cyber
+Insurance
+
+[PDF_BLOCK b54]
+Trigger: Question
+
+[PDF_BLOCK b55]
+Risk Name: QRN_T3_No
+Cyber Insurance
+
+[PDF_BLOCK b56]
+Question: 4.5
+
+[PDF_BLOCK b57]
+Inherent risk: High
+
+[PDF_BLOCK b58]
+Operator: Equal To
+
+[PDF_BLOCK b59]
+Proprietary and Confidential
+75
+
+[PDF_BLOCK b1]
+Response: No
+Control ID: QRC_Sec_4.35
+
+[PDF_BLOCK b2]
+Control Name: QRC_No
+Cyber Insurance
+
+[PDF_BLOCK b3]
+IF: Any
+
+[PDF_BLOCK b4]
+Action: Create risk
+
+[PDF_BLOCK b5]
+QR.67
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b6]
+[REDACTED: GPE]
+to Cadence
+
+[PDF_BLOCK b7]
+Trigger: Question
+
+[PDF_BLOCK b8]
+Risk Name: QRN_T3_No
+Notification to Cadence
+
+[PDF_BLOCK b9]
+Question: 5.2
+
+[PDF_BLOCK b10]
+Inherent risk: High
+
+[PDF_BLOCK b11]
+Operator: Equal To
+
+[PDF_BLOCK b12]
+Control ID: QRC_Sec_4.23
+
+[PDF_BLOCK b13]
+Response: No
+
+[PDF_BLOCK b14]
+Control Name: QRC_No
+Notification to Cadence
+
+[PDF_BLOCK b15]
+IF: Any
+
+[PDF_BLOCK b16]
+Action: Create risk
+
+[PDF_BLOCK b17]
+QR.68
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b18]
+QR_T3_No Business
+Continuity Plan
+
+[PDF_BLOCK b19]
+Trigger: Question
+
+[PDF_BLOCK b20]
+Risk Name: QRN_T3_No
+Business Continuity Plan
+
+[PDF_BLOCK b21]
+Question: 6.1
+
+[PDF_BLOCK b22]
+Inherent risk: High
+
+[PDF_BLOCK b23]
+Operator: Equal To
+
+[PDF_BLOCK b24]
+Control ID: QRC_RR_8.2
+
+[PDF_BLOCK b25]
+Response: No
+
+[PDF_BLOCK b26]
+Control Name: QRC_No
+Business Continuity Plan
+
+[PDF_BLOCK b27]
+IF: Any
+
+[PDF_BLOCK b28]
+Action: Create risk
+
+[PDF_BLOCK b29]
+QR.69
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b30]
+QR_T3_No Disaster
+Recovery Plan
+
+[PDF_BLOCK b31]
+Trigger: Question
+
+[PDF_BLOCK b32]
+Risk Name: QRN_T3_No
+Disaster Recovery Plan
+
+[PDF_BLOCK b33]
+Question: 6.2
+
+[PDF_BLOCK b34]
+Inherent risk: High
+
+[PDF_BLOCK b35]
+Operator: Equal To
+
+[PDF_BLOCK b36]
+Control ID: QRC_RR_8.3
+
+[PDF_BLOCK b37]
+Response: No
+
+[PDF_BLOCK b38]
+Control Name: QRC_No
+Disaster Recovery Plan
+
+[PDF_BLOCK b39]
+QR.70
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b40]
+Condition 1:
+IF: Any
+
+[PDF_BLOCK b41]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b42]
+QR_T3_Task
+Assessment
+Completed
+
+[PDF_BLOCK b43]
+Trigger: Question
+
+[PDF_BLOCK b44]
+Task Name: Assessment
+Submitted_T3
+
+[PDF_BLOCK b45]
+Question: 1.2
+
+[PDF_BLOCK b46]
+Operator: Contains Any
+
+[PDF_BLOCK b47]
+Assignee: Assessment
+workflow approvers
+
+[PDF_BLOCK b48]
+Response: Yes and No
+
+[PDF_BLOCK b49]
+Collaborators: ALL TPRM
+Groups
+
+[PDF_BLOCK b50]
+OR
+
+[PDF_BLOCK b51]
+Condition 2:
+IF: Any
+
+[PDF_BLOCK b52]
+Trigger: Question
+
+[PDF_BLOCK b53]
+Question: 4.5
+
+[PDF_BLOCK b54]
+Proprietary and Confidential
+76
+
+[PDF_BLOCK b1]
+Operator: Contains Any
+
+[PDF_BLOCK b2]
+Response: Yes and No
+
+[PDF_BLOCK b3]
+IF: Any
+
+[PDF_BLOCK b4]
+QR.71
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b5]
+QR_T3_Template
+score rule
+
+[PDF_BLOCK b6]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b7]
+Trigger: Assessment
+Score
+
+[PDF_BLOCK b8]
+Task Name: Template score
+rule_T3
+
+[PDF_BLOCK b9]
+Question: Tier 1 and 2
+assessment scoring
+
+[PDF_BLOCK b10]
+Assignee: N/A
+
+[PDF_BLOCK b11]
+Operator: Less than
+
+[PDF_BLOCK b12]
+Collaborators:
+TPRM_Vendor Risk
+Management Team
+
+[PDF_BLOCK b13]
+Response: 40
+
+[PDF_BLOCK b14]
+Scoring Type: Average
+
+[PDF_BLOCK b15]
+QR.72
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b16]
+Tier 3 assessment
+scoring
+
+[PDF_BLOCK b17]
+Questions: ALL Yes and
+No questions
+
+[PDF_BLOCK b18]
+QR_T3_Auto Approve
+IF: ALL
+
+[PDF_BLOCK b19]
+QR.73
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b20]
+Trigger: Question
+
+[PDF_BLOCK b21]
+Action: Auto-Complete
+Assessment Upon
+Submission
+
+[PDF_BLOCK b22]
+Result: Approved
+
+[PDF_BLOCK b23]
+Question: All required
+questions
+
+[PDF_BLOCK b24]
+Operator: Equal To
+
+[PDF_BLOCK b25]
+Result comments: The third
+-party is [REDACTED: GPE]
+
+[PDF_BLOCK b26]
+Response: Yes / No
+
+[PDF_BLOCK b27]
+QR_Task Legal Risk
+IF: Any
+
+[PDF_BLOCK b28]
+QR.74
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b29]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b30]
+Trigger: Question
+
+[PDF_BLOCK b31]
+Task Name: Legal Risk
+Identified for Third-Party
+
+[PDF_BLOCK b32]
+Question: Added as per
+requirement
+
+[PDF_BLOCK b33]
+Operator: Equal to
+
+[PDF_BLOCK b34]
+Assignee: --
+Collaborators: TPRM_Legal
+Group
+
+[PDF_BLOCK b35]
+Response: Yes and No
+
+[PDF_BLOCK b36]
+IF: Any
+
+[PDF_BLOCK b37]
+QR.75
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b38]
+QR_Task Procurement
+Risk
+
+[PDF_BLOCK b39]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b40]
+Trigger: Question
+
+[PDF_BLOCK b41]
+Question: Added as per
+requirement
+
+[PDF_BLOCK b42]
+Task Name: Procurement
+Risk Identified for Third-
+Party
+
+[PDF_BLOCK b43]
+Assignee: --
+
+[PDF_BLOCK b44]
+Operator: Equal to,
+Contains Any
+
+[PDF_BLOCK b45]
+Collaborators:
+TPRM_Procurement Group
+
+[PDF_BLOCK b46]
+Response: Yes and No,
+Options
+
+[PDF_BLOCK b47]
+IF: Any
+
+[PDF_BLOCK b48]
+QR.76
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b49]
+QR_Task Compliance
+Risk
+
+[PDF_BLOCK b50]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b51]
+Trigger: Question
+
+[PDF_BLOCK b52]
+Question: Added as per
+requirement
+
+[PDF_BLOCK b53]
+Task Name: Compliance
+Risk Identified for Third-
+Party
+
+[PDF_BLOCK b54]
+Proprietary and Confidential
+77
+
+[PDF_BLOCK b1]
+Assignee: --
+
+[PDF_BLOCK b2]
+Operator: Equal to
+
+[PDF_BLOCK b3]
+Response: Yes and No
+
+[PDF_BLOCK b4]
+Collaborators:
+TPRM_Compliance Group
+
+[PDF_BLOCK b5]
+QR_Task Finance Risk
+IF: Any
+
+[PDF_BLOCK b6]
+QR.77
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b7]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b8]
+Trigger: Question
+
+[PDF_BLOCK b9]
+Task Name: Finance Risk
+Identified for Third-Party
+
+[PDF_BLOCK b10]
+Question: Added as per
+requirement
+
+[PDF_BLOCK b11]
+Assignee: --
+
+[PDF_BLOCK b12]
+Operator: Equal to
+
+[PDF_BLOCK b13]
+Collaborators:
+TPRM_Finance Group
+
+[PDF_BLOCK b14]
+Response: Yes and No
+
+[PDF_BLOCK b15]
+QR_Task Privacy Risk
+IF: Any
+
+[PDF_BLOCK b16]
+QR.78
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b17]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b18]
+Trigger: Question
+
+[PDF_BLOCK b19]
+Task Name: Privacy Risk
+Identified for Third-Party
+
+[PDF_BLOCK b20]
+Question: Added as per
+requirement
+
+[PDF_BLOCK b21]
+Assignee: --
+
+[PDF_BLOCK b22]
+Operator: Equal to
+
+[PDF_BLOCK b23]
+Collaborators:
+TPRM_Privacy Group
+
+[PDF_BLOCK b24]
+Response: Yes and No
+
+[PDF_BLOCK b25]
+IF: Any
+
+[PDF_BLOCK b26]
+QR.79
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b27]
+QR_Task Data Quality
+Risk
+
+[PDF_BLOCK b28]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b29]
+Trigger: Question
+
+[PDF_BLOCK b30]
+Question: Added as per
+requirement
+
+[PDF_BLOCK b31]
+Task Name: Data Quality
+Risk Identified for Third-
+Party
+
+[PDF_BLOCK b32]
+Assignee: --
+
+[PDF_BLOCK b33]
+Operator: Equal to
+
+[PDF_BLOCK b34]
+Response: Yes and No
+
+[PDF_BLOCK b35]
+Collaborators: TPRM_Data
+Quality Group
+
+[PDF_BLOCK b36]
+QR_Task Security Risk
+IF: Any
+
+[PDF_BLOCK b37]
+QR.80
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b38]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b39]
+Trigger: Question
+
+[PDF_BLOCK b40]
+Task Name: Security Risk
+Identified for Third-Party
+
+[PDF_BLOCK b41]
+Question: Added as per
+requirement
+
+[PDF_BLOCK b42]
+Assignee: --
+
+[PDF_BLOCK b43]
+Operator: Equal to
+
+[PDF_BLOCK b44]
+Collaborators:
+TPRM_Security Group
+
+[PDF_BLOCK b45]
+Response: Yes and No
+
+[PDF_BLOCK b46]
+QR_Task IT Risk
+IF: Any
+
+[PDF_BLOCK b47]
+QR.81
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b48]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b49]
+Trigger: Question
+
+[PDF_BLOCK b50]
+Question: 5.6
+
+[PDF_BLOCK b51]
+Task Name: IT Risk
+Identified for Third-Party
+
+[PDF_BLOCK b52]
+Assignee: --
+
+[PDF_BLOCK b53]
+Operator: Equal to
+
+[PDF_BLOCK b54]
+Response: No
+
+[PDF_BLOCK b55]
+Collaborators: TPRM_IT
+Group
+
+[PDF_BLOCK b56]
+Proprietary and Confidential
+78
+
+[PDF_BLOCK b1]
+IF: Any
+
+[PDF_BLOCK b2]
+QR.82
+Due Diligence
+Questionnaire T1-2 v1
+
+[PDF_BLOCK b3]
+QR_Task IT
+Requirement
+
+[PDF_BLOCK b4]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b5]
+Trigger: Question
+
+[PDF_BLOCK b6]
+Question: 5.1
+
+[PDF_BLOCK b7]
+Task Name: IT Requirement
+Identified for Third-Party
+
+[PDF_BLOCK b8]
+Assignee: --
+
+[PDF_BLOCK b9]
+Operator: Equal to
+
+[PDF_BLOCK b10]
+Response: Yes
+
+[PDF_BLOCK b11]
+Collaborators: TPRM_IT
+Group
+
+[PDF_BLOCK b12]
+IF: Any
+
+[PDF_BLOCK b13]
+QR.83
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b14]
+QR_T3_Task Legal
+Risk
+
+[PDF_BLOCK b15]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b16]
+Trigger: Question
+
+[PDF_BLOCK b17]
+Task Name: Legal Risk
+Identified for Third-Party_T3
+
+[PDF_BLOCK b18]
+Question: Added as per
+requirement
+
+[PDF_BLOCK b19]
+Operator: Equal to
+
+[PDF_BLOCK b20]
+Assignee: --
+Collaborators: TPRM_Legal
+Group
+
+[PDF_BLOCK b21]
+Response: Yes and No
+
+[PDF_BLOCK b22]
+IF: Any
+
+[PDF_BLOCK b23]
+QR.84
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b24]
+QR_T3_Task
+Procurement Risk
+
+[PDF_BLOCK b25]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b26]
+Trigger: Question
+
+[PDF_BLOCK b27]
+Question: Added as per
+requirement
+
+[PDF_BLOCK b28]
+Task Name: Procurement
+Risk Identified for Third-
+Party_T3
+
+[PDF_BLOCK b29]
+Assignee: --
+
+[PDF_BLOCK b30]
+Operator: Equal to
+
+[PDF_BLOCK b31]
+Collaborators:
+TPRM_Procurement Group
+
+[PDF_BLOCK b32]
+Response: Yes and No,
+Options
+
+[PDF_BLOCK b33]
+IF: Any
+
+[PDF_BLOCK b34]
+QR.85
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b35]
+QR_T3_Task
+Compliance Risk
+
+[PDF_BLOCK b36]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b37]
+Trigger: Question
+
+[PDF_BLOCK b38]
+Question: Added as per
+requirement
+
+[PDF_BLOCK b39]
+Task Name: Compliance
+Risk Identified for Third-
+Party_T3
+
+[PDF_BLOCK b40]
+Assignee: --
+
+[PDF_BLOCK b41]
+Operator: Equal to
+
+[PDF_BLOCK b42]
+Response: Yes and No
+
+[PDF_BLOCK b43]
+Collaborators:
+TPRM_Compliance Group
+
+[PDF_BLOCK b44]
+IF: Any
+
+[PDF_BLOCK b45]
+QR.86
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b46]
+QR_T3_Task Finance
+Risk
+
+[PDF_BLOCK b47]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b48]
+Trigger: Question
+
+[PDF_BLOCK b49]
+Task Name: Finance Risk
+Identified for Third-Party_T3
+
+[PDF_BLOCK b50]
+Question: Added as per
+requirement
+
+[PDF_BLOCK b51]
+Assignee: --
+
+[PDF_BLOCK b52]
+Operator: Equal to
+
+[PDF_BLOCK b53]
+Collaborators:
+TPRM_Finance Group
+
+[PDF_BLOCK b54]
+Response: Yes and No
+
+[PDF_BLOCK b55]
+IF: Any
+
+[PDF_BLOCK b56]
+QR.87
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b57]
+QR_T3_Task Privacy
+Risk
+
+[PDF_BLOCK b58]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b59]
+Trigger: Question
+
+[PDF_BLOCK b60]
+Proprietary and Confidential
+79
+
+[PDF_BLOCK b1]
+Question: Added as per
+requirement
+
+[PDF_BLOCK b2]
+Task Name: Privacy Risk
+Identified for Third-Party_T3
+
+[PDF_BLOCK b3]
+Assignee: --
+
+[PDF_BLOCK b4]
+Operator: Equal to
+
+[PDF_BLOCK b5]
+Response: Yes and No
+
+[PDF_BLOCK b6]
+Collaborators:
+TPRM_Privacy Group
+
+[PDF_BLOCK b7]
+IF: Any
+
+[PDF_BLOCK b8]
+QR.88
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b9]
+QR_T3_Task Security
+Risk
+
+[PDF_BLOCK b10]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b11]
+Trigger: Question
+
+[PDF_BLOCK b12]
+Task Name: Security Risk
+Identified for Third-Party_T3
+
+[PDF_BLOCK b13]
+Question: Added as per
+requirement
+
+[PDF_BLOCK b14]
+Assignee: --
+
+[PDF_BLOCK b15]
+Operator: Equal to
+
+[PDF_BLOCK b16]
+Collaborators:
+TPRM_Security Group
+
+[PDF_BLOCK b17]
+Response: Yes and No
+
+[PDF_BLOCK b18]
+IF: Any
+
+[PDF_BLOCK b19]
+QR.89
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b20]
+QR_T3_Task IT
+Requirement
+
+[PDF_BLOCK b21]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b22]
+Trigger: Question
+
+[PDF_BLOCK b23]
+Question: 5.1
+
+[PDF_BLOCK b24]
+Task Name: IT Requirement
+Identified for Third-Party_T3
+
+[PDF_BLOCK b25]
+Assignee: --
+
+[PDF_BLOCK b26]
+Operator: Equal to
+
+[PDF_BLOCK b27]
+Response: Yes
+
+[PDF_BLOCK b28]
+Collaborators: TPRM_IT
+Group
+
+[PDF_BLOCK b29]
+QR_Task IT Risk
+IF: Any
+
+[PDF_BLOCK b30]
+QR.90
+Due Diligence
+Questionnaire T3 v1
+
+[PDF_BLOCK b31]
+Action: Create task upon
+submission
+
+[PDF_BLOCK b32]
+Trigger: Question
+
+[PDF_BLOCK b33]
+Task Name: IT Risk
+Identified for Third-Party_T3
+
+[PDF_BLOCK b34]
+Question: Added as per
+requirement
+
+[PDF_BLOCK b35]
+Assignee: --
+
+[PDF_BLOCK b36]
+Operator: Equal to
+
+[PDF_BLOCK b37]
+Collaborators: TPRM_IT
+Group
+
+[PDF_BLOCK b38]
+Response: Yes and No
+
+[PDF_BLOCK b39]
+Proprietary and Confidential
+80
+
+[PDF_BLOCK b1]
+General
+
+[PDF_BLOCK b2]
+Copyright
+
+[PDF_BLOCK b3]
+The information transmitted in this document is intended only for the addressee and may contain confidential and/or
+privileged material. Any interception, review, retransmission, dissemination, or other use of or taking of any action
+upon this information by persons or entities other than the intended recipient is prohibited by law and may subject
+them to criminal or civil liability.
+
+[PDF_BLOCK b4]
+Copyright © 2026 Optiv Security Inc. All rights reserved. The Optiv Security logo is a registered trademark of Optiv
+Security. All other products and company names mentioned herein are trademarks or registered trademarks of their
+respective owners.
+
+[PDF_BLOCK b5]
+Version Control
+
+[PDF_BLOCK b6]
+Third-Party Risk Assessment
+
+[PDF_BLOCK b7]
+Client Name
+Cadence
+
+[PDF_BLOCK b8]
+[REDACTED: GPE]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b9]
+Document Revision Number
+1.0
+
+[PDF_BLOCK b10]
+Author(s)
+[REDACTED: PERSON_NAME], [REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b11]
+[REDACTED: PERSON_NAME][REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b12]
+QA Reviewer
+
+[PDF_BLOCK b13]
+Delivery Date
+October 13, 2026
+
+[PDF_BLOCK b14]
+Data Classification
+Client Confidential
+
+[PDF_BLOCK b15]
+Proprietary and Confidential
+81
+
+[PDF_BLOCK b1]
+Optiv is the cyber advisory and solutions leader, delivering strategic
+and technical expertise to more than 6,000 companies across every
+major industry. We partner with organizations to advise, deploy and
+operate complete cybersecurity programs from strategy and
+managed security services to risk, integration and technology
+solutions. With clients at the center of our unmatched ecosystem of
+people, products, partners and programs, we accelerate business
+progress like no other company can. At Optiv, we manage cyber risk
+so you can secure your full potential.
+
+[PDF_BLOCK b2]
+Proprietary and Confidential
+82
+
+[PDF_BLOCK b3]
+©2025 Optiv Security Inc. All Rights Reserved. Optiv is a registered trademark of Optiv Inc.

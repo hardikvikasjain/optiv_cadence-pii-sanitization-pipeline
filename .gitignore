@@ -8,5 +8,5 @@ Person2_PII_Detector.zip*
 scratch/
 temp
 /Cadence_*
-data/
-
+data/*.db
+.pytest_cache/

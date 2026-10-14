@@ -1,0 +1,766 @@
+[PDF_BLOCK b1]
+06
+Executive o¦cers
+
+[PDF_BLOCK b2]
+16
+Named role holders
+
+[PDF_BLOCK b3]
+Organizational
+Reference Pack
+
+[PDF_BLOCK b4]
+02
+Accountability matrices
+
+[PDF_BLOCK b5]
+Leadership structure, reporting lines and accountability matrices
+
+[PDF_BLOCK b6]
+03
+Divisional structures
+
+[PDF_BLOCK b7]
+P r e p a r e d f o r
+Cadence Financial Group · Version 1.0 · Internal — Con¬dential
+
+[PDF_BLOCK b1]
+Organization at a Glance
+
+[PDF_BLOCK b2]
+C A D E N C E F I N A N C I A L G R O U P
+
+[PDF_BLOCK b3]
+Cadence Financial Group is organised into ¬ve reporting divisions under the Chief Executive O¦cer. Governance of technology, data and risk activity is distributed
+across the Technology & Data and Risk, Compliance & Security divisions, with joint accountability recorded in the matrices that follow.
+
+[PDF_BLOCK b4]
+O¦ce of the CEO
+
+[PDF_BLOCK b5]
+Operations
+
+[PDF_BLOCK b6]
+Finance
+
+[PDF_BLOCK b7]
+Strategy, communications and board reporting
+
+[PDF_BLOCK b8]
+Client servicing, payments and shared services
+
+[PDF_BLOCK b9]
+Treasury, ¬nancial control and planning
+
+[PDF_BLOCK b10]
+Led by Marguerite Vossberg
+
+[PDF_BLOCK b11]
+Led by [REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b12]
+Led by Priyanka Raghunathan
+
+[PDF_BLOCK b13]
+Technology & Data
+
+[PDF_BLOCK b14]
+Risk, Compliance & Security
+
+[PDF_BLOCK b15]
+People & Culture
+
+[PDF_BLOCK b16]
+Engineering, infrastructure, data and security
+
+[PDF_BLOCK b17]
+Enterprise risk, compliance, privacy and assurance
+
+[PDF_BLOCK b18]
+Talent, workforce policy and employee relations
+
+[PDF_BLOCK b19]
+Led by [REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b20]
+Led by Adaeze Okonkwo-Bell
+
+[PDF_BLOCK b21]
+Led by Rosalind Featherstone
+
+[PDF_BLOCK b22]
+Cadence Financial Group | Internal — Con¬dential | Contains personal data (synthetic sample)
+2
+
+[PDF_BLOCK b1]
+Executive Leadership Structure
+
+[PDF_BLOCK b2]
+O R G C H A R T — T I E R 1 A N D T I E R 2
+
+[PDF_BLOCK b3]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b4]
+CHIEF EXECUTIVE OFFICER
+
+[PDF_BLOCK b5]
+[REDACTED: EMAIL]
+M +1 (555) 0114
+
+[PDF_BLOCK b6]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b7]
+Priyanka Raghunathan
+
+[PDF_BLOCK b8]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b9]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b10]
+Rosalind Featherstone
+
+[PDF_BLOCK b11]
+CHI EF OPERATI NG OFFI CER
+
+[PDF_BLOCK b12]
+CHI EF FI NANCI AL OFFI CER
+
+[PDF_BLOCK b13]
+CHI EF I NFORMATI ON OFFI CER
+
+[PDF_BLOCK b14]
+CHI EF RI SK OFFI CER
+
+[PDF_BLOCK b15]
+CHI EF PEOPLE OFFI CER
+
+[PDF_BLOCK b16]
+[REDACTED: EMAIL]
+M +1 (555) 0121
+
+[PDF_BLOCK b17]
+[REDACTED: EMAIL]
+M +1 (555) 0128
+
+[PDF_BLOCK b18]
+[REDACTED: EMAIL]
+M +1 (555) 0133
+
+[PDF_BLOCK b19]
+[REDACTED: EMAIL]
+M +1 (555) 0139
+
+[PDF_BLOCK b20]
+[REDACTED: EMAIL]
+M +1 (555) 0145
+
+[PDF_BLOCK b21]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b22]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b23]
+GENERAL COUNSEL
+
+[PDF_BLOCK b24]
+DATA PROTECTI ON OFFI CER
+
+[PDF_BLOCK b25]
+Independent reporting line
+¸e General Counsel and the Data Protection O¦cer report directly to the Chief Executive
+O¦cer and hold a standing reporting line to the Board Risk Committee.
+
+[PDF_BLOCK b26]
+[REDACTED: EMAIL]
+M +1 (555) 0196
+
+[PDF_BLOCK b27]
+[REDACTED: EMAIL]
+M +1 (555) 0192
+
+[PDF_BLOCK b28]
+Cadence Financial Group | Internal — Con¬dential | Contains personal data (synthetic sample)
+3
+
+[PDF_BLOCK b1]
+Technology & Data Division
+
+[PDF_BLOCK b2]
+O R G C H A R T — R E P O R T I N G T O T H E C H I E F I N F O R M AT I O N O F F I C E R
+
+[PDF_BLOCK b3]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b4]
+CHIEF INFORMATION OFFICER
+
+[PDF_BLOCK b5]
+[REDACTED: EMAIL]
+M +1 (555) 0133
+
+[PDF_BLOCK b6]
+Emiliano Bertucci
+
+[PDF_BLOCK b7]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b8]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b9]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b10]
+VP, I NFORMATI ON SECURI TY
+
+[PDF_BLOCK b11]
+VP, ENGI NEERI NG
+
+[PDF_BLOCK b12]
+VP, DATA & ANALY TI CS
+
+[PDF_BLOCK b13]
+VP, I NFRASTRUCTURE & CLOUD
+
+[PDF_BLOCK b14]
+[REDACTED: EMAIL]
+M +1 (555) 0152
+
+[PDF_BLOCK b15]
+[REDACTED: EMAIL]
+M +1 (555) 0163
+
+[PDF_BLOCK b16]
+[REDACTED: EMAIL]
+M +1 (555) 0157
+
+[PDF_BLOCK b17]
+[REDACTED: EMAIL]
+M +1 (555) 0168
+
+[PDF_BLOCK b18]
+Information Security
+
+[PDF_BLOCK b19]
+Engineering
+
+[PDF_BLOCK b20]
+Data & Analytics
+
+[PDF_BLOCK b21]
+Infrastructure & Cloud
+
+[PDF_BLOCK b22]
+Security operations, identity, vulnerability
+management
+
+[PDF_BLOCK b23]
+Core banking platform, digital channels, release
+management
+
+[PDF_BLOCK b24]
+Data platform, model development, reporting
+services
+
+[PDF_BLOCK b25]
+Hosting, networks, resilience and cloud
+governance
+
+[PDF_BLOCK b26]
+Cadence Financial Group | Internal — Con¬dential | Contains personal data (synthetic sample)
+4
+
+[PDF_BLOCK b1]
+Risk, Compliance & Security Division
+
+[PDF_BLOCK b2]
+O R G C H A R T — R E P O R T I N G T O T H E C H I E F R I S K O F F I C E R
+
+[PDF_BLOCK b3]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b4]
+CHIEF RISK OFFICER
+
+[PDF_BLOCK b5]
+[REDACTED: EMAIL]
+M +1 (555) 0139
+
+[PDF_BLOCK b6]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b7]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b8]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b9]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b10]
+VP, COMPLI ANCE
+
+[PDF_BLOCK b11]
+VP, OPERATI ONAL RI SK
+
+[PDF_BLOCK b12]
+DI RECTOR, THI RD-PARTY RI SK
+
+[PDF_BLOCK b13]
+DI RECTOR, I NTERNAL ASSURANCE
+
+[PDF_BLOCK b14]
+[REDACTED: EMAIL]
+M +1 (555) 0174
+
+[PDF_BLOCK b15]
+[REDACTED: EMAIL]
+M +1 (555) 0179
+
+[PDF_BLOCK b16]
+[REDACTED: EMAIL]
+M +1 (555) 0183
+
+[PDF_BLOCK b17]
+[REDACTED: EMAIL]
+M +1 (555) 0188
+
+[PDF_BLOCK b18]
+Committee interlock ¸e Chief Risk O¦cer chairs the Enterprise Risk Committee. ¸e Data Protection O¦cer, the VP Information Security and the Director of ¸ird-Party
+Risk hold standing membership. Escalations from the divisions feed the committee on a monthly cycle, with material items routed to the Board Risk Committee.
+
+[PDF_BLOCK b19]
+Cadence Financial Group | Internal — Con¬dential | Contains personal data (synthetic sample)
+5
+
+[PDF_BLOCK b1]
+RACI — AI & Data Governance Programme
+
+[PDF_BLOCK b2]
+A C C O U N TA B I L I T Y B Y A C T I V I T Y A N D R O L E H O L D E R
+
+[PDF_BLOCK b3]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b4]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b5]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b6]
+Activity
+M. Vossberg
+
+[PDF_BLOCK b7]
+CEO
+
+[PDF_BLOCK b8]
+CIO
+
+[PDF_BLOCK b9]
+CRO
+
+[PDF_BLOCK b10]
+DPO
+
+[PDF_BLOCK b11]
+[REDACTED: PERSON_NAME]
+VP InfoSec
+
+[PDF_BLOCK b12]
+[REDACTED: GPE]
+VP Data
+
+[PDF_BLOCK b13]
+[REDACTED: PERSON_NAME]
+VP Compliance
+
+[PDF_BLOCK b14]
+AI use-case intake and approval
+I
+R
+A
+C
+R
+C
+C
+
+[PDF_BLOCK b15]
+Model inventory and registration
+A
+C
+I
+R
+C
+I
+
+[PDF_BLOCK b16]
+Data classi¬cation and PII detection
+C
+C
+R
+R
+A
+I
+
+[PDF_BLOCK b17]
+Privacy impact assessment
+I
+C
+C
+C
+I
+A
+R
+
+[PDF_BLOCK b18]
+Security review of AI platforms
+C
+A
+R
+C
+C
+I
+
+[PDF_BLOCK b19]
+Model monitoring and drift review
+A
+C
+I
+R
+I
+C
+
+[PDF_BLOCK b20]
+Regulatory reporting on AI use
+A
+I
+R
+I
+C
+C
+R
+
+[PDF_BLOCK b21]
+Programme funding and prioritisation
+A
+R
+C
+I
+I
+I
+I
+
+[PDF_BLOCK b22]
+R
+Responsible
+A
+Accountable
+C
+Consulted
+I
+Informed
+Blank cells indicate no formal involvement
+
+[PDF_BLOCK b23]
+in the activity.
+
+[PDF_BLOCK b24]
+Cadence Financial Group | Internal — Con¬dential | Contains personal data (synthetic sample)
+6
+
+[PDF_BLOCK b1]
+RACI — ¸ird-Party Risk & Incident Response
+
+[PDF_BLOCK b2]
+A C C O U N TA B I L I T Y B Y A C T I V I T Y A N D R O L E H O L D E R
+
+[PDF_BLOCK b3]
+[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b4]
+Activity
+A. Okonkwo-Bell
+
+[PDF_BLOCK b5]
+CRO
+
+[PDF_BLOCK b6]
+S. Aarnio
+Dir. TPRM
+
+[PDF_BLOCK b7]
+[REDACTED: PERSON_NAME]
+VP InfoSec
+
+[PDF_BLOCK b8]
+G. Wenzel
+VP Op Risk
+
+[PDF_BLOCK b9]
+VP Cloud
+
+[PDF_BLOCK b10]
+[REDACTED: PERSON_NAME]
+General Counsel
+
+[PDF_BLOCK b11]
+R. Quintanilla
+Dir. Assurance
+
+[PDF_BLOCK b12]
+Vendor onboarding due diligence
+A
+R
+C
+C
+I
+C
+I
+
+[PDF_BLOCK b13]
+SOC 2 report review and gap analysis
+I
+R
+C
+C
+I
+A
+
+[PDF_BLOCK b14]
+Contractual security schedules
+C
+R
+C
+I
+I
+A
+I
+
+[PDF_BLOCK b15]
+Continuous vendor monitoring
+A
+R
+C
+R
+I
+I
+C
+
+[PDF_BLOCK b16]
+Incident detection and triage
+I
+I
+A
+C
+R
+I
+I
+
+[PDF_BLOCK b17]
+Incident escalation and noti¬cation
+A
+C
+R
+C
+I
+R
+I
+
+[PDF_BLOCK b18]
+Post-incident review and remediation
+C
+C
+R
+A
+R
+I
+C
+
+[PDF_BLOCK b19]
+Annual control testing
+I
+C
+C
+C
+I
+I
+A
+
+[PDF_BLOCK b20]
+R
+Responsible
+A
+Accountable
+C
+Consulted
+I
+Informed
+Role holders are listed by name; contact
+
+[PDF_BLOCK b21]
+details appear in the directory.
+
+[PDF_BLOCK b22]
+Cadence Financial Group | Internal — Con¬dential | Contains personal data (synthetic sample)
+7
+
+[PDF_BLOCK b1]
+Role Holder Directory
+
+[PDF_BLOCK b2]
+N A M E D C O N TA C T S B Y D I V I S I O N
+
+[PDF_BLOCK b3]
+Name
+Role
+Division
+Email
+Mobile
+
+[PDF_BLOCK b4]
+[REDACTED: PERSON_NAME]
+Chief Executive O¦cer
+O¦ce of the CEO
+[REDACTED: EMAIL]
++1 (555) 0114
+
+[PDF_BLOCK b5]
+[REDACTED: PERSON_NAME]
+General Counsel
+O¦ce of the CEO
+[REDACTED: EMAIL]
++1 (555) 0196
+
+[PDF_BLOCK b6]
+[REDACTED: PERSON_NAME]
+Data Protection O¦cer
+O¦ce of the CEO
+[REDACTED: EMAIL]
++1 (555) 0192
+
+[PDF_BLOCK b7]
+[REDACTED: PERSON_NAME]
+Chief Operating O¦cer
+Operations
+[REDACTED: EMAIL]
++1 (555) 0121
+
+[PDF_BLOCK b8]
+Priyanka Raghunathan
+Chief Financial O¦cer
+Finance
+[REDACTED: EMAIL]
++1 (555) 0128
+
+[PDF_BLOCK b9]
+Rosalind Featherstone
+Chief People O¦cer
+People & Culture
+[REDACTED: EMAIL]
++1 (555) 0145
+
+[PDF_BLOCK b10]
+[REDACTED: PERSON_NAME]
+Chief Information O¦cer
+Technology & Data
+[REDACTED: EMAIL]
++1 (555) 0133
+
+[PDF_BLOCK b11]
+Emiliano Bertucci
+VP, Information Security
+Technology & Data
+[REDACTED: EMAIL]
++1 (555) 0152
+
+[PDF_BLOCK b12]
+[REDACTED: PERSON_NAME]
+VP, Engineering
+Technology & Data
+[REDACTED: EMAIL]
++1 (555) 0163
+
+[PDF_BLOCK b13]
+Hyun-Woo Park
+VP, Data & Analytics
+Technology & Data
+[REDACTED: EMAIL]
++1 (555) 0157
+
+[PDF_BLOCK b14]
+Nikolai Brandvold
+VP, Infrastructure & Cloud
+Technology & Data
+[REDACTED: EMAIL]
++1 (555) 0168
+
+[PDF_BLOCK b15]
+[REDACTED: PERSON_NAME]
+Chief Risk O¦cer
+Risk, Compliance & Security
+[REDACTED: EMAIL]
++1 (555) 0139
+
+[PDF_BLOCK b16]
+[REDACTED: PERSON_NAME]
+VP, Compliance
+Risk, Compliance & Security
+[REDACTED: EMAIL]
++1 (555) 0174
+
+[PDF_BLOCK b17]
+Gerhardt Wenzel
+VP, Operational Risk
+Risk, Compliance & Security
+[REDACTED: EMAIL]
++1 (555) 0179
+
+[PDF_BLOCK b18]
+[REDACTED: PERSON_NAME]
+Director, ¸ird-Party Risk
+Risk, Compliance & Security
+[REDACTED: EMAIL]
++1 (555) 0183
+
+[PDF_BLOCK b19]
+Rafael Quintanilla
+Director, Internal Assurance
+Risk, Compliance & Security
+[REDACTED: EMAIL]
++1 (555) 0188
+
+[PDF_BLOCK b20]
+Cadence Financial Group | Internal — Con¬dential | Contains personal data (synthetic sample)
+8
+
+[PDF_BLOCK b1]
+Handling of Personal Data
+
+[PDF_BLOCK b2]
+Classi¬cation
+¸is pack carries an Internal — Con¬dential marking and holds directory-level personal data comprising names,
+corporate email addresses and mobile numbers.
+
+[PDF_BLOCK b3]
+Distribution
+Circulation is limited to named recipients with a de¬ned business need. Onward forwarding, printing and upload to third
+-party or generative AI tools are to be avoided.
+
+[PDF_BLOCK b4]
+Sample data notice
+¸e role holder details shown are synthetic and have been generated for illustration. Live records are to be sourced
+from the HR system of record before operational use.
+
+[PDF_BLOCK b5]
+Retention
+Superseded versions are to be withdrawn once a revised pack is issued; retention beyond the current reporting cycle
+is not anticipated.
