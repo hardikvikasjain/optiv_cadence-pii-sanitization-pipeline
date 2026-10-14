@@ -1,0 +1,226 @@
+[PARAGRAPH p1]
+VIT VELLORE
+SCHOOL OF COMPUTER SCIENCE AND ENGINEERING
+
+[PARAGRAPH p2]
+BCSE308L – COMPUTER NETWORKS
+CASE STUDY | FALL SEMESTER 2026–2027
+
+[PARAGRAPH p3]
+Name: Hardik Vikas Jain
+
+[PARAGRAPH p4]
+Programme: B.Tech – Computer Science and Engineering
+
+[PARAGRAPH p5]
+Specialisation: Information Security
+
+[PARAGRAPH p6]
+Topic: Networking accessories in personal devices, malware attacks, and recent networking advancements
+
+[HEADING p7]
+1. Networking accessories available in my mobile phone and laptop (5 marks)
+
+[PARAGRAPH p8]
+For this case study, I have considered the devices I use: a OnePlus Nord CE4 Lite 5G mobile phone and a Dell G15 5530 laptop with a 13th Generation Intel Core i7-13650HX processor and NVIDIA GeForce RTX 3050 Laptop GPU. The devices use different networking interfaces depending on whether I need internet access, file transfer, location services, or a connection to another device.
+
+[HEADING p9]
+A. OnePlus Nord CE4 Lite 5G
+
+[PARAGRAPH p10]
+5G / 4G cellular modem: Connects the phone to a mobile operator’s network for internet access, calls, and mobile data. 5G can provide higher data rates and lower latency where coverage and the selected plan support it.
+
+[PARAGRAPH p11]
+Wi-Fi: Connects to a wireless router or campus access point. It is useful for browsing, online classes, downloads, and streaming without using mobile data. The exact Wi-Fi generation depends on the phone specification and regional variant.
+
+[PARAGRAPH p12]
+Bluetooth: Provides short-range wireless communication with accessories such as wireless earphones, speakers, watches, and some file-transfer devices.
+
+[PARAGRAPH p13]
+GPS / satellite positioning: Uses satellite navigation signals to estimate the phone’s location. Navigation apps combine location with network data to load maps and traffic information.
+
+[PARAGRAPH p14]
+USB Type-C port: Supports wired charging and data connection to compatible computers and accessories. With suitable support and settings, a USB connection can also be used for tethering.
+
+[PARAGRAPH p15]
+Mobile hotspot and tethering: Allows the phone to share its mobile-data connection with a laptop or other devices over Wi-Fi, USB, or Bluetooth, depending on the mode selected.
+
+[HEADING p16]
+[REDACTED: PERSON_NAME] G15 5530 laptop
+
+[PARAGRAPH p17]
+Wireless network adapter (Wi-Fi): Connects the laptop to home, college, or public wireless networks. It is useful when an Ethernet cable is not available. The supported Wi-Fi standard should be confirmed from [REDACTED: LOC] Manager or Dell specifications for the exact configuration.
+
+[PARAGRAPH p18]
+Bluetooth adapter: Connects the laptop wirelessly to headphones, a mouse, a keyboard, a phone, and other supported accessories.
+
+[PARAGRAPH p19]
+Ethernet (RJ-45) port: Provides a wired LAN connection to a router or network switch. Ethernet is often preferred for stable connectivity, online gaming, large downloads, and troubleshooting wireless problems.
+
+[PARAGRAPH p20]
+USB ports: Allow supported network-related peripherals to be connected, such as a USB-to-Ethernet adapter or a compatible mobile phone for USB tethering. A USB port itself is not a network adapter; the attached device provides the network function.
+
+[PARAGRAPH p21]
+HDMI / display connection (not a network interface): Useful for connecting an external monitor, but it does not provide network access. It is included here to distinguish general connectivity ports from actual networking interfaces.
+
+[PARAGRAPH p22]
+Network software and Windows firewall: Windows network settings, drivers, and the firewall help the laptop communicate over networks and control unwanted incoming connections. These are software features rather than physical networking accessories.
+
+[HEADING p23]
+Short comparison
+
+[TABLE_CELL t1:r1:c1]
+Feature
+
+[TABLE_CELL t1:r1:c2]
+OnePlus Nord CE4 Lite 5G
+
+[TABLE_CELL t1:r1:c3]
+Dell G15 5530
+
+[TABLE_CELL t1:r2:c1]
+Mobile data
+
+[TABLE_CELL t1:r2:c2]
+5G / 4G cellular connection
+
+[TABLE_CELL t1:r2:c3]
+Can use Wi-Fi, Ethernet, or phone tethering
+
+[TABLE_CELL t1:r3:c1]
+Wireless LAN
+
+[TABLE_CELL t1:r3:c2]
+Wi-Fi
+
+[TABLE_CELL t1:r3:c3]
+Wi-Fi
+
+[TABLE_CELL t1:r4:c1]
+Short-range link
+
+[TABLE_CELL t1:r4:c2]
+Bluetooth
+
+[TABLE_CELL t1:r4:c3]
+Bluetooth
+
+[TABLE_CELL t1:r5:c1]
+Wired data connection
+
+[TABLE_CELL t1:r5:c2]
+USB Type-C
+
+[TABLE_CELL t1:r5:c3]
+USB ports and Ethernet RJ-45
+
+[TABLE_CELL t1:r6:c1]
+Location
+
+[TABLE_CELL t1:r6:c2]
+Satellite positioning
+
+[TABLE_CELL t1:r6:c3]
+Usually uses network/app location services or an external receiver
+
+[PARAGRAPH p24]
+In my daily use, the phone is convenient for mobile data and hotspot sharing, while the laptop gives me more options for wired networking and working with network tools. For security, I should use trusted Wi-Fi, keep both devices updated, avoid unknown USB accessories, and use strong passwords.
+
+[HEADING p25]
+2. Real-time cases of malware attacks in networks (5 marks)
+
+[PARAGRAPH p26]
+Malware is software designed to perform harmful actions, such as stealing information, encrypting files, spying on users, or taking control of devices. A network can help malware spread from one computer to another or allow attackers to control many infected devices at the same time.
+
+[HEADING p27]
+Case 1: WannaCry ransomware (2017)
+
+[PARAGRAPH p28]
+WannaCry was a ransomware worm that spread by exploiting a vulnerability in the [REDACTED: LOC] SMBv1 file-sharing service. Once a vulnerable computer was infected, the malware encrypted files and attempted to spread to other reachable computers on the network. The incident affected organisations in many countries, including healthcare services. It showed that one unpatched computer can become a risk to other systems connected to the same network. The main lessons are to install security updates, disable obsolete SMBv1 where possible, segment networks, and maintain offline or otherwise protected backups.
+
+[HEADING p29]
+Case 2: Mirai botnet and the Dyn DDoS attack (2016)
+
+[PARAGRAPH p30]
+Mirai targeted Internet of Things (IoT) devices such as routers, cameras, and digital video recorders that used weak or default login credentials. Infected devices were gathered into a botnet and instructed to send large volumes of traffic toward a target. In October 2016, a Mirai-related distributed denial-of-service (DDoS) attack against DNS provider Dyn disrupted access to a number of well-known websites. This case demonstrates that even small devices can be misused as part of a large network attack. Changing default passwords, applying firmware updates, disabling unnecessary remote access, and isolating IoT devices can reduce the risk.
+
+[HEADING p31]
+Case 3: NotPetya (2017)
+
+[PARAGRAPH p32]
+NotPetya initially appeared to be ransomware, but its destructive behaviour caused widespread disruption. It spread through organisations and used credential theft and [REDACTED: LOC] network mechanisms, including SMB, to move between systems. Many organisations experienced serious operational and financial damage. The incident shows why organisations should restrict administrator privileges, separate important network segments, monitor unusual internal traffic, and test their recovery plans rather than relying only on perimeter security.
+
+[HEADING p33]
+How these attacks can be reduced
+
+[PARAGRAPH p34]
+Keep operating systems, applications, routers, and device firmware updated.
+
+[PARAGRAPH p35]
+Use unique passwords and multi-factor authentication where available; change default IoT passwords.
+
+[PARAGRAPH p36]
+Enable a firewall and block unnecessary network services and ports.
+
+[PARAGRAPH p37]
+Use network segmentation so an infected device cannot easily reach every other system.
+
+[PARAGRAPH p38]
+Keep tested backups separate from everyday systems and practise recovery.
+
+[PARAGRAPH p39]
+Avoid suspicious links and attachments, and install software only from trusted sources.
+
+[HEADING p40]
+3. Outline of recent technological advancements in networking
+
+[PARAGRAPH p41]
+Wi-Fi 7: Wi-Fi 7 adds features designed for higher throughput, lower latency, and more reliable connections. It can benefit demanding uses such as gaming, video collaboration, and augmented or virtual reality. A device needs compatible hardware and a suitable router to use Wi-Fi 7 features.
+
+[PARAGRAPH p42]
+5G-Advanced: 5G-Advanced builds on 5G through standardised improvements in performance, efficiency, positioning, and support for more connected devices. It is an evolution of 5G rather than a completely separate generation. Availability of features depends on network operators and devices.
+
+[PARAGRAPH p43]
+Early 6G research: Researchers and standards groups are studying the next generation of mobile networking, commonly called 6G. Potential goals include very high capacity, integrated sensing, AI-assisted operation, and improved connectivity in difficult-to-reach areas. These are research and development directions, not services universally available today.
+
+[PARAGRAPH p44]
+AI-assisted network management: Machine-learning systems can help operators identify unusual traffic, predict congestion, detect faults, and optimise network resources. Human review is still important because inaccurate alerts or automated decisions can affect users.
+
+[PARAGRAPH p45]
+Software-Defined Networking (SDN) and Network Function Virtualisation (NFV): SDN separates network control from packet forwarding, while NFV runs functions such as firewalls and load balancers as software on general-purpose infrastructure. These approaches can make networks easier to configure and scale.
+
+[PARAGRAPH p46]
+Zero Trust and Secure Access Service Edge (SASE): Modern network security increasingly checks identity, device health, and access permissions rather than trusting a device simply because it is inside an organisation’s network. SASE combines networking and security services for users and sites in different locations.
+
+[PARAGRAPH p47]
+Satellite internet and non-terrestrial networks: Low-Earth-orbit satellite systems and developing non-terrestrial network standards aim to extend connectivity to remote regions, ships, aircraft, and emergency locations where terrestrial coverage is limited.
+
+[PARAGRAPH p48]
+Edge computing and IoT networking: Edge computing processes some data closer to where it is generated instead of sending everything to a distant cloud. This can reduce delay for applications such as industrial monitoring, smart transport, and connected healthcare.
+
+[HEADING p49]
+Conclusion
+
+[PARAGRAPH p50]
+This case study helped me connect networking concepts with devices I use every day. My phone mainly provides cellular connectivity, Wi-Fi, Bluetooth, and tethering, while my laptop also supports wired Ethernet. Real-world malware incidents show that insecure devices and unpatched software can affect an entire network. At the same time, technologies such as Wi-Fi 7, 5G-Advanced, AI-assisted management, and edge computing are improving how networks perform. Good security practices must develop alongside these improvements.
+
+[HEADING p51]
+References
+
+[PARAGRAPH p52]
+Cybersecurity and Infrastructure Security Agency (CISA), “What is WannaCry/WanaCrypt0r?” https://www.cisa.gov/sites/default/files/FactSheets/NCCIC%20ICS_FactSheet_WannaCry_Ransomware_S508C.pdf
+
+[PARAGRAPH p53]
+Federal Bureau of Investigation, Internet Crime Complaint Center (IC3), “Common Internet of Things Devices May Expose Consumers to Cyber Exploitation.” https://www.ic3.gov/PSA/2017/PSA171017
+
+[PARAGRAPH p54]
+Cybersecurity and Infrastructure Security Agency (CISA), “#StopRansomware Guide.” https://www.cisa.gov/stopransomware/ransomware-guide
+
+[PARAGRAPH p55]
+Wi-Fi Alliance, “Wi-Fi CERTIFIED 7™: driving next-level Wi-Fi performance,” January 2024. https://www.globenewswire.com/news-release/2024/01/08/2805409/0/en/wi-fi-alliance-introduces-wi-fi-certified-7.html
+
+[PARAGRAPH p56]
+3GPP, “5G-Advanced / Release 18” information and standards programme. https://www.3gpp.org/
+
+[FOOTER s1:ftr]
+BCSE308L – Computer Networks | Case Study   •   Page

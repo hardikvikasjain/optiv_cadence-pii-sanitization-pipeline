@@ -1,27 +1,25 @@
 {
-  "certificate_id": "e7a516ce-477a-4851-ab8c-bd69c348c9f0",
-  "session_id": "4a59cac3-d885-424e-90d7-92166d01e44f",
-  "issued_at": "2026-10-14T09:24:27.091803+00:00",
+  "certificate_id": "cbc54b0e-9222-4fe0-8a6e-0ba4fd46897a",
+  "session_id": "00c1b330-7c6e-44bc-a8a3-7d9e0f0b2526",
+  "issued_at": "2026-10-14T09:38:33.800075+00:00",
   "issuer": "Cadence Financial Group - Autonomous Governance Sentinel",
   "jurisdiction": "Global Enterprise / Strict Local Security Boundary",
   "artifact_details": {
-    "file_name": "Cadence_TPRM_Training.pdf",
-    "source_file_sha256": "09922e782863a2c487a3b89973fbeda1be7daffa874fe6829924c6f5d86f46d8",
-    "sanitized_content_sha256": "646299ff829b0d2a5c40790152708dd90174c8a40bba450d9c4af1855b84465b",
-    "total_segments_processed": 2364,
-    "total_entities_sanitized": 38
+    "file_name": "BCSE308L_Computer_Networks_Case_Study_Hardik_Jain.docx",
+    "source_file_sha256": "dd702272903843b5d52f0cc8c616fd105db56229a83be8146100611a2f4c7ba6",
+    "sanitized_content_sha256": "7845baee7b7854717d45e243ac90cd01d370a124c2640b16a6b9b98bef89ebfc",
+    "total_segments_processed": 75,
+    "total_entities_sanitized": 4
   },
   "entity_distribution_summary": {
-    "GPE": 13,
-    "PERSON_NAME": 25
+    "PERSON_NAME": 1,
+    "LOC": 3
   },
   "safety_gate": {
-    "status": "REVIEW REQUIRED",
-    "safe_for_downstream_llm": false,
-    "warnings_logged_count": 1,
-    "warnings": [
-      "Offset Verification Gate: Slice mismatch at [7:18]. Expected 'Tier Custom', found 'Tier\nCustom'."
-    ]
+    "status": "PASS - AUDITED",
+    "safe_for_downstream_llm": true,
+    "warnings_logged_count": 0,
+    "warnings": []
   },
   "qa_performance_guarantee": {
     "precision_benchmark": "90.0% Verified",
@@ -39,5 +37,5 @@
     "Gramm-Leach-Bliley Act (GLBA) Safeguards Rule",
     "Cadence TPRM Risk Policy v6.0"
   ],
-  "digital_signature": "375a08eb3b7fa1ce4645e2be29682bbbc867c46a2f353a5688894242e2f977ea"
+  "digital_signature": "e32ab83d547b251040f82e1fbeeadfdb52eccdacba10131d99ffeaa0e5f990ef"
 }

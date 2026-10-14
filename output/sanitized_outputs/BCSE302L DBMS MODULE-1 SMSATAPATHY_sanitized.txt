@@ -1,0 +1,2732 @@
+[PDF_BLOCK b1]
+Module - 1
+Database Systems Concepts and Architecture
+
+[PDF_BLOCK b2]
+L T P C
+BCSE302L - 3 0 0 3
+BCSE302P - 0 0 2 1
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+
+[PDF_BLOCK b4]
+Professor, SCOPE
+
+[PDF_BLOCK b5]
+School of Computer Science and Engineering
+
+[PDF_BLOCK b6]
+Vellore Institute of Technology
+Vellore, Tamil Nadu - 632014, [REDACTED: GPE]
+
+[PDF_BLOCK b7]
+July 30, 2026
+
+[PDF_BLOCK b8]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+1
+
+[PDF_BLOCK b1]
+Outline
+
+[PDF_BLOCK b2]
+1
+Introduction
+
+[PDF_BLOCK b3]
+File System vs. DBMS
+Characteristics of DBMS
+Database Users
+
+[PDF_BLOCK b4]
+2
+Data Models, [REDACTED: GPE], and Instances
+
+[PDF_BLOCK b5]
+Categories of Data Models
+Schema vs. Instance
+
+[PDF_BLOCK b6]
+3
+Database System Environment
+
+[PDF_BLOCK b7]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+2
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+Reference Books
+
+[PDF_BLOCK b3]
+1 R. Elmasri & S. B. Navathe, Fundamentals of Database Systems,
+[REDACTED: PERSON_NAME], 7th Edition, 2016
+
+[PDF_BLOCK b4]
+2 Raghu Ramakrishnan,
+Database Management Systems,
+Mcgraw-
+Hill,4th edition, 2015.
+
+[PDF_BLOCK b5]
+3 A. Silberschatz, H. F. Korth S. Sudershan, Database System Concepts,
+McGraw Hill, 7th Edition 2010.
+
+[PDF_BLOCK b6]
+4 [REDACTED: PERSON_NAME], [REDACTED: PERSON_NAME], Database Systems: A Practical Ap-
+proach to Design, Implementation and Management, 6th Edition, 2012.
+
+[PDF_BLOCK b7]
+5 Pramod J. Sadalage and [REDACTED: PERSON_NAME], NoSQL Distilled: A brief guide
+to merging world of Polyglot persistence, [REDACTED: PERSON_NAME], 2012.
+
+[PDF_BLOCK b8]
+6 [REDACTED: PERSON_NAME], Professional NoSql, Wiley, 2011.
+
+[PDF_BLOCK b9]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+3
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+General Instructions
+
+[PDF_BLOCK b3]
+1 Attendance is mandatory as per the norms of VIT.
+
+[PDF_BLOCK b4]
+2 Be attentive during the class and take part in all discussions.
+
+[PDF_BLOCK b5]
+3 Submission of any class assignments and graded assignments should be
+done on time.
+
+[PDF_BLOCK b6]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+4
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+General Instructions
+
+[PDF_BLOCK b3]
+1 Attendance is mandatory as per the norms of VIT.
+
+[PDF_BLOCK b4]
+2 Be attentive during the class and take part in all discussions.
+
+[PDF_BLOCK b5]
+3 Submission of any class assignments and graded assignments should be
+done on time.
+
+[PDF_BLOCK b6]
+Grading Scheme
+
+[PDF_BLOCK b7]
+Activity
+Tentative Deadline
+Weightage
+
+[PDF_BLOCK b8]
+Digital Assessment
+1 week before last instructional day
+10%
+
+[PDF_BLOCK b9]
+Quiz - 1
+1-2 weeks Post CAT1
+10%
+
+[PDF_BLOCK b10]
+Quiz - 2
+1-2 weeks Post CAT2
+10%
+
+[PDF_BLOCK b11]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+4
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+What is Data?
+Data is unorganized information, that is processed to make it meaningful.
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+5
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+What is Data?
+Data is unorganized information, that is processed to make it meaningful.
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+5
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+What is Data?
+Data is unorganized information, that is processed to make it meaningful.
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+5
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+What is Data?
+Data is unorganized information, that is processed to make it meaningful.
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+5
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+Data Can be...
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+6
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+Data Can be...
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+6
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+Data Can be...
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+6
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+Data Can be...
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+6
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+Data Can be...
+
+[PDF_BLOCK b3]
+“[REDACTED: GPE] database”, they typically use it to refer to any non-relational
+database. It stores and retrieves data without needing to define its
+structure first.
+
+[PDF_BLOCK b4]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+6
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+Data
+
+[PDF_BLOCK b3]
+Definition
+
+[PDF_BLOCK b4]
+Collection of facts and figures
+
+[PDF_BLOCK b5]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+7
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+Data
+
+[PDF_BLOCK b3]
+Information
+
+[PDF_BLOCK b4]
+Definition
+
+[PDF_BLOCK b5]
+Collection of facts and figures
+
+[PDF_BLOCK b6]
+Processed data
+
+[PDF_BLOCK b7]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+7
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+Data
+
+[PDF_BLOCK b3]
+Information
+
+[PDF_BLOCK b4]
+Database
+
+[PDF_BLOCK b5]
+Definition
+
+[PDF_BLOCK b6]
+Collection of facts and figures
+
+[PDF_BLOCK b7]
+Processed data
+
+[PDF_BLOCK b8]
+Collection of related data in a defined order.
+Ex:- student database, employee database
+
+[PDF_BLOCK b9]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+7
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+Data
+
+[PDF_BLOCK b3]
+Information
+
+[PDF_BLOCK b4]
+Database
+
+[PDF_BLOCK b5]
+DBMS
+
+[PDF_BLOCK b6]
+Definition
+
+[PDF_BLOCK b7]
+Collection of facts and figures
+
+[PDF_BLOCK b8]
+Processed data
+
+[PDF_BLOCK b9]
+Collection of related data in a defined order.
+Ex:- student database, employee database
+
+[PDF_BLOCK b10]
+Database + Set of Programs
+
+[PDF_BLOCK b11]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+7
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+DBMS - Definition
+It is a software system that facilitates the processes of defining, constructing,
+manipulating and sharing data among various users and applications.
+Ex: - MySQL, MS SQL Server, Oracle, DB2, MongoDB, Microsoft Access,
+etc.
+
+[PDF_BLOCK b3]
+Define – specifying the data type, structure and constraints for the
+data to be stored
+
+[PDF_BLOCK b4]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+8
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+DBMS - Definition
+It is a software system that facilitates the processes of defining, constructing,
+manipulating and sharing data among various users and applications.
+Ex: - MySQL, MS SQL Server, Oracle, DB2, MongoDB, Microsoft Access,
+etc.
+
+[PDF_BLOCK b3]
+Define – specifying the data type, structure and constraints for the
+data to be stored
+
+[PDF_BLOCK b4]
+Construct – process of storing the data
+
+[PDF_BLOCK b5]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+8
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+DBMS - Definition
+It is a software system that facilitates the processes of defining, constructing,
+manipulating and sharing data among various users and applications.
+Ex: - MySQL, MS SQL Server, Oracle, DB2, MongoDB, Microsoft Access,
+etc.
+
+[PDF_BLOCK b3]
+Define – specifying the data type, structure and constraints for the
+data to be stored
+
+[PDF_BLOCK b4]
+Construct – process of storing the data
+
+[PDF_BLOCK b5]
+Manipulate – Querying the database to retrieve specific data, updating
+the database, and generating the reports
+
+[PDF_BLOCK b6]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+8
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+DBMS - Definition
+It is a software system that facilitates the processes of defining, constructing,
+manipulating and sharing data among various users and applications.
+Ex: - MySQL, MS SQL Server, Oracle, DB2, MongoDB, Microsoft Access,
+etc.
+
+[PDF_BLOCK b3]
+Define – specifying the data type, structure and constraints for the
+data to be stored
+
+[PDF_BLOCK b4]
+Construct – process of storing the data
+
+[PDF_BLOCK b5]
+Manipulate – Querying the database to retrieve specific data, updating
+the database, and generating the reports
+
+[PDF_BLOCK b6]
+Share – allows multiple users to access the database concurrently
+
+[PDF_BLOCK b7]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+8
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+Goal
+provide a way to Store & Retrieve data from the database in a Convenient
+& Efficient manner.
+
+[PDF_BLOCK b3]
+Figure 1: A simplified database system environment
+
+[PDF_BLOCK b4]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+9
+
+[PDF_BLOCK b1]
+Introduction
+
+[PDF_BLOCK b2]
+Relational vs. Non-relational DBMS
+
+[PDF_BLOCK b3]
+Features
+Relational DBMS
+Non-relational DBMS
+
+[PDF_BLOCK b4]
+Document, Key-Value, Graph,
+
+[PDF_BLOCK b5]
+Data Model
+Relational (tables, rows,
+
+[PDF_BLOCK b6]
+columns)
+
+[PDF_BLOCK b7]
+Wide-Column
+
+[PDF_BLOCK b8]
+Often designed for horizontal
+
+[PDF_BLOCK b9]
+Scalability
+Can be challenging for large
+
+[PDF_BLOCK b10]
+datasets
+
+[PDF_BLOCK b11]
+scaling
+
+[PDF_BLOCK b12]
+Strong ACID compliance
+
+[PDF_BLOCK b13]
+Varies, often weaker ACID
+
+[PDF_BLOCK b14]
+ACID Compliance
+
+[PDF_BLOCK b15]
+(Atomicity, Consistency,
+
+[PDF_BLOCK b16]
+guarantees
+
+[PDF_BLOCK b17]
+Isolation, Durability)
+
+[PDF_BLOCK b18]
+MongoDB, Cassandra, Redis,
+
+[PDF_BLOCK b19]
+Example
+Oracle Database, MySQL,
+
+[PDF_BLOCK b20]
+PostgreSQL, SQL Server
+
+[PDF_BLOCK b21]
+DynamoDB
+
+[PDF_BLOCK b22]
+Varies (e.g., MongoDB’s query
+
+[PDF_BLOCK b23]
+Query Language
+SQL (Structured Query
+
+[PDF_BLOCK b24]
+Language)
+
+[PDF_BLOCK b25]
+language)
+
+[PDF_BLOCK b26]
+Social media, IoT, analytics
+
+[PDF_BLOCK b27]
+Preferred Applications
+Financial systems, Inventory
+
+[PDF_BLOCK b28]
+management etc.
+
+[PDF_BLOCK b29]
+etc.
+
+[PDF_BLOCK b30]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+10
+
+[PDF_BLOCK b1]
+Applications of DBMS
+
+[PDF_BLOCK b2]
+E-Commerce ([REDACTED: GPE], Amazon, Shopclues, eBay etc...)
+
+[PDF_BLOCK b3]
+Online Television Streaming (Hotstar, Amazon Prime etc...)
+
+[PDF_BLOCK b4]
+Social Media (WhatsApp, Facebook, Twitter, LinkedIn etc...)
+
+[PDF_BLOCK b5]
+Banking & Insurance
+
+[PDF_BLOCK b6]
+Airline & Railway
+
+[PDF_BLOCK b7]
+Universities and Colleges/Schools
+
+[PDF_BLOCK b8]
+Library Management System
+
+[PDF_BLOCK b9]
+Human Resource Department
+
+[PDF_BLOCK b10]
+Hospitals and Medical Stores
+
+[PDF_BLOCK b11]
+Government Organizations
+
+[PDF_BLOCK b12]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+11
+
+[PDF_BLOCK b1]
+File System vs. DBMS
+
+[PDF_BLOCK b2]
+Data redundancy - repetition of data
+
+[PDF_BLOCK b3]
+The file system cannot control the redundancy of data, Whereas DBMS
+controls redundancy by maintaining a single repository of data that is
+defined once and is accessed by many users.
+
+[PDF_BLOCK b4]
+This will lead to wastage of storage space, inconsistency
+
+[PDF_BLOCK b5]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+12
+
+[PDF_BLOCK b1]
+File System vs. DBMS
+
+[PDF_BLOCK b2]
+Restricting Unauthorized Access
+
+[PDF_BLOCK b3]
+When multiple users share a large database, it is likely that most users
+will only be authorized to access some information in the database.
+
+[PDF_BLOCK b4]
+For example, financial data such as salaries and bonuses is often con-
+sidered confidential, and only authorized persons are allowed to access
+such data.
+
+[PDF_BLOCK b5]
+Type of access operation—retrieval or update—must also be controlled.
+DBMS should provide a security and authorization subsystem, which
+the DBA uses to create accounts and to specify account restrictions.
+
+[PDF_BLOCK b6]
+For example, only the DBA’s staff may be allowed to use certain privi-
+leged software, such as the software for creating new accounts.
+
+[PDF_BLOCK b7]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+13
+
+[PDF_BLOCK b1]
+File System vs. DBMS
+
+[PDF_BLOCK b2]
+Providing Persistent Storage for Program Objects
+
+[PDF_BLOCK b3]
+In a file system, the values of program variables or objects are discarded
+once a program terminates
+
+[PDF_BLOCK b4]
+When the need arises to read this data once more, the programmer
+must convert from the file format to the program variable or object
+structure.
+
+[PDF_BLOCK b5]
+DBMS software automatically performs any necessary conversions.
+
+[PDF_BLOCK b6]
+Such an object is said to be persistent since it survives the termination
+of program execution and can later be directly retrieved by another
+program.
+
+[PDF_BLOCK b7]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+14
+
+[PDF_BLOCK b1]
+File System vs. DBMS
+
+[PDF_BLOCK b2]
+Providing [REDACTED: PERSON_NAME] and Search Techniques for Efficient
+Query Processing
+
+[PDF_BLOCK b3]
+Database systems must provide capabilities for efficiently executing
+queries and updates.
+
+[PDF_BLOCK b4]
+Because the database is typically stored on disk, the DBMS must
+provide specialized data structures (indexes) and search techniques to
+speed up disk search for the desired records.
+
+[PDF_BLOCK b5]
+In order to process the database records needed by a particular query,
+those records must be copied from disk to main memory.
+
+[PDF_BLOCK b6]
+Therefore, the DBMS often has a buffering or caching module that
+maintains parts of the database in main memory buffers.
+
+[PDF_BLOCK b7]
+The query processing and optimization module of the DBMS is respon-
+sible for choosing an efficient query execution plan for each query based
+on the existing storage structures.
+
+[PDF_BLOCK b8]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+15
+
+[PDF_BLOCK b1]
+File System vs. DBMS
+
+[PDF_BLOCK b2]
+Providing Backup and Recovery
+
+[PDF_BLOCK b3]
+The backup and recovery subsystem of the DBMS is responsible for
+recovery.
+For example, if the computer system fails in the middle of a complex
+update transaction, the recovery subsystem is responsible for making
+sure that the database is restored to the state it was in before the
+transaction started executing.
+
+[PDF_BLOCK b4]
+Providing Multiple User Interfaces
+
+[PDF_BLOCK b5]
+Multiple users →different levels of technical knowledge →so DBMS
+should provide a variety of user interfaces. e.g.
+Query languages →casual users
+programming language interfaces →application programmers
+forms →parametric users
+menu driven interface →standalone users
+
+[PDF_BLOCK b6]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+16
+
+[PDF_BLOCK b1]
+File System vs. DBMS
+
+[PDF_BLOCK b2]
+Representing Complex Relationships among Data
+
+[PDF_BLOCK b3]
+A database may have variety of data →interrelated in many ways.
+DBMS must be capable of:
+
+[PDF_BLOCK b4]
+Representing complex relationships among data
+Retrieve and update related data easily and efficiently
+
+[PDF_BLOCK b5]
+Enforcing Integrity Constraints
+
+[PDF_BLOCK b6]
+Specifying a data type for the data ([REDACTED: LOC] constraint)
+
+[PDF_BLOCK b7]
+Uniqueness of the data items
+
+[PDF_BLOCK b8]
+Responsibility of the database designers to fix these constraints
+
+[PDF_BLOCK b9]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+17
+
+[PDF_BLOCK b1]
+Characteristics of DBMS
+
+[PDF_BLOCK b2]
+1 Self-describing nature of a database system
+A DBMS catalog stores the description of a particular database (e.g.
+data structures, types, and constraints)
+The description is called meta-data.
+This allows the DBMS software to work with different database applica-
+tions.
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+18
+
+[PDF_BLOCK b1]
+Characteristics of DBMS
+
+[PDF_BLOCK b2]
+2 Data isolation
+Data are scattered in various files & the formats of these data may be
+different, so retrieving the appropriate data is difficult. ( Multiple Files
+and [REDACTED: GPE])
+In the database system data are stored in one place. So data will be
+accessed in a faster manner.
+
+[PDF_BLOCK b3]
+3 Insulation between Programs and Data, and Data Abstraction
+Application Program and structure of data files are independent in the
+case of DBMS Called program-data independence.
+A data model is used to hide storage details and present the users with
+a conceptual view of the database.
+
+[PDF_BLOCK b4]
+Table 1: Internal storage format for a STUDENT record
+
+[PDF_BLOCK b5]
+Data Item name
+Starting Position in Record
+Length in Characters (bytes)
+
+[PDF_BLOCK b6]
+Name
+1
+30
+
+[PDF_BLOCK b7]
+Student number
+31
+4
+Class
+35
+1
+
+[PDF_BLOCK b8]
+Major
+36
+4
+
+[PDF_BLOCK b9]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+19
+
+[PDF_BLOCK b1]
+Characteristics of DBMS
+
+[PDF_BLOCK b2]
+4 Support of multiple views of the data
+Each user may see a different view of the database, which describes only
+the data of interest to that user
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+20
+
+[PDF_BLOCK b1]
+Characteristics of DBMS
+
+[PDF_BLOCK b2]
+5 Sharing of data and multi-user transaction processing
+Allowing a set of concurrent users to retrieve from and to update the
+database.
+Concurrency control within the DBMS guarantees that each transac-
+tion is correctly executed or aborted.
+Recovery subsystem ensures each completed transaction has its effect
+permanently recorded in the database.
+OLTP (Online Transaction Processing) is a major part of database
+applications. This allows hundreds of concurrent transactions to execute
+per second.
+
+[PDF_BLOCK b3]
+6 Data redundancy and inconsistency
+Data redundancy may lead to data inconsistency and higher storage
+costs.
+The same information may be replicated in several files in the file pro-
+cessing approach.
+For example, any changes to the records of one file will not affect the
+records of other files.
+
+[PDF_BLOCK b4]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+21
+
+[PDF_BLOCK b1]
+Characteristics of DBMS
+
+[PDF_BLOCK b2]
+The various copies of the same data may no longer agree (data incon-
+sistency).
+In DB approach, there is controlled redundancy of data and no data
+inconsistency.
+Student DB system included in a file
+
+[PDF_BLOCK b3]
+➔General info (regd no, Name, dob, branch, address, Tel-phno, marks)
+➔Hostel info (regd no, Name, dob, branch, address, Tel-phno, mess-bill,
+
+[PDF_BLOCK b4]
+room no)
+➔Library info (regd no, name, dob, branch, address, Tel-phno, date-of-
+
+[PDF_BLOCK b5]
+issue, date-of-return, no-of-books-issued, fine)
+➔Account info (regd no, name, dob, branch, address, Tel-phno, year-of-
+
+[PDF_BLOCK b6]
+joining, Fee, installment, Balance, Total)
+The file system contains some common data of students like regd no,
+Name, dob, branch, dob, address, Tel-phno causing redundant info
+and wastage of storage space. But in a centralized DBMS system,
+this can be eliminated to a great extent as data can be shared by
+across many numbers of applications.
+
+[PDF_BLOCK b7]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+22
+
+[PDF_BLOCK b1]
+Characteristics of DBMS
+
+[PDF_BLOCK b2]
+➔General info (regd no, Name, dob, branch, address, Tel-phno, marks)
+➔Hostel info (regd no, mess-bill, room no)
+➔Library info (regd no, date-of-issue, date-of-return, no-of-books-issued,
+
+[PDF_BLOCK b3]
+fine)
+➔Account info (regd no, year-of-joining, Fee, installment, Balance, Total)
+Data need not be stored repeatedly as all applications can access the
+information by joining the relation on basis of the common column.
+
+[PDF_BLOCK b4]
+7 Difficulty in accessing the data
+It is difficult to implement a new requirement through the application
+program in a traditional file processing system.
+Changed requirement of user leads to writing different application pro-
+grams.
+Conventional file processing environments do not allow needed data to
+be retrieved in a convenient and efficient manner.
+A more responsive data retrieval system is required.
+
+[PDF_BLOCK b5]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+23
+
+[PDF_BLOCK b1]
+Characteristics of DBMS
+
+[PDF_BLOCK b2]
+8 Integrity Problem
+The data stored in the database must satisfy certain types of
+constraint.
+
+[PDF_BLOCK b3]
+Integrity constraints (e.g. account balance > 0 implemented through
+program code rather than being stated explicitly)
+Hard to add new constraints or change existing ones in the case of a
+traditional file-processing system.
+
+[PDF_BLOCK b4]
+9 Concurrent Access Anomalies
+Multiple users are allowed to access and update the data simultaneously.
+Uncontrolled concurrent accesses can lead to inconsistencies.
+
+[PDF_BLOCK b5]
+10 Security Problem
+Hard to provide user access to some, but not all, data in the case of a
+file processing system, but possible for DBMS.
+
+[PDF_BLOCK b6]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+24
+
+[PDF_BLOCK b1]
+Characteristics of DBMS
+
+[PDF_BLOCK b2]
+11 Atomicity Problem
+A computer system, like any other device, is subject to failure.
+In many applications, it is crucial that, if a failure occurs, the data be
+restored to the consistent state that existed prior to the failure.
+All the operations in a database must be atomic Either the operation
+is entirely executed or None of the steps of the operation should be
+executed.
+It is difficult to ensure atomicity in a conventional file processing system
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+25
+
+[PDF_BLOCK b1]
+Database Users
+
+[PDF_BLOCK b2]
+Based on the interaction with the database, DBMS has two categories of
+users.
+
+[PDF_BLOCK b3]
+Actors on the scene
+Workers behind the scene
+
+[PDF_BLOCK b4]
+People whose jobs involve the
+use of a large database every
+day.
+
+[PDF_BLOCK b5]
+design, development, and op-
+eration of the DBMS software
+and system environment.
+
+[PDF_BLOCK b6]
+There are 4 different users:
+
+[PDF_BLOCK b7]
+There are 3 different users:
+
+[PDF_BLOCK b8]
+➔DBMS system designers
+
+[PDF_BLOCK b9]
+➔Database Administrators
+➔Database Designers
+➔End Users
+➔System Analysts and
+
+[PDF_BLOCK b10]
+and implementers
+➔Tool developers
+➔Operators and
+
+[PDF_BLOCK b11]
+maintenance personnel
+
+[PDF_BLOCK b12]
+Application Programmers
+(Software Engineers)
+
+[PDF_BLOCK b13]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+26
+
+[PDF_BLOCK b1]
+Actors on the scene
+
+[PDF_BLOCK b2]
+1 Database Administrators (DBA)
+The person in charge of implementing the database system for an orga-
+nization.
+Responsible for the management of the database system Chief admin-
+istrator.
+In database environment, Primary resources →Database,
+Secondary resource →DBMS and related software.
+DBA responsibilities:
+
+[PDF_BLOCK b3]
+Administering the primary/secondary resources
+⇒
+Schema Definition
+⇒
+Storage Structure and access method definition
+⇒
+Schema and Physical organization modification
+Granting of authorization for data access
+Coordinating and Monitoring the use of database ([REDACTED: PERSON_NAME])
+Acquiring software and hardware resources
+Handling any security-related threats
+
+[PDF_BLOCK b4]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+27
+
+[PDF_BLOCK b1]
+Actors on the scene
+
+[PDF_BLOCK b2]
+Examples of the database administrator’s routine maintenance activities
+are
+
+[PDF_BLOCK b3]
+⇒Periodically backing up the database onto remote servers, to prevent loss
+
+[PDF_BLOCK b4]
+of data in case of disasters such as flooding.
+⇒Ensuring that enough free disk space is available for normal operations,
+
+[PDF_BLOCK b5]
+and upgrading disk space as required.
+⇒Monitoring jobs running on the database and ensuring that performance
+
+[PDF_BLOCK b6]
+is not degraded by very expensive tasks submitted by some users.
+
+[PDF_BLOCK b7]
+2 Database Designers
+Responsible for:
+
+[PDF_BLOCK b8]
+⇒Identifying the data to be stored in the database
+⇒Choose appropriate content, structure, constraints, and functions or
+
+[PDF_BLOCK b9]
+transactions against the database.
+⇒Communicate with the end-users and understand their needs
+
+[PDF_BLOCK b10]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+28
+
+[PDF_BLOCK b1]
+Actors on the scene
+
+[PDF_BLOCK b2]
+3 End-users
+They use the data for queries, reports and some of them update the
+database content.
+End-users can be categorized into:
+
+[PDF_BLOCK b3]
+⇒Casual: access database occasionally when needed.
+⇒Need different information each time.
+⇒Use a sophisticated database query interface to specify their request.
+⇒Na¨ıve or Parametric: they make up a large section of the end-user
+
+[PDF_BLOCK b4]
+population.
+⇒They use previously well-defined functions in the form of “canned
+
+[PDF_BLOCK b5]
+transactions” against the database.
+⇒Examples, The person who is working in the bank will basically tell us
+
+[PDF_BLOCK b6]
+the account balance and post-withdrawal and deposits.
+⇒Reservation clerks for airlines, railway, hotels, and car rental companies
+
+[PDF_BLOCK b7]
+basically check availability for a given request and make the reservation.
+⇒Sophisticated end users: These users basically include engineers,
+
+[PDF_BLOCK b8]
+scientists, business analytics, and others who thoroughly familiarize
+themselves with the facilities of the DBMS in order to implement their
+application to meet their complex requirements.
+
+[PDF_BLOCK b9]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+29
+
+[PDF_BLOCK b1]
+Actors on the scene
+
+[PDF_BLOCK b2]
+⇒These users try to learn most of the DBMS facilities in order to achieve
+
+[PDF_BLOCK b3]
+their complex requirements.
+⇒Many use tools in the form of software packages that work closely with
+
+[PDF_BLOCK b4]
+the stored database.
+⇒Stand-alone: Mostly maintain personal databases using ready-to-use
+
+[PDF_BLOCK b5]
+packaged applications.
+⇒e.g., tax program user that creates its own internal database. User who
+
+[PDF_BLOCK b6]
+maintains an address book.
+
+[PDF_BLOCK b7]
+4 Application Programmer
+test, debug, and document these canned transactions.
+Write application programs in some Programming language (such as C,
+C++, Java, python)
+Possesses higher degree of expertise.
+Implement specifications of different end users as programs
+
+[PDF_BLOCK b8]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+30
+
+[PDF_BLOCK b1]
+Actors on the scene
+
+[PDF_BLOCK b2]
+5 System Analysts
+determines the requirements of the end users →develop specifications
+for canned transactions.
+Determine requirements of end users and develop specifications that
+meet these requirements
+Determine technical and operational feasibility
+Application programmers + System Analyst = Software Engineers
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+31
+
+[PDF_BLOCK b1]
+Workers behind the Scene
+
+[PDF_BLOCK b2]
+1 DBMS system designers and implementers design and implement
+the DBMS modules and interfaces as a software package.
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+32
+
+[PDF_BLOCK b1]
+Workers behind the Scene
+
+[PDF_BLOCK b2]
+1 DBMS system designers and implementers design and implement
+the DBMS modules and interfaces as a software package.
+
+[PDF_BLOCK b3]
+2 Tool developers design and implement tools—the software packages.
+
+[PDF_BLOCK b4]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+32
+
+[PDF_BLOCK b1]
+Workers behind the Scene
+
+[PDF_BLOCK b2]
+1 DBMS system designers and implementers design and implement
+the DBMS modules and interfaces as a software package.
+
+[PDF_BLOCK b3]
+2 Tool developers design and implement tools—the software packages.
+
+[PDF_BLOCK b4]
+3 Operators and maintenance personnel (system administration
+personnel) are responsible for the actual running and maintenance of
+the hardware and software environment for the database system.
+
+[PDF_BLOCK b5]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+32
+
+[PDF_BLOCK b1]
+Review Questions - 1
+
+[PDF_BLOCK b2]
+Give some examples of integrity constraints that can apply to the following
+database.
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+33
+
+[PDF_BLOCK b1]
+Review Questions - 1
+
+[PDF_BLOCK b2]
+The Student Number should be unique for each STUDENT record (key
+constraint).
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+34
+
+[PDF_BLOCK b1]
+Review Questions - 1
+
+[PDF_BLOCK b2]
+The Student Number should be unique for each STUDENT record (key
+constraint).
+
+[PDF_BLOCK b3]
+The value of [REDACTED: LOC] in a GRADE REPORT - record must be one of the
+values in the set A, B, C, D, E, F, S, N (domain constraint).
+
+[PDF_BLOCK b4]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+34
+
+[PDF_BLOCK b1]
+Review Questions - 2
+
+[PDF_BLOCK b2]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+35
+
+[PDF_BLOCK b1]
+Review Questions - 2
+
+[PDF_BLOCK b2]
+If the name of the ’CS’ [Computer Science] Department changes to
+’CSSE’ [Computer Science and Software Engineering] Department and the
+corresponding prefix for the course number also changes, identify the
+columns in the database that would need to be updated.
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+35
+
+[PDF_BLOCK b1]
+Review Questions - 2
+
+[PDF_BLOCK b2]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+36
+
+[PDF_BLOCK b1]
+Review Questions - 2
+
+[PDF_BLOCK b2]
+The following columns have to be updated:
+
+[PDF_BLOCK b3]
+Table
+Column(s)
+
+[PDF_BLOCK b4]
+STUDENT
+Major
+
+[PDF_BLOCK b5]
+COURSE
+Course number and Department
+
+[PDF_BLOCK b6]
+SECTION
+Course number
+
+[PDF_BLOCK b7]
+PREREQUISITE
+Course number and Prerequisite number
+
+[PDF_BLOCK b8]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+36
+
+[PDF_BLOCK b1]
+Advantage of File Processing over Database Approach
+
+[PDF_BLOCK b2]
+Sometimes DBMS involves unnecessary costs due to the high initial
+investment in hardware, software, training, security, control etc.
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+37
+
+[PDF_BLOCK b1]
+Advantage of File Processing over Database Approach
+
+[PDF_BLOCK b2]
+Sometimes DBMS involves unnecessary costs due to the high initial
+investment in hardware, software, training, security, control etc.
+
+[PDF_BLOCK b3]
+So, if you are working with simple and well-defined database applica-
+tions that aren’t going to change at all.
+
+[PDF_BLOCK b4]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+37
+
+[PDF_BLOCK b1]
+Advantage of File Processing over Database Approach
+
+[PDF_BLOCK b2]
+Sometimes DBMS involves unnecessary costs due to the high initial
+investment in hardware, software, training, security, control etc.
+
+[PDF_BLOCK b3]
+So, if you are working with simple and well-defined database applica-
+tions that aren’t going to change at all.
+
+[PDF_BLOCK b4]
+Sometimes, DBMS won’t fit if you have embedded systems with limited
+storage capacity, so it is better to use traditional file processing.
+
+[PDF_BLOCK b5]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+37
+
+[PDF_BLOCK b1]
+Advantage of File Processing over Database Approach
+
+[PDF_BLOCK b2]
+Sometimes DBMS involves unnecessary costs due to the high initial
+investment in hardware, software, training, security, control etc.
+
+[PDF_BLOCK b3]
+So, if you are working with simple and well-defined database applica-
+tions that aren’t going to change at all.
+
+[PDF_BLOCK b4]
+Sometimes, DBMS won’t fit if you have embedded systems with limited
+storage capacity, so it is better to use traditional file processing.
+
+[PDF_BLOCK b5]
+When you have sensitive data that you don’t want to give multiple user
+access to.
+
+[PDF_BLOCK b6]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+37
+
+[PDF_BLOCK b1]
+Advantage of File Processing over Database Approach
+
+[PDF_BLOCK b2]
+Sometimes DBMS involves unnecessary costs due to the high initial
+investment in hardware, software, training, security, control etc.
+
+[PDF_BLOCK b3]
+So, if you are working with simple and well-defined database applica-
+tions that aren’t going to change at all.
+
+[PDF_BLOCK b4]
+Sometimes, DBMS won’t fit if you have embedded systems with limited
+storage capacity, so it is better to use traditional file processing.
+
+[PDF_BLOCK b5]
+When you have sensitive data that you don’t want to give multiple user
+access to.
+Examples of such system:
+
+[PDF_BLOCK b6]
+⇒Small single-user application that does not require security (such as a
+
+[PDF_BLOCK b7]
+customized calculator or a personal address and phone book)
+⇒Real-time navigation system (with heavy computation and very little
+
+[PDF_BLOCK b8]
+data)
+
+[PDF_BLOCK b9]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+37
+
+[PDF_BLOCK b1]
+Data Models
+
+[PDF_BLOCK b2]
+Collection of concepts that can be used to describe the structure of a
+database - provides the necessary means to achieve data abstraction.
+
+[PDF_BLOCK b3]
+⇒structure of a database - Data types, Relationships, and Constraints
+
+[PDF_BLOCK b4]
+that apply to the data
+
+[PDF_BLOCK b5]
+A set of concepts to describe the structure of a database, the
+operations for manipulating these structures, and certain constraints
+that the database should obey.
+A collection of conceptual tools for describing
+
+[PDF_BLOCK b6]
+➤Data
+➤Data Relationships
+➤Data Semantics
+➤Data Constraints
+Specify the dynamic aspect or behavior of a database application
+(valid user-defined operations).
+
+[PDF_BLOCK b7]
+⇒e.g COMPUTE GPA, which can be applied to a STUDENT object
+
+[PDF_BLOCK b8]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+38
+
+[PDF_BLOCK b1]
+Categories of Data Models
+
+[PDF_BLOCK b2]
+Based on the types of concepts they use to describe the database
+structure.
+
+[PDF_BLOCK b3]
+➤Object-Based / Conceptual / Logical / High-Level Model
+
+[PDF_BLOCK b4]
+❒Entity Relationship Model
+
+[PDF_BLOCK b5]
+❒Object-Oriented Model
+
+[PDF_BLOCK b6]
+➤Representational / Record-Based logical models
+
+[PDF_BLOCK b7]
+❒[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b8]
+❒[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b9]
+❒[REDACTED: PERSON_NAME]
+
+[PDF_BLOCK b10]
+❒Object data model
+
+[PDF_BLOCK b11]
+❒Self-describing data models
+
+[PDF_BLOCK b12]
+➤Low-level / Physical Data Models
+
+[PDF_BLOCK b13]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+39
+
+[PDF_BLOCK b1]
+Categories of Data Models
+
+[PDF_BLOCK b2]
+Object-Based / Conceptual / Logical / High-Level Model
+
+[PDF_BLOCK b3]
+Provide concepts that are close to the way many users perceive data.
+
+[PDF_BLOCK b4]
+Used in describing data at the logical & view
+
+[PDF_BLOCK b5]
+Allows constraints to be specified explicitly.
+Categories:
+
+[PDF_BLOCK b6]
+➤Entity-relationship model
+➤Object-oriented model
+Entity-relationship model
+
+[PDF_BLOCK b7]
+Uses concepts such as entities, attributes, and relationships
+
+[PDF_BLOCK b8]
+Entity - represents a real-world object or concept (e.g employee, stu-
+dent). : a “thing” or “object” in the enterprise that is distinguishable
+from other objects of an organization
+
+[PDF_BLOCK b9]
+Attribute - further describes an entity (e.g employee’s name or salary)
+
+[PDF_BLOCK b10]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+40
+
+[PDF_BLOCK b1]
+Categories of Data Models
+
+[PDF_BLOCK b2]
+Relationship - An “association” among two or more entities represents
+an association among the entities, (e.g a works-on relationship between
+an employee and a project)
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+41
+
+[PDF_BLOCK b1]
+Categories of Data Models
+
+[PDF_BLOCK b2]
+Object-oriented model
+Object: Contains data and relationships with operations that are per-
+formed on it.
+
+[PDF_BLOCK b3]
+❒observable entity in the world being modeled
+❒similar to the concept of an entity in the E/R model
+❒Abstraction of a real-world entity
+An object consists of:
+
+[PDF_BLOCK b4]
+❒Attributes: Describes the properties of an object
+❒Relationships: properties whose type is a reference to some other
+
+[PDF_BLOCK b5]
+object or a collection of references
+❒Methods: functions that may be applied to the object.
+Object-oriented database management system(OODBMS)
+
+[PDF_BLOCK b6]
+❒Based on OODM
+
+[PDF_BLOCK b7]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+42
+
+[PDF_BLOCK b1]
+Categories of Data Models
+
+[PDF_BLOCK b2]
+Representational / Record-Based logical models
+
+[PDF_BLOCK b3]
+Named so because DB is structured in fixed format records.
+
+[PDF_BLOCK b4]
+Each record consists of fixed number of fields or attributes.
+
+[PDF_BLOCK b5]
+Each field is usually of a fixed length.
+
+[PDF_BLOCK b6]
+Represent data using record structure ⇒record based model
+Categories:
+
+[PDF_BLOCK b7]
+➤Network model
+➤Hierarchical model
+➤Relational data model
+➤Object data model
+➤Self-describing data models
+
+[PDF_BLOCK b8]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+43
+
+[PDF_BLOCK b1]
+Categories of Data Models
+
+[PDF_BLOCK b2]
+Network model
+
+[PDF_BLOCK b3]
+Data are represented by collections of records. Records and their
+fields are represented as record type. Relationships among the data
+are represented by links.
+
+[PDF_BLOCK b4]
+Represents complex data relationships.
+
+[PDF_BLOCK b5]
+Similar to an entity in the E R model.
+
+[PDF_BLOCK b6]
+Depicts both one to many(1:M) and many to many(M:N)
+relationships.
+
+[PDF_BLOCK b7]
+The records in the database are organized as a collection of an
+arbitrary graph. There are several paths in the graph using which the
+entities can be accessed.
+
+[PDF_BLOCK b8]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+44
+
+[PDF_BLOCK b1]
+Categories of Data Models
+
+[PDF_BLOCK b2]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+45
+
+[PDF_BLOCK b1]
+Categories of Data Models
+
+[PDF_BLOCK b2]
+Hierarchical model
+
+[PDF_BLOCK b3]
+A hierarchical database consists of a collection of records that are
+connected to one another through links.
+
+[PDF_BLOCK b4]
+A record is a collection of fields, each of which contains only one data
+value.
+
+[PDF_BLOCK b5]
+A link is an association between precisely two records.
+
+[PDF_BLOCK b6]
+The hierarchical model differs from the network model in that the
+records are organized as collections of trees rather than as arbitrary
+graphs.
+
+[PDF_BLOCK b7]
+Depicts a set of one-to-many (1:M) relationships. Each node has
+exactly one parent but may have many child nodes.
+
+[PDF_BLOCK b8]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+46
+
+[PDF_BLOCK b1]
+Categories of Data Models
+
+[PDF_BLOCK b2]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+47
+
+[PDF_BLOCK b1]
+Categories of Data Models
+
+[PDF_BLOCK b2]
+Relational model
+
+[PDF_BLOCK b3]
+Most popular database model.
+
+[PDF_BLOCK b4]
+Data is in form of table.
+
+[PDF_BLOCK b5]
+Example of tabular data in the relational model.
+
+[PDF_BLOCK b6]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+48
+
+[PDF_BLOCK b1]
+Categories of Data Models
+
+[PDF_BLOCK b2]
+Object Data model
+
+[PDF_BLOCK b3]
+It has been implemented in some commercial systems but has not had
+widespread use.
+
+[PDF_BLOCK b4]
+Recently, so-called big data systems, also known as key-value storage
+systems and [REDACTED: GPE] systems, use various data models:
+document-based, graph-based, column-based, and key-value data
+models.
+
+[PDF_BLOCK b5]
+Document-based [REDACTED: GPE] databases store the data in the JSON object
+format.
+
+[PDF_BLOCK b6]
+Each document has key-value pairs like structures. The
+document-based [REDACTED: GPE] databases are simple for engineers as they
+map items as JSON object.
+
+[PDF_BLOCK b7]
+Some examples of document-based [REDACTED: GPE] databases are CouchDB,
+MongoDB, OrientDB, and BaseX.
+
+[PDF_BLOCK b8]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+49
+
+[PDF_BLOCK b1]
+Categories of Data Models
+
+[PDF_BLOCK b2]
+JSON Document Format
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+50
+
+[PDF_BLOCK b1]
+Categories of Data Models
+
+[PDF_BLOCK b2]
+Wide-Column Database is similar to any relational database, this
+wide-column database stores the data in records, but it can also store
+very large numbers of dynamic columns.
+
+[PDF_BLOCK b3]
+It groups the dynamically added columns into column families.
+Instead of having multiple tables like relational databases, we have
+multiple column families in wide-column databases.
+
+[PDF_BLOCK b4]
+Examples of wide-column types of databases are Cassandra and
+HBase
+
+[PDF_BLOCK b5]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+51
+
+[PDF_BLOCK b1]
+Categories of Data Models
+
+[PDF_BLOCK b2]
+Graph Database stores the data in the form of nodes and edges. The
+node stores information about the main entities like people, places,
+and products, and the edge stores the relationships between them.
+
+[PDF_BLOCK b3]
+Graph database is very useful to find out the pattern or relationship
+among data like a social network and recommendation engines.
+
+[PDF_BLOCK b4]
+Examples of graph databases are Neo4j and Amazon Neptune.
+
+[PDF_BLOCK b5]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+52
+
+[PDF_BLOCK b1]
+Categories of Data Models
+
+[PDF_BLOCK b2]
+Many legacy applications still run on database systems based on
+hierarchical and network data models. Some experimental DBMSs are
+based on the XML (eXtended [REDACTED: PERSON_NAME]) model, which is a
+tree-structured data model or Self-describing data models.
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+53
+
+[PDF_BLOCK b1]
+Categories of Data Models
+
+[PDF_BLOCK b2]
+Low-level / Physical Data Models
+
+[PDF_BLOCK b3]
+Operates at the lowest level of abstraction.
+
+[PDF_BLOCK b4]
+Provide concepts that describe the details of how data is stored on
+the computer storage media such as hard disks.
+
+[PDF_BLOCK b5]
+Requires definition of physical storage and data access methods.
+
+[PDF_BLOCK b6]
+Concepts provided by physical data models are generally meant for
+computer specialists, not for end users.
+
+[PDF_BLOCK b7]
+Access path →structure for efficient searching of the database
+(indexing, hashing)
+
+[PDF_BLOCK b8]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+54
+
+[PDF_BLOCK b1]
+Schema vs. Instance
+
+[PDF_BLOCK b2]
+Database Schema:
+
+[PDF_BLOCK b3]
+The description of a database, which is specified during database
+design.(Overall design of the db). It includes descriptions of the
+database structure, data types, and constraints on the database.
+
+[PDF_BLOCK b4]
+Does not change frequently
+
+[PDF_BLOCK b5]
+The conceptual organization of the database as viewed by the DBA
+
+[PDF_BLOCK b6]
+[REDACTED: PERSON_NAME]:
+
+[PDF_BLOCK b7]
+An illustrative display of (most aspects of) a database schema.
+
+[PDF_BLOCK b8]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+55
+
+[PDF_BLOCK b1]
+Schema vs. Instance
+
+[PDF_BLOCK b2]
+Schema Construct:
+
+[PDF_BLOCK b3]
+A component of the schema or an object within the schema, e.g.,
+STUDENT, COURSE.
+
+[PDF_BLOCK b4]
+Database State:
+
+[PDF_BLOCK b5]
+The data in the database at a particular moment in time is called a
+database state or snapshot. (starts from empty state →initial state
+→current state)
+
+[PDF_BLOCK b6]
+It is also called the current set of occurrences or instances in the
+database.
+
+[PDF_BLOCK b7]
+Initial Database State refers to the database state when it is initially
+loaded into the system.
+
+[PDF_BLOCK b8]
+DBMS has to ensure that all states are valid state - that is, a state
+that satisfies the structure and constraints specified in the schema.
+
+[PDF_BLOCK b9]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+56
+
+[PDF_BLOCK b1]
+Schema vs. Instance
+
+[PDF_BLOCK b2]
+The schema is sometimes called the intension, and a database state is
+called an extension of the schema.
+
+[PDF_BLOCK b3]
+Instances are changed frequently (insertion, deletion and
+modification).
+
+[PDF_BLOCK b4]
+Every time we insert or delete a record or change the value of a data
+item in a record, the database moves from one state to another but
+the schema is fixed.
+
+[PDF_BLOCK b5]
+The database schema changes very infrequently.
+
+[PDF_BLOCK b6]
+The database state changes every time the database is updated.
+
+[PDF_BLOCK b7]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+57
+
+[PDF_BLOCK b1]
+Three-Schema Architecture
+
+[PDF_BLOCK b2]
+Schema architecture was proposed to help achieve and visualize the
+characteristic database.
+Recap of characteristics of database
+
+[PDF_BLOCK b3]
+➔Use of a catalog to store the database description – self-describing
+➔Insulation of program – program data independence
+➔Support of multiple user views
+
+[PDF_BLOCK b4]
+Architecture goal →is to separate the user applications from the
+physical database.
+
+[PDF_BLOCK b5]
+Also known as ANSI / SPARC (American National Standards Institute
+/ Standards Planning and Requirements Committee) architecture.
+Hide the complexity from users through several levels of abstraction,
+to simplify users’ interactions with the system.
+
+[PDF_BLOCK b6]
+➤External or view level
+➤Conceptual or logical level
+➤Physical level
+
+[PDF_BLOCK b7]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+58
+
+[PDF_BLOCK b1]
+Three-Schema Architecture
+
+[PDF_BLOCK b2]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+59
+
+[PDF_BLOCK b1]
+Three-Schema Architecture
+
+[PDF_BLOCK b2]
+External/ View level
+
+[PDF_BLOCK b3]
+Describes only part of the database that a particular user group is
+interested in and hides the rest of the database from that group.
+
+[PDF_BLOCK b4]
+External schemas describe various user views
+
+[PDF_BLOCK b5]
+Simplifies the end user’s interaction with the system
+
+[PDF_BLOCK b6]
+System may produce many views for the same database
+
+[PDF_BLOCK b7]
+Conceptual / Logical level
+
+[PDF_BLOCK b8]
+Hides the details of physical storage structures and concentrates on
+describing entities, data types, relationships, user operations, and
+constraints
+
+[PDF_BLOCK b9]
+Describes what data are stored in the database and what relationships
+exist among those data
+
+[PDF_BLOCK b10]
+Conceptual schema describes the structure and constraints of the
+whole database
+
+[PDF_BLOCK b11]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+60
+
+[PDF_BLOCK b1]
+Three-Schema Architecture
+
+[PDF_BLOCK b2]
+This level is used by the DBA, who decides what information is kept
+in the database.
+
+[PDF_BLOCK b3]
+Internal / Physical level
+
+[PDF_BLOCK b4]
+Lowest level of abstraction
+
+[PDF_BLOCK b5]
+Describes how the data are actually stored
+
+[PDF_BLOCK b6]
+It covers data structure and file organization used to store data on the
+storage device.
+
+[PDF_BLOCK b7]
+Internal schema describes data storage and access methods.
+
+[PDF_BLOCK b8]
+Internal schema uses a physical data model
+
+[PDF_BLOCK b9]
+DBA may aware of certain details of the physical organization of data.
+
+[PDF_BLOCK b10]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+61
+
+[PDF_BLOCK b1]
+Three-Schema Architecture
+
+[PDF_BLOCK b2]
+DBMS must transform a request specified on an external schema
+(user level) into a request against the conceptual schema, and then
+into a request on the internal schema for processing over the stored
+database.
+
+[PDF_BLOCK b3]
+➔Programs refer to an external schema and are mapped by the DBMS to
+
+[PDF_BLOCK b4]
+the internal schema for execution.
+➔Data extracted from the internal DBMS level is reformatted to match
+
+[PDF_BLOCK b5]
+the user’s external view (e.g., formatting the results of an SQL query
+for the display on a Web page)
+
+[PDF_BLOCK b6]
+If the request is a database retrieval, the data extracted from the
+stored database must be reformatted to match the user’s external
+view.
+
+[PDF_BLOCK b7]
+The processes of transforming requests and results between levels are
+called mappings.
+
+[PDF_BLOCK b8]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+62
+
+[PDF_BLOCK b1]
+Three-Schema Architecture
+
+[PDF_BLOCK b2]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+63
+
+[PDF_BLOCK b1]
+Data Independence
+
+[PDF_BLOCK b2]
+Defined as the capacity to change the schema at one level of a
+database system without having to change the schema at the next
+higher level.
+
+[PDF_BLOCK b3]
+Catalog includes information on how to map requests and data
+among the various levels.
+
+[PDF_BLOCK b4]
+When a schema at a lower level is changed, only the mappings
+between this schema and higher-level schemas need to be changed in
+a DBMS that fully supports data independence.
+
+[PDF_BLOCK b5]
+The higher-level schemas themselves are unchanged. Hence, the
+application programs referring to the higher-level schemas need not
+be changed.
+
+[PDF_BLOCK b6]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+64
+
+[PDF_BLOCK b1]
+Data Independence
+
+[PDF_BLOCK b2]
+➔Logical data independence:
+
+[PDF_BLOCK b3]
+The ability to change logical schema without changing external schema
+and their associated application program is called logical data
+independence.
+The conceptual schema changes
+
+[PDF_BLOCK b4]
+✓Adding a new data item
+✓Adding a new record type
+✓Change in [REDACTED: GPE]
+✓Deleting a record type
+✓Deleting data item
+
+[PDF_BLOCK b5]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+65
+
+[PDF_BLOCK b1]
+Data Independence
+
+[PDF_BLOCK b2]
+➔Physical data independence:
+
+[PDF_BLOCK b3]
+The ability to change physical schema without changing logical schema
+is called physical data independence.
+The internal schema may be changed when certain file structures are
+reorganized or new indexes are created to improve database
+performance.
+Physical schema may be changed
+
+[PDF_BLOCK b4]
+✓Using new storage device
+✓Using different storage structure
+✓Switching from one access method to another
+✓Using different storage structures
+✓Modifying indexes etc.
+
+[PDF_BLOCK b5]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+66
+
+[PDF_BLOCK b1]
+Review Questions - 3
+
+[PDF_BLOCK b2]
+Consider a Library management system, Design a schema and show a
+sample database for that application
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+67
+
+[PDF_BLOCK b1]
+Review Questions - 3
+
+[PDF_BLOCK b2]
+Consider a Library management system, Design a schema and show a
+sample database for that application
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+67
+
+[PDF_BLOCK b1]
+Review Questions - 4
+
+[PDF_BLOCK b2]
+Build a database for the record BOOK, BOOK AUTHORS and add a
+constraint
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+68
+
+[PDF_BLOCK b1]
+Review Questions - 4
+
+[PDF_BLOCK b2]
+Build a database for the record BOOK, BOOK AUTHORS and add a
+constraint
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+68
+
+[PDF_BLOCK b1]
+Review Questions - 4
+
+[PDF_BLOCK b2]
+Build a database for the record BOOK, BOOK AUTHORS and add a
+constraint
+
+[PDF_BLOCK b3]
+BOOK (ISBN) should be unique.
+
+[PDF_BLOCK b4]
+BOOK AUTHORS (ISBN) must have a matching value in BOOK
+(ISBN).
+
+[PDF_BLOCK b5]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+68
+
+[PDF_BLOCK b1]
+Database System Environment
+
+[PDF_BLOCK b2]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+69
+
+[PDF_BLOCK b1]
+Database System Environment
+
+[PDF_BLOCK b2]
+DBMS Component Modules
+
+[PDF_BLOCK b3]
+Database administrator or database designers →designing the
+schemas.
+
+[PDF_BLOCK b4]
+Define the database by using DDL commands (Data definition
+language) and other privileged commands.
+
+[PDF_BLOCK b5]
+DDL compiler →processes the schema definitions and stores
+descriptions of the schemas in the DBMS catalog.
+
+[PDF_BLOCK b6]
+Casual users →occasional need for information →interact using the
+interactive query
+
+[PDF_BLOCK b7]
+Query compiler →handles high level queries.
+Query optimizer →
+
+[PDF_BLOCK b8]
+concerned with the rearrangement and possible reordering of
+operations,
+Elimination of redundancies
+use of efficient search algorithms during execution
+
+[PDF_BLOCK b9]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+70
+
+[PDF_BLOCK b1]
+Database System Environment
+
+[PDF_BLOCK b2]
+Precompiler →extracts DML commands from an application program
+written in a host programming language.
+
+[PDF_BLOCK b3]
+DML compiler →extracted DML commands are compiled into object
+code for database access.
+
+[PDF_BLOCK b4]
+Object codes for the DML commands + rest of the program →forms
+canned transactions (used by parametric users)
+Runtime database processor executes
+
+[PDF_BLOCK b5]
+the privileged commands,
+the executable query plans, and
+the canned transactions with runtime parameters
+
+[PDF_BLOCK b6]
+Run time database processor →handles any kind of database access
+during runtime
+
+[PDF_BLOCK b7]
+Stored data manager →handles operations between the disk and
+main memory.
+
+[PDF_BLOCK b8]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+71
+
+[PDF_BLOCK b1]
+Database System Environment
+
+[PDF_BLOCK b2]
+Centralized DBMSs Architecture:
+
+[PDF_BLOCK b3]
+In earlier days, mainframe computers were
+used to process all system functions
+
+[PDF_BLOCK b4]
+The reason is users were provided with
+only computer terminals that have display
+capability and not processing capability.
+
+[PDF_BLOCK b5]
+Hence all processing was performed re-
+motely on a computer system.
+
+[PDF_BLOCK b6]
+Only display information was sent to the
+computer terminals (terminals were con-
+nected to the systems via the network)
+
+[PDF_BLOCK b7]
+As the price of the hardware declined
+– PCs, workstations, and mobile devices
+were used.
+
+[PDF_BLOCK b8]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+72
+
+[PDF_BLOCK b1]
+Database System Environment
+
+[PDF_BLOCK b2]
+Basic Client/Server Architectures:
+
+[PDF_BLOCK b3]
+Developed to deal with computing environments in which a large
+number of PCs, and workstations.
+
+[PDF_BLOCK b4]
+Goal →define specialized servers with specific functionalities.
+
+[PDF_BLOCK b5]
+Client →user machine that provides user interface capabilities and
+local processing
+
+[PDF_BLOCK b6]
+Server provides services to the client machines.
+
+[PDF_BLOCK b7]
+Two main types of basic DBMS architectures: two-tier and three-tier.
+
+[PDF_BLOCK b8]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+73
+
+[PDF_BLOCK b1]
+Database System Environment
+
+[PDF_BLOCK b2]
+Two-Tier Client / Server Architectures:
+
+[PDF_BLOCK b3]
+In RDBMS, user interface & application programs moved to the client
+side. Query and transaction processing was done on the server side
+using query servers or transaction servers.
+
+[PDF_BLOCK b4]
+RDBMS, the server is also often called an SQL server. When DBMS
+access is required, the program establishes a connection to the DBMS.
+
+[PDF_BLOCK b5]
+Open Database Connectivity (ODBC) provides an API, which allows
+client-side programs to call the DBMS. (both client and server
+machines have the necessary software installed)
+
+[PDF_BLOCK b6]
+Advantages of this architecture are its simplicity and seamless
+compatibility with existing systems.
+
+[PDF_BLOCK b7]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+74
+
+[PDF_BLOCK b1]
+Database System Environment
+
+[PDF_BLOCK b2]
+Three-Tier / N-tier Architectures for Web Applications:
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+75
+
+[PDF_BLOCK b1]
+Database System Environment
+
+[PDF_BLOCK b2]
+Number of users:
+
+[PDF_BLOCK b3]
+Single-user systems support only one user at a time and are mostly
+used with PCs.
+
+[PDF_BLOCK b4]
+Multiuser systems, which include the majority of DBMSs, support
+concurrent multiple users.
+
+[PDF_BLOCK b5]
+Number of sites over which the database is distributed
+
+[PDF_BLOCK b6]
+Centralized if the data is stored at a single computer site. A
+centralized DBMS can support multiple users, but the DBMS and the
+database reside totally at a single computer site.
+
+[PDF_BLOCK b7]
+A distributed DBMS (DDBMS) can have the actual database and
+DBMS software distributed over many sites connected by a computer
+network. Big data systems are often massively distributed, with
+hundreds of sites.
+
+[PDF_BLOCK b8]
+Also it can be classified based on cost and access path.
+
+[PDF_BLOCK b9]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+76
+
+[PDF_BLOCK b1]
+Disclaimer
+
+[PDF_BLOCK b2]
+The material for the presentation has been compiled from various
+sources such as prescribed text books by Elmasri - Navathe and other
+tutorials and lecture notes. The information contained in this lecture/
+presentation is for educational purpose only.
+
+[PDF_BLOCK b3]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+77
+
+[PDF_BLOCK b1]
+Dr. [REDACTED: PERSON_NAME] Satapathy
+VIT - SCOPE - Database Systems
+BCSE302L - Module 1
+July 30, 2026
+78
