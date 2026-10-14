@@ -1,141 +1,153 @@
-<div align="center">
+#  Enterprise PII Sanitization & Data Governance Pipeline
+### Cadence Financial Group | Case Study 2: Text Analysis & PII Detection
 
-# 🛡️ Enterprise PII Sanitization & Data Governance Pipeline
-### *Cadence Financial Group | Case Study 2: Text Analysis & PII Detection*
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge&logo=appveyor" />
-  <img src="https://img.shields.io/badge/Security-100%25%20Local%20Execution-blueviolet?style=for-the-badge&logo=shield" />
-  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python" />
-  <img src="https://img.shields.io/badge/Precision-90%25-orange?style=for-the-badge&logo=target" />
-</p>
-
-*An advanced, secure, and locally-executable data pipeline engineered to sanitize multi-format enterprise artifacts before downstream LLM ingestion.*
-
-</div>
+A Python-based pipeline designed to identify and protect sensitive information in enterprise documents before their text is passed to downstream LLMs.
 
 ---
 
-## ⚡ Executive Summary & Mission
-Cadence Financial Group utilizes cutting-edge AI document analysis agents to review internal corporate assets. However, rigorous data governance mandates strictly prohibit sending raw **Personally Identifiable Information (PII)**—such as employee names, personal emails, phone numbers, and government/employee IDs—to third-party LLMs.
+## 1. Project Overview
 
-To solve this, I engineered a robust, zero-leakage **Local PII Extraction, Hybrid Detection, and Safe Redaction Pipeline**. This project ensures full compliance, flawless source traceability, and rigorous QA validation metrics.
+Cadence Financial Group uses AI-based tools to analyze internal documents and extract useful information. However, these documents may contain sensitive data, such as employee names, email addresses, phone numbers, and employee or account IDs.
 
----
+Sharing this information with external AI services can create privacy and data security risks.
 
-## 🚀 Interactive Functional Architecture Flow
+Our project aims to address this problem by building a pipeline that extracts text from different document formats, identifies potential Personally Identifiable Information (PII), and prepares the content for sanitization before further processing.
+
+The main goal is to make document analysis safer while keeping the results traceable for review and auditing.
+
+## 2. How the Pipeline Works
+
+The pipeline follows a series of steps, from document extraction to PII detection and reporting.
 
 ```mermaid
 graph TD
-    A[📁 Document Upload <br> .docx, .pptx, .pdf] --> B{🔍 Format-Specific Router}
-    
-    B -->|Word .docx| C1[Paragraphs & Tables Extractor]
-    B -->|PowerPoint .pptx| C2[Slide Text Frame Extractor]
-    B -->|PDF .pdf| C3[PyMuPDF Native Text + Tesseract OCR Fallback]
-    
-    C1 & C2 & C3 --> D[📝 Text Normalization & Metadata Tagging]
-    
-    D --> E[⚡ Hybrid PII Detection Engine]
-    E -->|High-Precision Regex| E1[Emails, Phones, IPs, Employee IDs]
-    E -->|spaCy NER Tokenizer| E2[Person Names & Locations]
-    
-    E1 & E2 --> F[🛡️ Redaction Safety Gate]
-    F -->|Right-to-Left Offset Sorting| F1[Prevents Index-Shifting Bugs]
-    F -->|Review Flagging| F2[REVIEW REQUIRED on Low Confidence / OCR Failures]
-    
-    F1 & F2 --> G[📊 Audit & Downstream Delivery]
-    G -->|findings.csv| G1[Traceable PII Audit Log]
-    G -->|sanitized_output.json| G2[100% Safe Sanitized Text for LLM]
-
-    style A fill:#1e1e2e,stroke:#89b4fa,stroke-width:2px,color:#fff
-    style E fill:#181825,stroke:#f38ba8,stroke-width:2px,color:#fff
-    style F fill:#181825,stroke:#a6e3a1,stroke-width:2px,color:#fff
-    style G fill:#1e1e2e,stroke:#fab387,stroke-width:2px,color:#fff
-
+    A[Upload Documents] --> B[Identify File Format]
+    B --> C[Extract Text from Documents]
+    C --> D[Clean Text and Add Metadata]
+    D --> E[Detect Potential PII]
+    E --> F[Review and Redaction]
+    F --> G[Generate Audit Reports]
+    G --> H[Prepare Sanitized Text for Further Processing]
 ```
 
----
+### Main steps
 
-## 📁 Repository Structure & Deliverables
+1. **Document extraction:** Read text from Word documents, PowerPoint presentations, and PDFs. OCR can be used for scanned PDFs when supported by the extraction component.
+2. **Text processing:** Organize the extracted text and retain details such as the source file, page or slide number, and segment ID.
+3. **PII detection:** Use regular expressions to identify structured information and spaCy's Named Entity Recognition (NER) to help identify person names.
+4. **Redaction and review:** Use the detected information to support redaction, with uncertain results flagged for review where that functionality is implemented.
+5. **Reporting:** Store findings in structured formats such as CSV and JSON so they can be reviewed and traced back to their source.
+
+## 3. Repository Structure
+
+The repository is organized into separate folders and modules to make the project easier to understand, test, and maintain.
 
 ```text
 cadence-pii-sanitization-pipeline/
 │
-├── 📁 01_Demo/
-│   ├── 📜 main.py                           # Master terminal demo & integration orchestrator
-│   └── 📓 Cadence_PII_Detection.ipynb       # Master Google Colab notebook (Run-all ready)
+├── 01_Demo/
+│   ├── main.py
+│   └── Cadence_PII_Detection.ipynb
 │
-├── 📁 02_Presentation/
-│   └── 📊 Cadence_PII_Detection.pptx        # 10-slide stakeholder walkthrough deck
+├── 02_Presentation/
+│   └── Cadence_PII_Detection.pptx
 │
-├── 📁 03_Diagrams/
-│   ├── 🖼️ functional_blueprint.png          # End-to-end functional data flow diagram
-│   └── 🖼️ technical_architecture.png        # Detailed system component architecture
+├── 03_Diagrams/
+│   ├── functional_blueprint.png
+│   └── technical_architecture.png
 │
-├── 📁 04_Results/
-│   ├── 📄 findings.csv                      # Traceable PII audit log with source references
-│   ├── 📄 findings.json                     # Machine-readable audit log
-│   ├── 📄 pipeline_summary.json             # Pipeline scorecard & safety gate verdicts
-│   ├── 📄 qa_log.csv                        # Manual test log with True/False positive checks
-│   └── 📁 sanitized_outputs/                # Sanitized document text files (*_sanitized.txt)
-│       ├── Cadence_Financial_Group_Organizational_Pack_sanitized.txt
-│       ├── Cadence_Group_Risk_Management_Policy__v6.0_sanitized.txt
-│       └── Cadence_TPRM_Training_sanitized.txt
+├── 04_Results/
+│   ├── findings.csv
+│   ├── findings.json
+│   ├── pipeline_summary.json
+│   ├── qa_log.csv
+│   └── sanitized_outputs/
 │
-├── 📜 extractor.py                          # Person 1: Document extraction & OCR fallback
-├── 📜 pii_detector.py                       # Person 2: Hybrid Regex + spaCy NER detection
-└── 📜 README.md                             # Professional project documentation
+├── extractor.py
+├── pii_detector.py
+└── README.md
 ```
 
----
+*Note: The structure above represents the planned project layout. Keep only files and features that are actually present in the repository.*
 
-## 🛠️ Technical Stack & Frameworks
+## 4. Technologies Used
 
-| Component | Technology / Library | Purpose |
-| --- | --- | --- |
-| **Environment** | Google Colab / Python 3.10+ | Isolated local execution runtime |
-| **Word Parsing** | `python-docx` | Extracts ordered paragraphs and table cells |
-| **Presentation Parsing** | `python-pptx` | Parses slide-by-slide text frames |
-| **PDF & OCR Engine** | `PyMuPDF (fitz)` & `Tesseract OCR` | Native text extraction + Scanned image fallback |
-| **NLP & Detection** | `spaCy (en_core_web_sm)` & Regex (`re`) | Hybrid entity recognition & pattern matching |
-| **Data Processing** | `pandas` | Structured audit logging and reporting |
+| Technology | Purpose |
+|---|---|
+| Python | Main programming language |
+| `python-docx` | Extracting text from Word documents |
+| `python-pptx` | Extracting text from PowerPoint slides |
+| PyMuPDF (`fitz`) | Reading text from PDFs |
+| Tesseract OCR | Extracting text from scanned pages |
+| spaCy | Identifying potential person names |
+| Regular expressions (`re`) | Detecting emails, phone numbers, IP addresses, and supported ID patterns |
+| pandas | Organizing and exporting results |
 
----
+## 5. Running the Project
 
-## ⚡ Quickstart Guide (How to Run)
+### Option A: Run the terminal demo
 
-### Option A: Live Terminal Pipeline & Demo (Person 4 CLI)
-Run the automated end-to-end integration orchestrator directly from the command line:
+If the integration script is available in the repository, run:
+
 ```bash
-# Execute standard pipeline across all artifacts
 python 01_Demo/main.py
+```
 
-# Optional: customize preview samples or specify custom directory
+If supported by the script, you can also specify an input directory and preview count:
+
+```bash
 python 01_Demo/main.py --preview 5 --input-dir ./data
 ```
-The CLI provides colored step-by-step progress logging, Before/After redaction verification previews, and exports all audit artifacts to `04_Results/`.
 
-### Option B: Interactive Google Colab / Jupyter Notebook
-1. **Open Colab / Jupyter:** Launch `01_Demo/Cadence_PII_Detection.ipynb`.
-2. **Run All:** Execute cells sequentially from top to bottom (`Runtime -> Run all`).
-3. **Inspect & Download:** View interactive Pandas findings tables, Before/After inspection diffs, and download the full results bundle.
+The exact commands and output locations depend on the implementation in `main.py`.
 
----
+### Option B: Use the notebook
 
-## 📊 Rigorous Testing, QA Metrics & Limitations
+1. Open `01_Demo/Cadence_PII_Detection.ipynb` in Jupyter or Google Colab.
+2. Run the cells in order.
+3. Review the detection results and any available before-and-after comparisons.
+4. Inspect the generated reports and sanitized outputs, if those features are implemented.
 
-* **Evaluation Scope:** Tested across diverse enterprise documents to measure system accuracy.
-* **Measured Performance (Test Sample):**
-* **Precision:** **90%** (Tuned via strict boundary constraints to eliminate false alarms on version/policy numbers).
-* **Recall:** **90%** (Transparently logged edge-case misses).
+## 6. Testing and Evaluation
 
+Testing is an important part of checking whether the detector identifies sensitive information and avoids flagging ordinary text unnecessarily.
 
-* **Robust Safety Fallback:** If a PDF page is unreadable or OCR processing degrades, the system explicitly flags the segment with a `REVIEW REQUIRED` warning rather than making unsafe assumptions.
+The current PII detector was tested using 15 predefined test cases:
 
----
+- **10 positive tests:** Examples containing PII patterns that the detector is expected to identify.
+- **5 negative tests:** Ordinary text that should not be flagged.
 
-## 🔒 Security & Privacy Guarantee
+All 15 test cases passed.
 
-> In full compliance with corporate data security standards, **all parsing, tokenization, OCR scanning, and regex/NER detection execute 100% locally** within the isolated execution runtime. No raw PII-bearing document contents are ever transmitted to external APIs or third-party generative AI models.
+The detector was also run against 3,299 extracted text segments and reported 673 potential PII findings. These included person names, email addresses, account or employee IDs, and phone numbers.
 
----
+These findings are candidates for review, not necessarily 673 confirmed cases of PII. In particular, name detection can produce false positives, so further validation is needed before relying on the results for production use.
+
+Precision and recall should be reported only when they have been calculated using a labelled evaluation dataset.
+
+## 7. Security and Privacy
+
+The pipeline is designed to process document content within the local Python environment, helping reduce the need to send sensitive text to external services.
+
+For a secure deployment, the team should also verify that every component—including extraction, OCR, logging, and downstream processing—runs locally and does not transmit document contents externally.
+
+Access to raw documents and generated findings should be restricted because the output reports may themselves contain sensitive information.
+
+## 8. Current Limitations and Future Improvements
+
+Some types of PII are easier to detect than others. Regular expressions work well for predictable formats, while person-name detection depends on the surrounding text and may produce false positives or miss some names.
+
+Potential improvements include:
+
+- Expanding the test dataset with more real-world examples.
+- Measuring precision and recall against manually labelled results.
+- Improving name and ID detection.
+- Adding review flags for uncertain findings.
+- Validating that redaction preserves text offsets and does not leave sensitive information behind.
+- Testing the complete pipeline before using it with external AI systems.
+
+## 9. Conclusion
+
+This project brings document extraction, PII detection, and reporting together in a single workflow. By identifying potential sensitive information and making the results traceable, it provides a foundation for safer document processing.
+
+The next step is to validate the detection results and verify the complete sanitization workflow so the pipeline can be used more reliably with enterprise documents.
