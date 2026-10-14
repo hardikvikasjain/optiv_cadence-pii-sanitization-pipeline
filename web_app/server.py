@@ -78,10 +78,19 @@ async def serve_index():
 async def get_presets():
     return list(PRESETS.values())
 
+import socket
+import platform
+
+from web_app.redactor import create_sanitized_original_file, redact_text_rtl, get_file_sha256
+
 @app.post("/api/process")
 async def process_document(
     file: Optional[UploadFile] = File(None),
-    preset_id: Optional[str] = Form(None)
+    preset_id: Optional[str] = Form(None),
+    operator_name: Optional[str] = Form("Aarav"),
+    operator_id: Optional[str] = Form("CAD-ANALYST-402"),
+    department: Optional[str] = Form("Risk, Compliance & Security"),
+    justification: Optional[str] = Form("Pre-LLM Sanitization & Safe External Ingestion")
 ):
     start_time = time.time()
     job_id = str(uuid.uuid4())[:8]
@@ -113,6 +122,7 @@ async def process_document(
         raise HTTPException(status_code=400, detail=f"Unsupported format .{ext}. Only .pdf, .docx, and .pptx are supported.")
 
     file_size_bytes = os.path.getsize(target_path)
+    source_sha256 = get_file_sha256(str(target_path))
 
     # 1. Extraction
     try:
@@ -149,15 +159,18 @@ async def process_document(
     with open(sanitized_txt_path, "w", encoding="utf-8") as f:
         f.write(sanitized_text_content)
 
-    # 4. Create Sanitized Original-Format File (.docx, .pptx, or .pdf)
+    # 4. Create Sanitized Original-Format File (.docx, .pptx, or .pdf) with font auto-scaling
     sanitized_native_filename = f"Sanitized_{original_filename}"
     sanitized_native_path = job_dir / sanitized_native_filename
+    changelog = []
     try:
-        create_sanitized_original_file(str(target_path), str(sanitized_native_path), all_findings)
+        _, changelog = create_sanitized_original_file(str(target_path), str(sanitized_native_path), all_findings)
         native_success = True
     except Exception as e:
         native_success = False
         native_error = str(e)
+
+    sanitized_sha256 = get_file_sha256(str(sanitized_native_path)) if native_success else ""
 
     # 5. Export findings CSV and JSON
     findings_csv_path = job_dir / "findings.csv"
@@ -185,25 +198,62 @@ async def process_document(
     df_findings = pd.DataFrame(findings_records)
     df_findings.to_csv(findings_csv_path, index=False)
 
-    # 6. Compute statistics
+    # 6. Export Transformation Changelog CSV & Audit Certificate
+    changelog_csv_path = job_dir / "transformation_audit_log.csv"
+    df_changelog = pd.DataFrame(changelog)
+    if not df_changelog.empty:
+        df_changelog.to_csv(changelog_csv_path, index=False)
+    else:
+        # Fallback empty structure
+        pd.DataFrame(columns=["change_id", "location", "original_text", "redacted_text", "entity_type", "method"]).to_csv(changelog_csv_path, index=False)
+
+    # 7. Operator Custody & Certificate Telemetry
+    timestamp_utc = time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime())
+    timestamp_local = time.strftime("%Y-%m-%d %H:%M:%S")
+    custody = {
+        "session_id": f"CAD-GOV-{job_id.upper()}",
+        "operator_name": operator_name.strip() if operator_name else "Aarav",
+        "operator_id": operator_id.strip() if operator_id else "CAD-ANALYST-402",
+        "department": department.strip() if department else "Risk, Compliance & Security",
+        "justification": justification.strip() if justification else "Pre-LLM Sanitization & Safe External Ingestion",
+        "timestamp_utc": timestamp_utc,
+        "timestamp_local": timestamp_local,
+        "machine_host": socket.gethostname(),
+        "platform_os": platform.platform(),
+        "source_filename": original_filename,
+        "source_sha256": source_sha256,
+        "sanitized_sha256": sanitized_sha256,
+        "total_modifications": len(changelog)
+    }
+
+    certificate_json_path = job_dir / "audit_certificate.json"
+    with open(certificate_json_path, "w", encoding="utf-8") as f:
+        json.dump({
+            "custody": custody,
+            "summary_scorecard": {
+                "segments_scanned": len(segments),
+                "pii_detected": len(all_findings),
+                "modifications_applied": len(changelog),
+                "safety_gate": "PASS" if len(warnings) == 0 else "REVIEW REQUIRED"
+            },
+            "changelog": changelog
+        }, f, indent=2)
+
+    # 8. Compute statistics
     counts_by_type = {}
     for f in all_findings:
         t = f["entity_type"]
         counts_by_type[t] = counts_by_type.get(t, 0) + 1
 
     processing_time = round(time.time() - start_time, 2)
-
-    # 7. Safety gate determination
     is_safe = len(warnings) == 0
     safety_status = "PASS" if is_safe else "REVIEW REQUIRED"
 
-    # 8. Generate highlighted HTML preview snippet (first 15 segments with text)
+    # 9. Highlighted HTML preview snippet
     preview_pairs = []
     for seg in [s for s in segments if s["text"].strip()][:12]:
         seg_hits = [h for h in all_findings if h["segment_id"] == seg["segment_id"]]
         raw_text = seg["text"]
-        
-        # Build highlighted raw HTML
         sorted_hits = sorted(seg_hits, key=lambda x: x["start_char"], reverse=True)
         highlighted = raw_text
         for h in sorted_hits:
@@ -229,6 +279,8 @@ async def process_document(
         "segments_total": len(segments),
         "pii_total": len(all_findings),
         "pii_by_type": counts_by_type,
+        "custody": custody,
+        "changelog": changelog,
         "safety_gate": {
             "status": safety_status,
             "safe_for_downstream_llm": is_safe,
@@ -243,7 +295,9 @@ async def process_document(
             "native_available": native_success,
             "text": f"/api/download/{job_id}/file/{original_filename}.sanitized.txt",
             "csv": f"/api/download/{job_id}/file/findings.csv",
-            "json": f"/api/download/{job_id}/file/findings.json"
+            "json": f"/api/download/{job_id}/file/findings.json",
+            "changelog_csv": f"/api/download/{job_id}/file/transformation_audit_log.csv",
+            "certificate_json": f"/api/download/{job_id}/file/audit_certificate.json"
         }
     }
 
@@ -308,11 +362,17 @@ async def save_to_downloads(job_id: str):
     user_downloads_dir.mkdir(exist_ok=True, parents=True)
 
     dest_file = user_downloads_dir / src_file.name
-    shutil.copyfile(src_file, dest_file)
+    try:
+        shutil.copyfile(src_file, dest_file)
+    except PermissionError:
+        # If the user currently has the file open in PowerPoint / Word, save with timestamp
+        ts_suffix = time.strftime("%H%M%S")
+        dest_file = user_downloads_dir / f"{src_file.stem}_{ts_suffix}{src_file.suffix}"
+        shutil.copyfile(src_file, dest_file)
 
     return {
         "status": "success",
-        "filename": src_file.name,
+        "filename": dest_file.name,
         "saved_path": str(dest_file)
     }
 

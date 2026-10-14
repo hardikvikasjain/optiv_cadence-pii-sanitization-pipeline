@@ -127,6 +127,38 @@
           </div>
         </div>
 
+        <!-- Operator & Corporate Custody Credentials -->
+        <div class="operator-credentials-panel">
+          <div class="credentials-header">
+            <i class="fa-solid fa-user-shield text-accent"></i>
+            <span>Operator & Corporate Audit Identity</span>
+            <span class="text-xs text-muted" style="margin-left: auto;">Chain-of-Custody Attribution</span>
+          </div>
+          <div class="credentials-grid">
+            <div class="input-field-group">
+              <label for="operatorName"><i class="fa-solid fa-user text-muted"></i> Operator Name</label>
+              <input type="text" id="operatorName" value="Aarav" placeholder="Enter your full name">
+            </div>
+            <div class="input-field-group">
+              <label for="operatorId"><i class="fa-solid fa-id-badge text-muted"></i> Operator / Employee ID</label>
+              <input type="text" id="operatorId" value="CAD-ANALYST-402" placeholder="e.g. EMP-10492">
+            </div>
+            <div class="input-field-group">
+              <label for="operatorDept"><i class="fa-solid fa-building-shield text-muted"></i> Department</label>
+              <input type="text" id="operatorDept" value="Risk, Compliance & Security" placeholder="e.g. Data Governance">
+            </div>
+            <div class="input-field-group">
+              <label for="operatorJustification"><i class="fa-solid fa-scale-balanced text-muted"></i> Business Purpose</label>
+              <select id="operatorJustification">
+                <option value="Pre-LLM Sanitization & Safe External Ingestion" selected>Pre-LLM Sanitization & Safe External Ingestion</option>
+                <option value="Vendor Sharing & Third-Party Due Diligence">Vendor Sharing & Third-Party Due Diligence</option>
+                <option value="Internal Regulatory Audit & QA Check">Internal Regulatory Audit & QA Check</option>
+                <option value="Confidential Archive Cleansing">Confidential Archive Cleansing</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
         <!-- Action Button -->
         <div class="upload-action">
           <button type="button" class="btn-primary" id="processBtn">
@@ -260,7 +292,15 @@
               <div class="dl-icon"><i class="fa-solid fa-table"></i></div>
               <div class="dl-text">
                 <strong>Findings Audit (.csv)</strong>
-                <span class="text-sm">Traceable spreadsheet log</span>
+                <span class="text-sm">Traceable PII log</span>
+              </div>
+            </a>
+            <!-- Transformation Changelog CSV -->
+            <a href="#" class="btn-download" id="downloadChangelogBtn" download>
+              <div class="dl-icon"><i class="fa-solid fa-clock-rotate-left text-accent"></i></div>
+              <div class="dl-text">
+                <strong>Transformation Log (.csv)</strong>
+                <span class="text-sm">Full before & after replacements</span>
               </div>
             </a>
             <!-- Findings JSON -->
@@ -268,25 +308,38 @@
               <div class="dl-icon"><i class="fa-solid fa-code"></i></div>
               <div class="dl-text">
                 <strong>Telemetry Log (.json)</strong>
-                <span class="text-sm">Machine-readable coordinates</span>
+                <span class="text-sm">Machine coordinates</span>
+              </div>
+            </a>
+            <!-- Audit Certificate JSON -->
+            <a href="#" class="btn-download" id="downloadCertBtn" download>
+              <div class="dl-icon"><i class="fa-solid fa-certificate text-emerald"></i></div>
+              <div class="dl-text">
+                <strong>Audit Certificate (.json)</strong>
+                <span class="text-sm">Cryptographic custody proof</span>
               </div>
             </a>
           </div>
           <div class="save-toast" id="saveToast" style="display: none;"></div>
-        </div>
         </div>
 
         <!-- Inspection Tabs (Before / After & Findings) -->
         <div class="inspection-container">
           <div class="tab-nav">
             <button type="button" class="tab-btn active" data-tab="tabComparison">
-              <i class="fa-solid fa-table-columns"></i> Side-by-Side Inspection (Before vs After)
+              <i class="fa-solid fa-table-columns"></i> Side-by-Side Inspection
+            </button>
+            <button type="button" class="tab-btn" data-tab="tabChangelog">
+              <i class="fa-solid fa-clock-rotate-left"></i> Transformation Changelog
+            </button>
+            <button type="button" class="tab-btn" data-tab="tabCustody">
+              <i class="fa-solid fa-id-card-clip"></i> Corporate Audit & Custody
             </button>
             <button type="button" class="tab-btn" data-tab="tabTable">
-              <i class="fa-solid fa-list-check"></i> Traceable Findings Audit Table
+              <i class="fa-solid fa-list-check"></i> Findings Table
             </button>
             <button type="button" class="tab-btn" data-tab="tabSafety">
-              <i class="fa-solid fa-shield-virus"></i> Safety Gate & OCR Telemetry
+              <i class="fa-solid fa-shield-virus"></i> Safety Gate Telemetry
             </button>
           </div>
 
@@ -307,7 +360,112 @@
             </div>
           </div>
 
-          <!-- Tab 2: Findings Table -->
+          <!-- Tab 2: Transformation Changelog -->
+          <div class="tab-content" id="tabChangelog">
+            <div class="table-controls">
+              <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="changelogSearch" placeholder="Search transformation records...">
+              </div>
+              <div class="changelog-badge-counter">
+                <span class="badge badge-shield"><i class="fa-solid fa-pen-to-square"></i> Total Changes: <strong id="changelogTotalCount">0</strong></span>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="findings-table changelog-table">
+                <thead>
+                  <tr>
+                    <th>Change ID</th>
+                    <th>Document Location</th>
+                    <th>Original Sensitive Value</th>
+                    <th>Sanitized Value Applied</th>
+                    <th>PII Classification</th>
+                    <th>Policy Rule & Action</th>
+                  </tr>
+                </thead>
+                <tbody id="changelogTableBody">
+                  <!-- Dynamically populated rows -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Tab 3: Corporate Audit & Chain of Custody -->
+          <div class="tab-content" id="tabCustody">
+            <div class="certificate-container">
+              <div class="certificate-header">
+                <div class="cert-seal">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div>
+                  <div class="cert-title">CERTIFICATE OF DATA SANITIZATION</div>
+                  <div class="cert-subtitle">Cadence Financial Group &bull; Corporate Data Governance & AI Safety Verification</div>
+                </div>
+                <div class="cert-stamp">
+                  <span class="stamp-verified"><i class="fa-solid fa-circle-check"></i> CHAIN-OF-CUSTODY AUDITED</span>
+                </div>
+              </div>
+
+              <div class="cert-grid">
+                <div class="cert-card">
+                  <div class="cert-card-title"><i class="fa-solid fa-user-shield text-accent"></i> Operator Attribution</div>
+                  <div class="cert-data-row">
+                    <span class="cert-key">Analyst / Operator:</span>
+                    <strong class="cert-val" id="custodyOperatorName">Aarav</strong>
+                  </div>
+                  <div class="cert-data-row">
+                    <span class="cert-key">Employee / Operator ID:</span>
+                    <strong class="cert-val" id="custodyOperatorId">CAD-ANALYST-402</strong>
+                  </div>
+                  <div class="cert-data-row">
+                    <span class="cert-key">Department:</span>
+                    <span class="cert-val" id="custodyDepartment">Risk, Compliance & Security</span>
+                  </div>
+                  <div class="cert-data-row">
+                    <span class="cert-key">Business Justification:</span>
+                    <span class="cert-val" id="custodyJustification">Pre-LLM Sanitization & Safe External Ingestion</span>
+                  </div>
+                </div>
+
+                <div class="cert-card">
+                  <div class="cert-card-title"><i class="fa-solid fa-clock text-accent"></i> Execution & Environment Telemetry</div>
+                  <div class="cert-data-row">
+                    <span class="cert-key">Timestamp (Local):</span>
+                    <strong class="cert-val" id="custodyTimestampLocal">--</strong>
+                  </div>
+                  <div class="cert-data-row">
+                    <span class="cert-key">Timestamp (UTC):</span>
+                    <span class="cert-val" id="custodyTimestampUtc">--</span>
+                  </div>
+                  <div class="cert-data-row">
+                    <span class="cert-key">Machine Hostname:</span>
+                    <span class="cert-val" id="custodyMachine">--</span>
+                  </div>
+                  <div class="cert-data-row">
+                    <span class="cert-key">Session Governance ID:</span>
+                    <code class="val-pill" id="custodySessionId">--</code>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cert-card cert-hash-box">
+                <div class="cert-card-title"><i class="fa-solid fa-fingerprint text-accent"></i> Cryptographic Document Fingerprints (SHA-256)</div>
+                <div class="hash-row">
+                  <span class="hash-label">Source Document Hash:</span>
+                  <code class="hash-code" id="custodySourceHash">--</code>
+                </div>
+                <div class="hash-row">
+                  <span class="hash-label">Sanitized Document Hash:</span>
+                  <code class="hash-code text-success" id="custodySanitizedHash">--</code>
+                </div>
+                <div class="hash-note">
+                  <i class="fa-solid fa-shield-check text-success"></i> Cryptographic proof of safe mutation. No plaintext PII is retained on downstream systems.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 4: Findings Table -->
           <div class="tab-content" id="tabTable">
             <div class="table-controls">
               <div class="search-box">

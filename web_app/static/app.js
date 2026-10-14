@@ -112,6 +112,17 @@ document.addEventListener("DOMContentLoaded", () => {
       formData.append("preset_id", activePreset);
     }
 
+    // Attach Operator Attribution & Governance Credentials
+    const opName = document.getElementById("operatorName") ? document.getElementById("operatorName").value : "Aarav";
+    const opId = document.getElementById("operatorId") ? document.getElementById("operatorId").value : "CAD-ANALYST-402";
+    const opDept = document.getElementById("operatorDept") ? document.getElementById("operatorDept").value : "Risk, Compliance & Security";
+    const opJust = document.getElementById("operatorJustification") ? document.getElementById("operatorJustification").value : "Pre-LLM Sanitization & Safe External Ingestion";
+
+    formData.append("operator_name", opName);
+    formData.append("operator_id", opId);
+    formData.append("department", opDept);
+    formData.append("justification", opJust);
+
     // UI Progress State
     resultsHub.style.display = "none";
     progressCard.style.display = "block";
@@ -167,8 +178,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setTimeout(() => {
       progressBar.style.width = "80%";
-      progressStepTitle.textContent = "3. Right-to-Left Redaction Gate...";
-      progressStepDesc.textContent = "Executing character offset replacements to ensure zero coordinate-shifting.";
+      progressStepTitle.textContent = "3. Right-to-Left Redaction Gate & Font Preservation...";
+      progressStepDesc.textContent = "Applying compact redactions with run auto-scaling to prevent shape overflow.";
       document.getElementById("step3").classList.add("active");
     }, 2400);
   }
@@ -243,17 +254,46 @@ document.addEventListener("DOMContentLoaded", () => {
     csvBtn.href = data.downloads.csv;
     csvBtn.download = "pii_findings.csv";
 
+    const changelogBtn = document.getElementById("downloadChangelogBtn");
+    if (changelogBtn) {
+      changelogBtn.href = data.downloads.changelog_csv;
+      changelogBtn.download = "transformation_audit_log.csv";
+    }
+
     const jsonBtn = document.getElementById("downloadJsonBtn");
     jsonBtn.href = data.downloads.json;
     jsonBtn.download = "pii_findings.json";
 
-    // 5. Render Comparison List
+    const certBtn = document.getElementById("downloadCertBtn");
+    if (certBtn) {
+      certBtn.href = data.downloads.certificate_json;
+      certBtn.download = "audit_certificate.json";
+    }
+
+    // 5. Populate Corporate Custody & Audit Certificate
+    if (data.custody) {
+      document.getElementById("custodyOperatorName").textContent = data.custody.operator_name;
+      document.getElementById("custodyOperatorId").textContent = data.custody.operator_id;
+      document.getElementById("custodyDepartment").textContent = data.custody.department;
+      document.getElementById("custodyJustification").textContent = data.custody.justification;
+      document.getElementById("custodyTimestampLocal").textContent = data.custody.timestamp_local;
+      document.getElementById("custodyTimestampUtc").textContent = data.custody.timestamp_utc;
+      document.getElementById("custodyMachine").textContent = data.custody.machine_host;
+      document.getElementById("custodySessionId").textContent = data.custody.session_id;
+      document.getElementById("custodySourceHash").textContent = data.custody.source_sha256;
+      document.getElementById("custodySanitizedHash").textContent = data.custody.sanitized_sha256;
+    }
+
+    // 6. Render Comparison List
     renderComparison(data.preview_pairs);
 
-    // 6. Render Findings Table
+    // 7. Render Transformation Changelog
+    renderChangelogTable(data.changelog);
+
+    // 8. Render Findings Table
     renderFindingsTable(data.findings);
 
-    // 7. Render Telemetry Warnings
+    // 9. Render Telemetry Warnings
     const warningsList = document.getElementById("warningsList");
     warningsList.innerHTML = "";
     if (data.safety_gate.warnings_sample && data.safety_gate.warnings_sample.length > 0) {
@@ -340,10 +380,55 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  function renderChangelogTable(changelog) {
+    const tbody = document.getElementById("changelogTableBody");
+    const countEl = document.getElementById("changelogTotalCount");
+    if (!tbody) return;
+    tbody.innerHTML = "";
+
+    const query = (document.getElementById("changelogSearch") ? document.getElementById("changelogSearch").value : "").toLowerCase();
+
+    const filtered = (changelog || []).filter((c) => {
+      return (
+        c.change_id.toLowerCase().includes(query) ||
+        c.location.toLowerCase().includes(query) ||
+        c.original_text.toLowerCase().includes(query) ||
+        c.entity_type.toLowerCase().includes(query)
+      );
+    });
+
+    if (countEl) countEl.textContent = (changelog || []).length;
+
+    if (filtered.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="6" class="text-muted" style="text-align: center; padding: 24px;">No transformation records found matching query.</td></tr>`;
+      return;
+    }
+
+    filtered.forEach((c) => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td><code class="val-pill" style="color: #818cf8;">${escapeHtml(c.change_id)}</code></td>
+        <td><strong>${escapeHtml(c.location)}</strong></td>
+        <td><span class="diff-orig-tag">${escapeHtml(c.original_text)}</span></td>
+        <td><span class="diff-new-tag">${escapeHtml(c.redacted_text)}</span></td>
+        <td><span class="chip chip-person" style="font-size: 11px;">${escapeHtml(c.entity_type)}</span></td>
+        <td><span class="text-sm" style="color: #cbd5e1;">${escapeHtml(c.rule || "Cadence Standard Sec 3.1")}</span></td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+
   // Search & Filter Listeners
   document.getElementById("tableSearch").addEventListener("input", () => {
     if (currentResults) renderFindingsTable(currentResults.findings);
   });
+
+  const clSearch = document.getElementById("changelogSearch");
+  if (clSearch) {
+    clSearch.addEventListener("input", () => {
+      if (currentResults) renderChangelogTable(currentResults.changelog);
+    });
+  }
 
   document.getElementById("typeFilter").addEventListener("change", () => {
     if (currentResults) renderFindingsTable(currentResults.findings);
