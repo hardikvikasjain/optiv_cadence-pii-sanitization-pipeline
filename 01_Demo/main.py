@@ -11,6 +11,14 @@ if sys.platform == "win32":
     except Exception:
         pass
 
+# Ensure modules in current or repo directory can be imported
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(SCRIPT_DIR)
+if REPO_ROOT not in sys.path:
+    sys.path.insert(0, REPO_ROOT)
+if SCRIPT_DIR not in sys.path:
+    sys.path.insert(0, SCRIPT_DIR)
+
 # Import the modules provided by the team
 import extractor
 import pii_detector
@@ -34,8 +42,10 @@ def run_pipeline(file_paths: list[str]):
 
     print("=== PIPELINE EXECUTION START ===")
     
-    # Ensure output directories exist relative to this script
-    os.makedirs("../04_Results/sanitized_outputs", exist_ok=True)
+    # Ensure output directories exist relative to repo root
+    results_dir = os.path.join(REPO_ROOT, "04_Results")
+    sanitized_dir = os.path.join(results_dir, "sanitized_outputs")
+    os.makedirs(sanitized_dir, exist_ok=True)
 
     for path in file_paths:
         ext = path.split(".")[-1].lower()
@@ -79,7 +89,7 @@ def run_pipeline(file_paths: list[str]):
         # 4. OUTPUT GENERATION
         base_name = os.path.basename(path)
         sanitized_text = "\n".join(sanitized_lines)
-        out_path = os.path.join("../04_Results/sanitized_outputs", f"{base_name}.sanitized.txt")
+        out_path = os.path.join(sanitized_dir, f"{base_name}.sanitized.txt")
         
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(sanitized_text)
@@ -87,11 +97,11 @@ def run_pipeline(file_paths: list[str]):
     return all_segments, all_findings, warnings
 
 if __name__ == "__main__":
-    # Define target artifacts relative to the script location (assuming script is in 01_Demo)
+    # Define target artifacts dynamically relative to repository root
     target_files = [
-        "../Cadence_Financial_Group_Organizational_Pack.pptx",
-        "../Cadence_Group_Risk_Management_Policy__v6.0.pdf",
-        "../Cadence_TPRM_Training.docx"
+        os.path.join(REPO_ROOT, "Cadence_Financial_Group_Organizational_Pack.pptx"),
+        os.path.join(REPO_ROOT, "Cadence_Group_Risk_Management_Policy__v6.0.pdf"),
+        os.path.join(REPO_ROOT, "Cadence_TPRM_Training.docx")
     ]
     
     # Filter to process only files currently existing in the directory
@@ -136,8 +146,9 @@ if __name__ == "__main__":
         print()
 
     # Write export files to the Results directory
-    df_findings.to_csv("../04_Results/findings.csv", index=False)
-    with open("../04_Results/findings.json", "w", encoding="utf-8") as jf:
+    results_dir = os.path.join(REPO_ROOT, "04_Results")
+    df_findings.to_csv(os.path.join(results_dir, "findings.csv"), index=False)
+    with open(os.path.join(results_dir, "findings.json"), "w", encoding="utf-8") as jf:
         json.dump(findings, jf, indent=2)
 
     print("=== PRIVACY SAFETY GATE & EXPORT ENFORCEMENT ===")

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadence Financial Group | Enterprise PII Sanitization Studio</title>
+  <meta name="description" content="Local PII Extraction, Hybrid Detection & Safe Redaction Pipeline for Enterprise Documents">
+  
+  <!-- Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for clean visuals -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <!-- Background Glow & Grid -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-grid"></div>
+
+  <div class="app-container">
+    <!-- Top Navigation Header -->
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <div>
+          <div class="brand-title">CADENCE FINANCIAL GROUP</div>
+          <div class="brand-subtitle">AI Governance & PII Sanitization Pipeline</div>
+        </div>
+      </div>
+
+      <div class="header-badges">
+        <span class="badge badge-shield"><i class="fa-solid fa-lock"></i> 100% Local Execution</span>
+        <span class="badge badge-llm"><i class="fa-solid fa-ban"></i> Zero LLM Leakage</span>
+        <div class="status-indicator">
+          <span class="pulse-dot"></span>
+          <span>Engine Online</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Flow -->
+    <main class="main-content">
+      <!-- Hero Header -->
+      <section class="hero-section">
+        <div class="hero-tag">CASE STUDY 2: TEXT ANALYSIS & PII DETECTION</div>
+        <h1 class="hero-title">Sanitize & Redact Enterprise Documents for AI</h1>
+        <p class="hero-description">
+          Upload any confidential Word (<code class="code-pill">.docx</code>), PowerPoint (<code class="code-pill">.pptx</code>), or PDF (<code class="code-pill">.pdf</code>) document. Our hybrid engine detects and redacts sensitive PII locally, producing safe, downloadable sanitized documents and audit logs.
+        </p>
+      </section>
+
+      <!-- Ingestion Hub Card -->
+      <section class="card upload-card" id="uploadCard">
+        <div class="card-header">
+          <div class="section-title">
+            <i class="fa-solid fa-cloud-arrow-up text-accent"></i>
+            <span>Document Ingestion Hub</span>
+          </div>
+          <span class="text-muted text-sm">Supported: .docx, .pptx, .pdf</span>
+        </div>
+
+        <!-- Drag & Drop Zone -->
+        <div class="dropzone" id="dropzone">
+          <input type="file" id="fileInput" accept=".docx,.pptx,.pdf" class="file-input">
+          <div class="dropzone-content">
+            <div class="dropzone-icon">
+              <i class="fa-solid fa-file-shield"></i>
+            </div>
+            <div class="dropzone-text">
+              <span class="dropzone-title">Drag & drop your document here</span>
+              <span class="dropzone-sub">or <button type="button" class="btn-browse" id="browseBtn">browse files</button> from your device</span>
+            </div>
+            <div class="dropzone-formats">
+              <span class="fmt-badge"><i class="fa-regular fa-file-word"></i> Word (.docx)</span>
+              <span class="fmt-badge"><i class="fa-regular fa-file-powerpoint"></i> PowerPoint (.pptx)</span>
+              <span class="fmt-badge"><i class="fa-regular fa-file-pdf"></i> PDF with OCR (.pdf)</span>
+            </div>
+          </div>
+          <div class="selected-file-banner" id="selectedFileBanner" style="display: none;">
+            <div class="selected-file-info">
+              <i class="fa-solid fa-file-circle-check text-success"></i>
+              <div>
+                <strong id="selectedFileName">filename.ext</strong>
+                <span id="selectedFileSize" class="text-muted text-sm">0 KB</span>
+              </div>
+            </div>
+            <button type="button" class="btn-clear" id="clearFileBtn" title="Remove file">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Demo Presets -->
+        <div class="presets-container">
+          <div class="presets-label">
+            <i class="fa-solid fa-bolt text-accent"></i> Or 1-Click Test With Cadence Artifacts:
+          </div>
+          <div class="presets-grid" id="presetsGrid">
+            <button type="button" class="preset-btn" data-preset="org_pack">
+              <div class="preset-icon pptx"><i class="fa-solid fa-file-powerpoint"></i></div>
+              <div class="preset-info">
+                <strong>Org Reference Pack</strong>
+                <span>.pptx • Leadership & Direct Contacts</span>
+              </div>
+            </button>
+            <button type="button" class="preset-btn" data-preset="risk_policy">
+              <div class="preset-icon pdf"><i class="fa-solid fa-file-pdf"></i></div>
+              <div class="preset-info">
+                <strong>Risk Management Policy</strong>
+                <span>.pdf • 48 pgs • OCR Scanned Appendix</span>
+              </div>
+            </button>
+            <button type="button" class="preset-btn" data-preset="tprm_training">
+              <div class="preset-icon docx"><i class="fa-solid fa-file-word"></i></div>
+              <div class="preset-info">
+                <strong>TPRM Training Guide</strong>
+                <span>.docx • Multi-table Vendor Matrix</span>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Action Button -->
+        <div class="upload-action">
+          <button type="button" class="btn-primary" id="processBtn">
+            <i class="fa-solid fa-shield-virus"></i>
+            <span>Execute Sanitization Pipeline</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Processing Progress Overlay -->
+      <section class="card progress-card" id="progressCard" style="display: none;">
+        <div class="progress-header">
+          <div class="spinner"></div>
+          <div>
+            <h3 class="progress-title" id="progressStepTitle">Ingesting Artifact...</h3>
+            <p class="progress-desc" id="progressStepDesc">Reading file structure and initializing local NLP models</p>
+          </div>
+        </div>
+        <div class="progress-track">
+          <div class="progress-bar" id="progressBar" style="width: 15%;"></div>
+        </div>
+        <div class="pipeline-steps-mini">
+          <span class="step-mini active" id="step1"><i class="fa-solid fa-file-import"></i> Extraction</span>
+          <span class="step-mini" id="step2"><i class="fa-solid fa-brain"></i> Hybrid PII Scan</span>
+          <span class="step-mini" id="step3"><i class="fa-solid fa-user-shield"></i> Redaction Gate</span>
+          <span class="step-mini" id="step4"><i class="fa-solid fa-file-export"></i> Deliverables</span>
+        </div>
+      </section>
+
+      <!-- Results Hub Section -->
+      <section class="results-hub" id="resultsHub" style="display: none;">
+        <!-- Safety Gate Verdict Banner -->
+        <div class="safety-banner" id="safetyBanner">
+          <div class="safety-banner-icon" id="safetyIcon">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <div class="safety-banner-content">
+            <div class="safety-status-title" id="safetyTitle">PRIVACY SAFETY GATE: PASSED</div>
+            <div class="safety-status-desc" id="safetyDesc">
+              Zero OCR degradation anomalies. 100% of PII entities safely redacted. Artifact is certified safe for downstream LLM ingestion.
+            </div>
+          </div>
+          <div class="safety-verdict-badge" id="safetyBadge">CERTIFIED SAFE</div>
+        </div>
+
+        <!-- Executive Metrics Cards -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-icon icon-blue"><i class="fa-solid fa-layer-group"></i></div>
+            <div class="metric-data">
+              <span class="metric-number" id="metricSegments">0</span>
+              <span class="metric-label">Extracted Segments</span>
+            </div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon icon-rose"><i class="fa-solid fa-fingerprint"></i></div>
+            <div class="metric-data">
+              <span class="metric-number" id="metricPii">0</span>
+              <span class="metric-label">PII Entities Detected</span>
+            </div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon icon-amber"><i class="fa-solid fa-clock-rotate-left"></i></div>
+            <div class="metric-data">
+              <span class="metric-number" id="metricTime">0.0s</span>
+              <span class="metric-label">Execution Time</span>
+            </div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon icon-emerald"><i class="fa-solid fa-file-contract"></i></div>
+            <div class="metric-data">
+              <span class="metric-number" id="metricFileType">DOCX</span>
+              <span class="metric-label" id="metricFileSize">0 KB</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entity Breakdown Chips -->
+        <div class="breakdown-card">
+          <div class="breakdown-title">
+            <i class="fa-solid fa-chart-pie text-accent"></i> Detected Entities Distribution:
+          </div>
+          <div class="breakdown-chips" id="breakdownChips">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Download Suite Card (Prominent Deliverable Actions) -->
+        <div class="card download-card">
+          <div class="download-card-header">
+            <div>
+              <h3 class="download-title"><i class="fa-solid fa-download text-accent"></i> Download Sanitized Deliverables</h3>
+              <p class="text-muted text-sm">Download your redacted document in its original file format, sanitized plain text for LLMs, or audit logs.</p>
+            </div>
+          </div>
+          <div class="download-buttons-grid">
+            <!-- Primary Download: Native Format -->
+            <a href="#" class="btn-download btn-download-primary" id="downloadNativeBtn" download>
+              <div class="dl-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
+              <div class="dl-text">
+                <strong id="downloadNativeTitle">Download Sanitized Document</strong>
+                <span id="downloadNativeFormat" class="text-sm">Redacted in Original Format</span>
+              </div>
+            </a>
+            <!-- Direct Save to Windows Downloads Folder -->
+            <button type="button" class="btn-download btn-download-success" id="saveToDownloadsBtn">
+              <div class="dl-icon"><i class="fa-solid fa-folder-arrow-down"></i></div>
+              <div class="dl-text">
+                <strong>Save to Downloads Folder</strong>
+                <span class="text-sm" id="saveFolderLabel">Direct to C:\Users\aarav\Downloads</span>
+              </div>
+            </button>
+            <!-- In-Browser Full Viewer Button -->
+            <button type="button" class="btn-download btn-download-view" id="openViewerBtn">
+              <div class="dl-icon"><i class="fa-solid fa-eye"></i></div>
+              <div class="dl-text">
+                <strong>View Sanitized Document</strong>
+                <span class="text-sm">Read full document in browser</span>
+              </div>
+            </button>
+            <!-- Sanitized TXT -->
+            <a href="#" class="btn-download" id="downloadTextBtn" download>
+              <div class="dl-icon"><i class="fa-regular fa-file-lines"></i></div>
+              <div class="dl-text">
+                <strong>Sanitized Text (.txt)</strong>
+                <span class="text-sm">Clean format for LLM Prompts</span>
+              </div>
+            </a>
+            <!-- Findings CSV -->
+            <a href="#" class="btn-download" id="downloadCsvBtn" download>
+              <div class="dl-icon"><i class="fa-solid fa-table"></i></div>
+              <div class="dl-text">
+                <strong>Findings Audit (.csv)</strong>
+                <span class="text-sm">Traceable spreadsheet log</span>
+              </div>
+            </a>
+            <!-- Findings JSON -->
+            <a href="#" class="btn-download" id="downloadJsonBtn" download>
+              <div class="dl-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="dl-text">
+                <strong>Telemetry Log (.json)</strong>
+                <span class="text-sm">Machine-readable coordinates</span>
+              </div>
+            </a>
+          </div>
+          <div class="save-toast" id="saveToast" style="display: none;"></div>
+        </div>
+        </div>
+
+        <!-- Inspection Tabs (Before / After & Findings) -->
+        <div class="inspection-container">
+          <div class="tab-nav">
+            <button type="button" class="tab-btn active" data-tab="tabComparison">
+              <i class="fa-solid fa-table-columns"></i> Side-by-Side Inspection (Before vs After)
+            </button>
+            <button type="button" class="tab-btn" data-tab="tabTable">
+              <i class="fa-solid fa-list-check"></i> Traceable Findings Audit Table
+            </button>
+            <button type="button" class="tab-btn" data-tab="tabSafety">
+              <i class="fa-solid fa-shield-virus"></i> Safety Gate & OCR Telemetry
+            </button>
+          </div>
+
+          <!-- Tab 1: Comparison View -->
+          <div class="tab-content active" id="tabComparison">
+            <div class="comparison-header">
+              <div class="comp-col-title">
+                <span class="badge badge-raw"><i class="fa-solid fa-triangle-exclamation"></i> Original Document Content</span>
+                <span class="text-muted text-sm">Detected PII highlighted in glowing tags</span>
+              </div>
+              <div class="comp-col-title">
+                <span class="badge badge-sanitized"><i class="fa-solid fa-shield-check"></i> Sanitized Output (LLM Ready)</span>
+                <span class="text-muted text-sm">Right-to-left character offset replacement</span>
+              </div>
+            </div>
+            <div class="comparison-list" id="comparisonList">
+              <!-- Dynamically rendered segment diff pairs -->
+            </div>
+          </div>
+
+          <!-- Tab 2: Findings Table -->
+          <div class="tab-content" id="tabTable">
+            <div class="table-controls">
+              <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="tableSearch" placeholder="Search by name, email, location...">
+              </div>
+              <div class="filter-group">
+                <label for="typeFilter" class="text-sm text-muted">Filter Type:</label>
+                <select id="typeFilter" class="select-filter">
+                  <option value="ALL">All Categories</option>
+                  <option value="PERSON_NAME">Person Names</option>
+                  <option value="EMAIL">Emails</option>
+                  <option value="PHONE">Phones</option>
+                  <option value="ACCOUNT_OR_EMPLOYEE_ID">Employee / Account IDs</option>
+                  <option value="IP_ADDRESS">IP Addresses</option>
+                </select>
+              </div>
+              <button type="button" class="btn-toggle-mask" id="toggleMaskBtn">
+                <i class="fa-solid fa-eye-slash"></i>
+                <span>Toggle Mask PII</span>
+              </button>
+            </div>
+
+            <div class="table-responsive">
+              <table class="findings-table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Document Location</th>
+                    <th>PII Category</th>
+                    <th>Detected Entity Value</th>
+                    <th>Detection Method</th>
+                    <th>Confidence</th>
+                  </tr>
+                </thead>
+                <tbody id="findingsTableBody">
+                  <!-- Dynamically populated rows -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Tab 3: Safety Gate & Governance Telemetry -->
+          <div class="tab-content" id="tabSafety">
+            <div class="safety-telemetry-box">
+              <h4 class="telemetry-subtitle"><i class="fa-solid fa-clipboard-check text-accent"></i> Governance Safety Enforcement Matrix</h4>
+              <p class="text-muted">
+                In strict accordance with corporate policy, our zero-trust architecture enforces safety checks before declaring any artifact ready for LLM consumption.
+              </p>
+              <div class="telemetry-grid">
+                <div class="telemetry-item">
+                  <span class="tel-label">Third-Party LLM API Transmission</span>
+                  <span class="tel-value text-success"><i class="fa-solid fa-lock"></i> Strictly Blocked (100% Local)</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="tel-label">Character Offset Sorting Logic</span>
+                  <span class="tel-value text-success"><i class="fa-solid fa-check-double"></i> Right-to-Left (Prevents Shifting)</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="tel-label">Scanned Document OCR Fallback</span>
+                  <span class="tel-value text-accent"><i class="fa-solid fa-image"></i> Tesseract 300 DPI Native PyMuPDF</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="tel-label">Low OCR Confidence Tolerance</span>
+                  <span class="tel-value text-amber"><i class="fa-solid fa-bell"></i> Default to REVIEW REQUIRED (&lt; 70%)</span>
+                </div>
+              </div>
+
+              <div class="warnings-box" id="warningsBox">
+                <h5 class="warnings-title"><i class="fa-solid fa-triangle-exclamation text-amber"></i> Flagged Warnings Log:</h5>
+                <ul class="warnings-list" id="warningsList">
+                  <li class="text-muted">No warnings recorded. All pages met maximum confidence thresholds.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div>Cadence Financial Group &bull; Case Study 2: Text Analysis & PII Detection</div>
+      <div class="text-muted text-sm">Engineered with Python 3.10+, PyMuPDF, spaCy & FastAPI</div>
+    </footer>
+  </div>
+
+  <!-- In-Browser Full Document Viewer Modal -->
+  <div class="modal-overlay" id="viewerModal" style="display: none;">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <i class="fa-solid fa-file-shield text-accent"></i>
+          <div>
+            <h3 id="viewerModalTitle">Sanitized Document Viewer</h3>
+            <span class="text-sm text-muted" id="viewerModalSub">Full document text rendered with all PII safely redacted</span>
+          </div>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn-modal-action" id="modalSaveToDownloadsBtn">
+            <i class="fa-solid fa-folder-arrow-down"></i> Save to Downloads Folder
+          </button>
+          <button type="button" class="btn-modal-close" id="closeViewerModalBtn" title="Close Viewer">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+      <div class="modal-body" id="viewerModalBody">
+        <div class="viewer-loading">Loading sanitized document...</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
